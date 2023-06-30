@@ -1,4 +1,3 @@
-# The Weapon of Waupun
 
 > Pritchard Greene is an innocent man, but I am recommending he remain in solitude or, more mercifully, be executed. As I’ve noted in the attached evaluation form, it is my professional opinion that Mr. Greene is suffering from a severe case of Dissociative Identity Disorder, but given recent events, I recommend that no single guard be left with Mr. Greene for more than 2 hours.
 > 
