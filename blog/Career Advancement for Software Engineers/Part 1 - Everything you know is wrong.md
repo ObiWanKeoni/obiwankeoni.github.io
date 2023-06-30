@@ -1,3 +1,9 @@
+---
+layout: page
+title: Part 1: Everything You Know Is Wrong
+catagories: Writing
+---
+
 In this _ part series, we will dive into the Software Engineering job market and how to succeed in it. This will take a rant-like tone but it will be a holistic viewpoint from someone who has lived experience. 
 
 ### WHO THE HECK EVEN ARE YOU? WHY SHOULD I LISTEN TO YOU?

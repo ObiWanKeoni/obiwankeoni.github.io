@@ -20,4 +20,4 @@ title: Disjointed Thoughts
  - [TDB](https://m.youtube.com/watch?v=gAGVAVxUgkc)
 
 ### Writing
-- [The Weapon of Waupun](writing/The%20Weapon%20of%20Waupun)
+- [The Weapon of Waupun](The%20Weapon%20of%20Waupun.md)
