@@ -1,5 +1,5 @@
 ### me
-- [email](keoni_garner@yahoo.com)
+- [email](mailto:keoni_garner@yahoo.com)
 - [github](https://github.com/ObiWanKeoni)
 - descriptors:
 	- dad
