@@ -1,7 +1,6 @@
 ---
 layout: page
 title: The Weapon of Waupun
-catagories: Writing
 ---
 
 
