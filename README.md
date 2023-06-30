@@ -1,4 +1,8 @@
-# Hey, what are you doing here?
+---
+layout: page
+title: Keoni’s Disjointed Thoughts
+---
+
 
 ### me
 - [email](mailto:keoni_garner@yahoo.com)
