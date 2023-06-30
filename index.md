@@ -13,15 +13,6 @@ title: Disjointed Thoughts
 	- software engineer
 	- ergonomic keyboard nut
 
-### Notes
-- [Radius Search for Scrappy Startup Engineers]()
-
-### Blog
- - [TDB](https://m.youtube.com/watch?v=gAGVAVxUgkc)
-
-### Writing
-- [2023-06-30-the-weapon-of-waupun](2023-06-30-the-weapon-of-waupun.md)
-
 <div id="archives">
 {% for category in site.categories %}
   <div class="archive-group">
