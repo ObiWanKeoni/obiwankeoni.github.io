@@ -1,5 +1,5 @@
 ---
-title: Keoni’s Disjointed Thoughts
+title: Disjointed Thoughts
 ---
 
 
