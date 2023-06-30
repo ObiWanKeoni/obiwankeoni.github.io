@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Career Advancement For Software Engineers | Part 1: Everything You Know Is Wrong
-catagories: Writing
+title: "Career Advancement For Software Engineers | Part 1: Everything You Know Is Wrong"
 ---
 
 In this _ part series, we will dive into the Software Engineering job market and how to succeed in it. This will take a rant-like tone but it will be a holistic viewpoint from someone who has lived experience. 
