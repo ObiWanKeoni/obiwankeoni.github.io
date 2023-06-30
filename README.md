@@ -5,4 +5,4 @@
  - []()
 
 ### Writing
-- [The Weapon of Waupun](writing/The%20Weapon%20of%20Waupun.md)
+- [The Weapon of Waupun](writing/The%20Weapon%20of%20Waupun)

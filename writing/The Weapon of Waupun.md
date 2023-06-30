@@ -216,6 +216,3 @@ Colin
 ---
 
 Dr. Colin Yeh hung himself in his home in Ripon on the 18th of December 2014. His wife, Emily, went missing 2 days prior - reported by her concerned sister. Pritchard Greene was indeed transferred to the Wauwatosa hospital but managed to escape during transit, never to be found again.
-
-
-Something happened
