@@ -1,2 +1,3 @@
-title: Keonis Disjointed Thoughts
+title: Disjointed Thoughts
 remote_theme: ronv/sidey
+include: ['_pages']
