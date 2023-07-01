@@ -1,4 +1,4 @@
 title: Disjointed Thoughts
 remote_theme: just-the-docs/just-the-docs
 include: ['_pages']
-color_scheme: dark
+color_scheme: catppuccin
