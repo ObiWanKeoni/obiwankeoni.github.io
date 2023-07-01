@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 title: Writing
 permalink: /writing/
 ---
