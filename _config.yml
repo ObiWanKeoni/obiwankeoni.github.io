@@ -1,5 +1,5 @@
 title: Disjointed Thoughts
-remote_theme: remote_theme: theramiyer/typographical
+remote_theme: theramiyer/typographical
 
 permalink: /:category/:year-:month-:day/:title
 paginate: 5
