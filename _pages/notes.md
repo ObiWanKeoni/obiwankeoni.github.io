@@ -3,6 +3,9 @@ layout: page
 title: Notes
 permalink: /notes/
 ---
+
+# Notes
+
 <section class="posts">
 <ul>
 {% for post in site.categories.notes %}
