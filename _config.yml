@@ -5,6 +5,9 @@ color_scheme: catppuccin
 
 url: https://obiwankeoni.github.io
 
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/favicon.ico"
+
 footer_content: "Copyright &copy; 2023 Keoni Garner."
 
 callouts:
