@@ -5,6 +5,8 @@ color_scheme: catppuccin
 
 url: https://obiwankeoni.github.io
 
+footer_content: "Copyright &copy; 2023 Keoni Garner."
+
 callouts:
   warning:
     title: Warning
