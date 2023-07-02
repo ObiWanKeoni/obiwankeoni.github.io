@@ -1,7 +1,7 @@
 # The Weapon of Waupun
 
 {: .warning }
-There are gruesome details of fictional deaths as well as mentions of miscarriage. *Proceed at your own risk*
+This story contains gruesome details of fictional deaths as well as mentions of miscarriage. *Proceed at your own risk*
 
 > Pritchard Greene is an innocent man, but I am recommending he remain in solitude or, more mercifully, be executed. As I’ve noted in the attached evaluation form, it is my professional opinion that Mr. Greene is suffering from a severe case of Dissociative Identity Disorder, but given recent events, I recommend that no single guard be left with Mr. Greene for more than 2 hours.
 > 
