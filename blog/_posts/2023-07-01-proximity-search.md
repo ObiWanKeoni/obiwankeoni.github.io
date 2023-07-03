@@ -1,3 +1,7 @@
+---
+parent: Blog
+---
+
 # Proximity Search for Startup Developers
 {: .no_toc }
 
