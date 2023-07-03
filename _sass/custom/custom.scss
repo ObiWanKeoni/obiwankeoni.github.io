@@ -16,3 +16,48 @@
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
 }
+
+// Labels (not the form kind)
+
+// this :not() prevents a style clash with Mermaid.js's
+// diagram labels, which also use .label
+// for more, see https://github.com/just-the-docs/just-the-docs/issues/1272
+// and the accompanying PR
+.label:not(g),
+.label-blue:not(g) {
+  display: inline-block;
+  padding: 0.16em 0.56em;
+  margin-right: $sp-2;
+  text-transform: uppercase;
+  vertical-align: middle;
+  /* border: 1px solid; */
+  color: $blue-300;
+  border-color: $blue-300;
+  background-color: $blue-000;
+  @include fs-2;
+  border-radius: 3px;
+}
+
+.label-green:not(g) {
+  color: $green-300;
+  border-color: $green-300;
+  background-color: $green-000;
+}
+
+.label-purple:not(g) {
+  color: $purple-300;
+  border-color: $purple-300;
+  background-color: $purple-000;
+}
+
+.label-red:not(g) {
+  color: $red-300;
+  border-color: $red-300;
+  background-color: $red-000;
+}
+
+.label-yellow:not(g) {
+  color: $yellow-300;
+  border-color: $yellow-300;
+  background-color: $yellow-000;
+}
