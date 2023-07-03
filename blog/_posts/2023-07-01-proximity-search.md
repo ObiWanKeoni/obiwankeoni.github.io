@@ -170,13 +170,13 @@ ORDER BY distance;
 
 That’s pretty much it. *Radius Search*  in just a few steps. 
 
-### Estimate
+#### Estimate
 
 *Time estimate: 1-2 weeks*
 
 Realistically, this could just be a single sprint’s worth of work considering differing PR processes, testing and validation, etc. I would be surprised if an engineer took longer than 2 weeks to do this but there may be unexpected issues with this approach given all of the variables that could affect this.
 
-### Evaluation
+#### Evaluation
 
 | Pros                         | Cons                                                    |
 | ---------------------------- | ------------------------------------------------------- |
