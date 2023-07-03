@@ -1,13 +1,13 @@
 # The Weapon of Waupun
 
 {: .warning }
-This story contains gruesome details of fictional deaths as well as mentions of miscarriage. *Proceed at your own risk*
+This story contains gruesome details of fictional deaths as well as mentions of miscarriage. **Proceed at your own risk**
 
 > Pritchard Greene is an innocent man, but I am recommending he remain in solitude or, more mercifully, be executed. As I’ve noted in the attached evaluation form, it is my professional opinion that Mr. Greene is suffering from a severe case of Dissociative Identity Disorder, but given recent events, I recommend that no single guard be left with Mr. Greene for more than 2 hours.
 > 
 > -*Excerpt from the letter written by Dr. Colin Yeh to the warden of the Waupun correctional facility.*
 
-## From the Journal discovered in Dr. Yeh's home in Ripon, WI. Dated December 18, 2014
+### From the Journal discovered in Dr. Yeh's home in Ripon, WI. Dated December 18, 2014
 
 On the 10th of December 2014, I was to meet for the first time a man of terrible repute - a Mr. Pritchard Greene who, it was told, had mutilated the body of his partner, Russell Parker, beyond all point of recognition. This was, unfortunately, commonplace in my field. What enthralled me about this specific case were the enigmatic events that unfolded in the wake of Mr. Greene's incarceration.
 

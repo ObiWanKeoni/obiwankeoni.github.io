@@ -1,5 +1,7 @@
-# PostGIS: Proximity Search for Startup Developers
+# Proximity Search for Startup Developers
 {: .no_toc }
+
+---
 
 {: .info }
 I use MacOS and only MacOS so all examples will be for MacOS.
@@ -18,6 +20,7 @@ Hypothetical
 
 I’ll spend some time pulling apart the different levels of product complexity and then providing some instructions on how to solve these with minimal effort - a goal for which all engineers should strive.
 
+---
 ## The Problem
 As with most requests from customers, clients, or product, the scope can be nebulous and expand quickly. What was presumably a single ticket can easily expand to entire feature lanes so it’s important (especially as a startup engineer) to cut scope where possible. 
 
@@ -42,8 +45,12 @@ This is just an example of a simple spec for this feature. YMMV.
 
 With so many Nice-to-Haves, how can we properly descope so we don’t overwhelm the implementing engineer(s)? I like to present different approaches with vastly different timelines and pros/cons and let someone else decide on the approach. In this way, the decider can make an educated decision and keep “realistic” expectations.
 
+---
+
 ## The Solution(s)
 I’m going to present three solutions in this section. Each will have its own merits and drawbacks in addition to a reasonable time estimate for a single software engineer to complete each solution.
+
+---
 
 ### Solution 1: Scrappy Doo
 ![](https://media.tenor.com/5nZMegPqCkQAAAAd/scrappy-doo-scooby-doo.gif)
@@ -136,7 +143,7 @@ Repeat this for each file/layer that you need to support.
 And there you have it! A file you can now use to get the centroid from an address qualifier. 
 
 {: .note }
-Alternatively, you could also use [Geocoder.ca](http://geocoder.ca/), but the data is crowdsourced and not exactly under your control. Use at your own risk!
+Alternatively, for this step you could also use [Geocoder.ca](http://geocoder.ca/), but the data is crowdsourced and not exactly under your control. Use at your own risk!
 
 #### Step 4: Use the [file] Luke
 Assuming you have a `customer_addresses` table with `latitude` and `longitude` columns, a query for the radius search (in kilometers) could look like this:
@@ -164,11 +171,11 @@ SELECT id, (
   )
 ) AS distance 
 FROM customer_addresses
-HAVING distance < {distance} 
+HAVING distance < {radius_in_km} 
 ORDER BY distance;
 ```
 
-That’s pretty much it. *Radius Search*  in just a few steps. 
+That’s pretty much it. **Radius Search**  in just a few steps. 
 
 #### Estimate
 
@@ -186,10 +193,16 @@ Realistically, this could just be a single sprint’s worth of work considering 
 | “Buys time”                  |                                                         |
 | No/Low Cost                  |                                                         |
 
+---
+
 ### Solution 2: Scooby Doo
+
 {: .warning }
 WIP
 
+---
+
 ### Solution 3: Scoobert Doo
+
 {: .warning }
 WIP
