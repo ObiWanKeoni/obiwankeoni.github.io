@@ -11,6 +11,17 @@ favicon_ico: "/assets/images/favicon.ico"
 footer_content: "Copyright &copy; 2023 Keoni Garner."
 
 callouts:
+  highlight:
+    color: yellow
+  info:
+    title: Info
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
   warning:
     title: Warning
-    color: red
+    color: yellow
