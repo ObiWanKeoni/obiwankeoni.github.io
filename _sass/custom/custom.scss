@@ -27,13 +27,13 @@ h1,h2,h3,h4,h5,h6 {
 .label-blue:not(g) {
   display: inline-block;
   padding: 0.16em 0.56em;
-  margin-right: $sp-2;
+  margin-right: $sp-1;
   text-transform: uppercase;
   vertical-align: middle;
   /* border: 1px solid; */
   color: $blue-300;
   border-color: $blue-300;
-  background-color: $blue-000;
+  background-color: $grey-dk-300;
   @include fs-2;
   border-radius: 3px;
 }
@@ -41,23 +41,19 @@ h1,h2,h3,h4,h5,h6 {
 .label-green:not(g) {
   color: $green-300;
   border-color: $green-300;
-  background-color: $green-000;
 }
 
 .label-purple:not(g) {
   color: $purple-300;
   border-color: $purple-300;
-  background-color: $purple-000;
 }
 
 .label-red:not(g) {
   color: $red-300;
   border-color: $red-300;
-  background-color: $red-000;
 }
 
 .label-yellow:not(g) {
   color: $yellow-300;
   border-color: $yellow-300;
-  background-color: $yellow-000;
 }
