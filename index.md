@@ -2,7 +2,6 @@
 title: About
 ---
 
-# Keoni Garner
 Dad
 {: .label .label-purple }
 
@@ -11,9 +10,8 @@ Husband
 
 Software Engineer
 {: .label .label-purple }
-
-Ask me about my keyboard
-{: .fs-6 .fw-300 }
+# Keoni Garner
+#### Ask me about my keyboard
 
 - [email](mailto:keoni_garner@yahoo.com)
 - [github](https://github.com/ObiWanKeoni)
