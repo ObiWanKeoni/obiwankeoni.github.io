@@ -3,13 +3,13 @@ title: About
 ---
 
 Dad
-{: .label .label-purple }
+{: .label .label-blue }
 
 Husband
-{: .label .label-purple }
+{: .label .label-blue }
 
 Software Engineer
-{: .label .label-purple }
+{: .label .label-blue }
 # Keoni Garner
 #### Ask me about my keyboard
 
