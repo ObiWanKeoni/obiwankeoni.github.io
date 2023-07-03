@@ -2,13 +2,13 @@
 title: About
 ---
 
-Dad
+**Dad**
 {: .label .label-blue }
 
-Husband
+**Husband**
 {: .label .label-blue }
 
-Software Engineer
+**Software Engineer**
 {: .label .label-blue }
 # Keoni Garner
 #### Ask me about my keyboard
