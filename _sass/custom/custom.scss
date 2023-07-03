@@ -30,10 +30,10 @@ h1,h2,h3,h4,h5,h6 {
   margin-right: $sp-1;
   text-transform: uppercase;
   vertical-align: middle;
-  /* border: 1px solid; */
+  border: 1px solid;
   color: $blue-300;
   border-color: $blue-300;
-  background-color: $grey-dk-300;
+  background-color: rgba($blue-300, .2);
   @include fs-2;
   border-radius: 3px;
 }
@@ -41,19 +41,28 @@ h1,h2,h3,h4,h5,h6 {
 .label-green:not(g) {
   color: $green-300;
   border-color: $green-300;
+  background-color: rgba($green-300, .2);
 }
 
 .label-purple:not(g) {
   color: $purple-300;
   border-color: $purple-300;
+  background-color: rgba($purple-300, .2);
 }
 
 .label-red:not(g) {
   color: $red-300;
   border-color: $red-300;
+  background-color: rgba($red-300, .2);
 }
 
 .label-yellow:not(g) {
   color: $yellow-300;
   border-color: $yellow-300;
+  background-color: rgba($yellow-300, .2);
+}
+
+pre {
+  border: 1px solid $white;
+  border-radius: 5px;
 }
