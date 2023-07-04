@@ -8,10 +8,10 @@ has_toc: false
  | where: "parent", page.title
  | where: "grand_parent", page.parent -%}
 
-# Keoni Garner
-> Ask me about my keyboard
-
+# <img src="assets/images/logo.png" height="18" > Keoni Garner
 Bakersfield, CA • Remote
+
+> Ask me about my keyboard
 
 **Dad**
 {: .label .label-blue }
@@ -34,10 +34,10 @@ Bakersfield, CA • Remote
 {% for child in child_pages %}
 - - -
 #### [{{child.title}}]({{child.url}})
+{: .mb-2}
 
 {% for history in child.history %}
 **{{ history.title }}** // _{{ history.dates }}_
-{: .mb-2}
 {% endfor %}
 
 {% for language in child.languages %}
