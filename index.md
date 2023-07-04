@@ -13,10 +13,10 @@ has_toc: false
  | sort: "date" | reverse -%}
 
 # <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-6 d-inline-block"></i>ObiWanKeoni</a>
+#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io"><i class="lni lni-arrow-top-right d-inline-block"></i>Isometric Technologies</a>
 Bakersfield, CA • Remote
+> ***Ask me about my keyboard***
 
-***Ask me about my keyboard***
-{: .fs-6}
 
 **Dad**
 {: .label .label-blue }
@@ -30,7 +30,7 @@ Bakersfield, CA • Remote
 #### Blog Posts
 {: .mt-10}
 
-{% for post in blog_posts limit:2 %}
+{% for post in blog_posts limit:5 %}
  - [{{ post.title }}]({{ post.url }})
     {{ post.description }}  
 {% endfor %}
