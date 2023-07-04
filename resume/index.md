@@ -16,7 +16,7 @@ Software engineer with 5+ years of experience across a wide range of industries.
 
 {% for child in sorted_pages %}
 - - -
-#### [{{child.title}}<i class="lni lni-arrow-right fs-4 d-inline-block"></i>]({{child.url}})
+#### [{{child.title}}<i class="lni lni-arrow-right fs-2"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
