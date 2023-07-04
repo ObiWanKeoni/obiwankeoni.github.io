@@ -9,7 +9,7 @@ has_toc: false
 
 {%- include sorted_pages.html pages = child_pages -%}
 
-# ObiWanKeoni
+# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-9 d-inline-block"></i></a>ObiWanKeoni
 Bakersfield, CA • Remote
 
 ***Ask me about my keyboard***
@@ -27,9 +27,6 @@ Bakersfield, CA • Remote
 
 <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni">
   <i class="lni lni-github fs-9 d-inline-block"></i>
-</a>
-<a style="text-decoration: none;" href="mailto:keoni_garner@yahoo.com">
-  <i class="lni lni-envelope fs-9 d-inline-block"></i>
 </a>
 
 ## Experience
