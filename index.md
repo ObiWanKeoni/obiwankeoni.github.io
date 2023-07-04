@@ -27,6 +27,15 @@ Bakersfield, CA • Remote
 **Software Engineer**
 {: .label .label-blue }
 
+#### Blog Posts
+{: .mt-10}
+
+{% for post in blog_posts limit:2 %}
+ - [{{ post.title }}]({{ post.url }})
+    {{ post.description }}  
+{% endfor %}
+[See more…](blog/index)
+
 #### Experience
 {: .mt-10}
 
@@ -46,11 +55,3 @@ Bakersfield, CA • Remote
 
 [View Full Résumé](resume/index){: .btn .btn-outline .mt-8}
 
-#### Blog Posts
-{: .mt-10}
-
-{% for post in blog_posts limit:2 %}
- - [{{ post.title }}]({{ post.url }})
-    {{ post.description }}  
-{% endfor %}
-[See more…](blog/index)
