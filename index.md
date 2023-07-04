@@ -10,10 +10,10 @@ has_toc: false
 
 {%- include sorted_pages.html pages = child_pages -%}
 
-# Keoni Garner
+# ObiWanKeoni
 Bakersfield, CA • Remote
 
-> Ask me about my keyboard
+***Ask me about my keyboard***
 
 **Dad**
 {: .label .label-blue }
@@ -26,8 +26,7 @@ Bakersfield, CA • Remote
 
 <a href="mailto:keoni_garner@yahoo.com">
   <i class="lni lni-envelope fs-7 d-inline-block"></i>
-</a>
-<a href="https://github.com/ObiWanKeoni">
+</a><a href="https://github.com/ObiWanKeoni">
   <i class="lni lni-github fs-7 d-inline-block"></i>
 </a>
 
