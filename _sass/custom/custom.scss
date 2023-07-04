@@ -72,6 +72,8 @@ i {
 }
 
 .filter {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 150px;
+  object-fit: cover;
 }
