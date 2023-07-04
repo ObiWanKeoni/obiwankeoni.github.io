@@ -9,7 +9,7 @@ has_toc: false
 
 {%- include sorted_pages.html pages = child_pages -%}
 
-# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github d-inline-block"></i>ObiWanKeoni</a>
+# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-3 d-inline-block"></i>ObiWanKeoni</a>
 Bakersfield, CA • Remote
 
 ***Ask me about my keyboard***
