@@ -8,7 +8,7 @@ has_toc: false
  | where: "parent", page.title
  | where: "grand_parent", page.parent -%}
 
-# <img src="assets/images/logo.png" height="18" > Keoni Garner
+# Keoni Garner
 Bakersfield, CA • Remote
 
 > Ask me about my keyboard
