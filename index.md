@@ -3,6 +3,10 @@ title: About
 has_children: true
 has_toc: false
 ---
+{%- assign child_pages = site[page.collection]
+ | default: site.html_pages
+ | where: "parent", page.title
+ | where: "grand_parent", page.parent -%}
 
 **Dad**
 {: .label .label-blue }
@@ -24,24 +28,18 @@ has_toc: false
 ### Experience
 {: .text-purple-200 .mt-8}
 
-#### [Isometric Technologies](https://iso.io)
-{: .no_toc }
-**Senior Software Engineer** | _Jan 2023 - Present_
-{: .fw-300 .mb-2}
+{% for child in child_pages %}
 
-#### Included Health (Formerly Doctor On Demand)
-{: .no_toc }
-**Senior Software Engineer** | _Oct 2021 - Jan 2023_
-{: .fw-300 .mb-2}
-**Backend Software Engineer** | _Oct 2020 - Oct 2021_
-{: .fw-300 .mb-2}
+#### [{{child.title}}]({{child.url}})
 
-#### Avadine
-{: .no_toc }
-**Software Engineer (Contractor)** | _Aug 2018 - Oct 2020_
-{: .fw-300 .mb-2}
+{% for history in child.history %}
+**{{ history.title }}** | _{{ history.dates }}_
+{: .mb-2}
+{% endfor %}
 
-#### Self Employed
-{: .no_toc }
-**Freelancer** | _Nov 2016 - Aug 2018_
-{: .fw-300 .mb-2}
+{% for language in child.languages %}
+**{{ language }}**
+{: .label .label-blue }
+{% endfor %}
+
+{% endfor %}
