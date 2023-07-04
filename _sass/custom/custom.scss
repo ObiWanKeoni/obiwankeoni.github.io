@@ -82,7 +82,7 @@ i {
 
 html {
   font-size: 18px !important;
-  background: linear-gradient(to left top, #11111b, #11111b, #11111b, #11111b, #11111b, #12121d, #13141e, #141520, #161723, #191a27, #1b1c2a, #1e1e2e); !important;
+  background: linear-gradient(to left top, #11111b, #11111b, #11111b, #11111b, #11111b, #12121d, #13141e, #141520, #161723, #191a27, #1b1c2a, #1e1e2e) !important;
 }
 
 body {
@@ -94,8 +94,8 @@ body {
   backdrop-filter: blur(5px);
   
   @include mq(md) {
-    display: block;
-    position: sticky;
+    display: block !important;
+    position: absolute !important;
     top: 0;
   }
 }
