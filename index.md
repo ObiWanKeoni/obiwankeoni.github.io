@@ -24,10 +24,12 @@ Bakersfield, CA • Remote
 **Software Engineer**
 {: .label .label-blue }
 
+
+<a href="https://github.com/ObiWanKeoni">
+  <i class="lni lni-github fs-7 d-inline-block"></i>
+</a>
 <a href="mailto:keoni_garner@yahoo.com">
   <i class="lni lni-envelope fs-7 d-inline-block"></i>
-</a><a href="https://github.com/ObiWanKeoni">
-  <i class="lni lni-github fs-7 d-inline-block"></i>
 </a>
 
 ## Experience
