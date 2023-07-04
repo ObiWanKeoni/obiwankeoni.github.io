@@ -42,7 +42,6 @@ Bakersfield, CA • Remote
 **{{ language }}**
 {: .label .label-purple }
 {% endfor %}
-- - - 
 {% endfor %}
 
 [View Full Résumé](resume/index){: .btn .btn-outline }
