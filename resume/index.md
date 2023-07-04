@@ -14,7 +14,7 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {: .fs-6 .fw-300 }
 
 
-{% for child in sorted_pages %}
+{% for child in sorted_pages limit: 2 %}
 - - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
@@ -28,3 +28,5 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {: .label .label-purple }
 {% endfor %}
 {% endfor %}
+
+[View Full Résumé](experience){: .btn .btn-outline }
