@@ -5,12 +5,12 @@ layout: default
 <img class="filter" src="{{ page.image_link }}" alt="{{ page.title }}">
 
 {% for history in page.history %}
-<span class="mb-1"><strong>{{ history.title }}</strong> // <em>{{ history.dates }}</em></span>
+<span class="mb-1 mt-1"><strong>{{ history.title }}</strong> // <em>{{ history.dates }}</em></span>
 <br>
 {% endfor %}
 
 {% for language in page.languages %}
-<span class="label label-purple mb-2"><strong>{{ language }}</strong></span>
+<span class="label label-purple mt-2"><strong>{{ language }}</strong></span>
 {% endfor %}
 
 {{ content }}
