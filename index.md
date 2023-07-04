@@ -6,8 +6,11 @@ has_toc: false
 {%- assign child_pages = site[page.collection]
  | default: site.html_pages
  | where: "grand_parent", page.title -%}
-
 {%- include sorted_pages.html pages = child_pages -%}
+{%- assign blog_posts = site[page.collection]
+ | default: site.html_pages
+ | where: "parent", "Blog"
+ | sort: "date" | reverse -%}
 
 # <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-6 d-inline-block"></i>ObiWanKeoni</a>
 Bakersfield, CA • Remote
@@ -27,7 +30,7 @@ Bakersfield, CA • Remote
 ## Experience
 {: .mt-10}
 
-{% for child in sorted_pages %}
+{% for child in sorted_pages limit:2 %}
 - - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
@@ -41,3 +44,17 @@ Bakersfield, CA • Remote
 {: .label .label-purple }
 {% endfor %}
 {% endfor %}
+
+[View Full Résumé](resume/index){: .btn .btn-outline }
+
+- - - 
+
+## Blog Posts
+{: .mt-10}
+
+{% for post in blog_posts limit:2 %}
+ - **[{{ post.title }}]({{ post.url }})**{: .fs-7}
+    {{ post.date }}{: .fs-4}
+    {{ post.description }}
+{% endfor %}
+ - [See more…](blog/index)
