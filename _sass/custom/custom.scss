@@ -95,7 +95,7 @@ body {
   
   @include mq(md) {
     display: block !important;
-    position: absolute !important;
+    position: fixed !important;
     top: 0;
   }
 }
