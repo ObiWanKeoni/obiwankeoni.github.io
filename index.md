@@ -53,8 +53,7 @@ Bakersfield, CA • Remote
 {: .mt-10}
 
 {% for post in blog_posts limit:2 %}
- - [{{ post.title }}]({{ post.url }})  
-    {{ post.date }}{: .fs-3}  
-    {{ post.description }}{: .fs-4}  
+ - [{{ post.title }}]({{ post.url }})
+    {{ post.description }}  
 {% endfor %}
 [See more…](blog/index)
