@@ -1,5 +1,7 @@
 ---
-title: Resume
+title: About
+has_children: true
+has_toc: false
 ---
 
 **Dad**
@@ -18,9 +20,6 @@ title: Resume
 <a href="mailto:keoni_garner@yahoo.com">
   <i class="fa fa-envelope"></i>
 </a>
-
-# Resume
-{: .no_toc }
 
 ### Experience
 {: .text-purple-200 .mt-8}
