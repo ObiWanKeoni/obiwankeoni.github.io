@@ -23,13 +23,15 @@ Bakersfield, CA • Remote
 {: .label .label-blue }
 
 <a href="mailto:keoni_garner@yahoo.com">
-  <i class="lni lni-envelope fs-7"></i>
+  <i class="lni lni-envelope fs-7 d-inline-block"></i>
 </a>
+
 <a href="https://github.com/ObiWanKeoni">
-  <i class="lni lni-github fs-7"></i>
+  <i class="lni lni-github fs-7 d-inline-block"></i>
 </a>
 
 ## Experience
+{: .mt-10}
 
 {% for child in child_pages %}
 - - -
