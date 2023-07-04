@@ -40,7 +40,12 @@ Bakersfield, CA • Remote
 {: .mt-10}
 
 {% for child in sorted_pages limit:2 %}
-### [{{child.title}}]({{child.url}})
+{% if child.nav_order == 1 %}
+**CURRENT**
+{: .label .label-green
+{% endif %}
+
+### [{{child.title}}<i class="lni lni-arrow-right fs-5 d-inline-block"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
