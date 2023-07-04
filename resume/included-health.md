@@ -3,7 +3,7 @@ layout: resume
 nav_order: 2
 title: Included Health (Formerly Doctor On Demand)
 link: https://includedhealth.com
-image_link: "https://mms.businesswire.com/media/20230209005277/en/1709618/22/Included_Logo_FullColor_Screen_%281%29.jpg"
+image_link: "https://includedhealth.com/wp-content/uploads/2021/11/Included_Logo_RGB.png"
 parent: About
 history:
   - title: Senior Software Engineer
