@@ -34,14 +34,14 @@ Bakersfield, CA • Remote
  - [{{ post.title }}]({{ post.url }})
     {{ post.description }}  
 {% endfor %}
-[View More<i class="lni lni-arrow-right fs-3 d-inline-block"></i>](blog/index){: .mt-4}
+[View More<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
 
 #### Experience
 {: .mt-10}
 
 {% for child in sorted_pages limit:2 %}
 
-### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-4 d-inline-block"></i>]({{child.url}})
+### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-2 d-inline-block"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
@@ -54,5 +54,5 @@ Bakersfield, CA • Remote
 {% endfor %}
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right fs-3"></i>](resume/index){: .mt-8}
+[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](resume/index){: .mt-8}
 
