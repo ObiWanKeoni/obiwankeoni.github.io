@@ -2,6 +2,7 @@
 title: Experience
 parent: About
 has_children: true
+has_toc: false
 ---
 {%- assign child_pages = site[page.collection]
  | default: site.html_pages
