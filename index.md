@@ -34,7 +34,7 @@ Bakersfield, CA • Remote
  - [{{ post.title }}]({{ post.url }})
     {{ post.description }}  
 {% endfor %}
-[View More<i class="lni lni-arrow-right fs-4 d-inline-block"></i>](blog/index){: .mt-4}
+[View More<i class="lni lni-arrow-right fs-3 d-inline-block"></i>](blog/index){: .mt-4}
 
 #### Experience
 {: .mt-10}
@@ -54,5 +54,5 @@ Bakersfield, CA • Remote
 {% endfor %}
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right fs-4 d-inline-block"></i>](resume/index){: .mt-8}
+[View Full Résumé<i class="lni lni-arrow-right fs-3"></i>](resume/index){: .mt-8}
 
