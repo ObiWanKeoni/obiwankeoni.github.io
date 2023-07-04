@@ -4,7 +4,7 @@ nav_order: 2
 title: Included Health (Formerly Doctor On Demand)
 link: https://includedhealth.com
 image_link: "https://includedhealth.com/wp-content/uploads/2021/11/Included_Logo_RGB.png"
-parent: About
+parent: Experience
 history:
   - title: Senior Software Engineer
     dates: "Oct 2022 - Jan 2023"

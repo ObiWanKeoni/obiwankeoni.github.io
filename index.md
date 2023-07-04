@@ -5,8 +5,7 @@ has_toc: false
 ---
 {%- assign child_pages = site[page.collection]
  | default: site.html_pages
- | where: "parent", page.title
- | where: "grand_parent", page.parent -%}
+ || where: "grand_parent", page.title -%}
 
 {%- include sorted_pages.html pages = child_pages -%}
 

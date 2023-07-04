@@ -4,7 +4,7 @@ nav_order: 1
 title: Isometric Technologies
 link: https://iso.io
 image_link: "https://blackhornvc.com/wp-content/uploads/Isometric-Technologies-ISO-White-Logo-Blackhorn-Ventures.png"
-parent: About
+parent: Experience
 history:
   - title: Senior Software Engineer
     dates: "Jan 2023 - Present"
