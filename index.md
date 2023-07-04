@@ -31,7 +31,7 @@ Bakersfield, CA • Remote
 {: .mt-10}
 
 {% for post in blog_posts limit:5 %}
- - [{{ post.title }}]({{ post.url }})
+ - [{{ post.title }}]({{ post.url }})  ![[]]
     {{ post.description }}  
 {% endfor %}
 [View More<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
