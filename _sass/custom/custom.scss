@@ -76,8 +76,9 @@ i {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
   height: 150px;
-  width: 100%;
+  width: 50%;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 html {
