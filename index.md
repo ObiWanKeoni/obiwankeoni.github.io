@@ -13,6 +13,7 @@ has_toc: false
 Bakersfield, CA • Remote
 
 ***Ask me about my keyboard***
+{: .fs-6}
 
 **Dad**
 {: .label .label-blue }
@@ -25,10 +26,10 @@ Bakersfield, CA • Remote
 
 
 <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni">
-  <i class="lni lni-github fs-7 d-inline-block"></i>
+  <i class="lni lni-github fs-9 d-inline-block"></i>
 </a>
 <a style="text-decoration: none;" href="mailto:keoni_garner@yahoo.com">
-  <i class="lni lni-envelope fs-7 d-inline-block"></i>
+  <i class="lni lni-envelope fs-9 d-inline-block"></i>
 </a>
 
 ## Experience
