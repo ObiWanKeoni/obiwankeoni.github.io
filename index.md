@@ -8,6 +8,8 @@ has_toc: false
  | where: "parent", page.title
  | where: "grand_parent", page.parent -%}
 
+{%- include sorted_pages.html pages = child_pages -%}
+
 # Keoni Garner
 Bakersfield, CA • Remote
 
@@ -33,7 +35,7 @@ Bakersfield, CA • Remote
 ## Experience
 {: .mt-10}
 
-{% for child in child_pages %}
+{% for child in pages %}
 - - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
