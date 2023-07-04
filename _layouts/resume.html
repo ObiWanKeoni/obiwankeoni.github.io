@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<img src="{{ page.image_link }}" alt="{{ page.title }}">
+
+<h1>
+  <a href="{{ page.link }}">{{ page.title }}<svg viewBox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg></a>
+</h1>
 
 {% for history in page.history %}
 <strong>{{ history.title }}</strong>|<em>{{ history.dates }}</em>
