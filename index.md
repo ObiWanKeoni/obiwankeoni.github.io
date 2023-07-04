@@ -39,7 +39,7 @@ has_toc: false
 
 {% for language in child.languages %}
 **{{ language }}**
-{: .label .label-blue }
+{: .label .label-purple }
 {% endfor %}
-
+- - -
 {% endfor %}
