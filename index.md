@@ -33,7 +33,7 @@ Bakersfield, CA • Remote
 ## Experience
 {: .mt-10}
 
-{% for child in child_pages %}
+{% for child in sorted_pages %}
 - - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
