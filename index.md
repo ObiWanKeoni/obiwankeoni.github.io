@@ -31,7 +31,6 @@ Bakersfield, CA • Remote
 {: .mt-10}
 
 {% for child in sorted_pages limit:2 %}
-- - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
 
@@ -43,6 +42,7 @@ Bakersfield, CA • Remote
 **{{ language }}**
 {: .label .label-purple }
 {% endfor %}
+- - - 
 {% endfor %}
 
 [View Full Résumé](resume/index){: .btn .btn-outline }
@@ -57,4 +57,4 @@ Bakersfield, CA • Remote
     {{ post.date }}{: .fs-3}  
     {{ post.description }}{: .fs-4}  
 {% endfor %}
- - [See more…](blog/index)
+[See more…](blog/index)
