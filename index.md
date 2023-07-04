@@ -29,8 +29,7 @@ Bakersfield, CA • Remote
   <i class="lni lni-github fs-7"></i>
 </a>
 
-### Experience
-{: .text-purple-200 .mt-8}
+## Experience
 
 {% for child in child_pages %}
 - - -
