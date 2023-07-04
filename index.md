@@ -9,7 +9,9 @@ has_toc: false
  | where: "grand_parent", page.parent -%}
 
 # Keoni Garner
-#### Ask me about my keyboard
+> Ask me about my keyboard
+
+Bakersfield, CA • Remote
 
 **Dad**
 {: .label .label-blue }
@@ -30,7 +32,7 @@ has_toc: false
 {: .text-purple-200 .mt-8}
 
 {% for child in child_pages %}
-
+- - -
 #### [{{child.title}}]({{child.url}})
 
 {% for history in child.history %}
@@ -42,5 +44,4 @@ has_toc: false
 **{{ language }}**
 {: .label .label-purple }
 {% endfor %}
-- - -
 {% endfor %}
