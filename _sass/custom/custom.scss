@@ -92,4 +92,10 @@ body {
 .main-header {
   background-color: rgba($sidebar-color, .6) !important;
   backdrop-filter: blur(5px);
+  
+  @include mq(md) {
+    display: block;
+    position: sticky;
+    top: 0;
+  }
 }
