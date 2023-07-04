@@ -13,7 +13,7 @@ has_toc: false
  | sort: "date" | reverse -%}
 
 # <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-6 d-inline-block"></i>ObiWanKeoni</a>
-#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io"><i class="lni lni-arrow-top-right d-inline-block"></i>Isometric Technologies</a>
+#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">Isometric Technologies<i class="lni lni-arrow-top-right d-inline-block"></i></a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
