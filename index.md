@@ -27,7 +27,6 @@ Bakersfield, CA • Remote
 <a href="mailto:keoni_garner@yahoo.com">
   <i class="lni lni-envelope fs-7 d-inline-block"></i>
 </a>
-
 <a href="https://github.com/ObiWanKeoni">
   <i class="lni lni-github fs-7 d-inline-block"></i>
 </a>
@@ -35,7 +34,7 @@ Bakersfield, CA • Remote
 ## Experience
 {: .mt-10}
 
-{% for child in pages %}
+{% for child in child_pages %}
 - - -
 #### [{{child.title}}]({{child.url}})
 {: .mb-2}
