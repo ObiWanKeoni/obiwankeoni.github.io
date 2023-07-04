@@ -70,3 +70,8 @@ div.highlight {
 i {
  margin: .5em;
 }
+
+.filter {
+  -webkit-filter: brightness(5) invert(1);
+  filter: brightness(5) invert(1);
+}
