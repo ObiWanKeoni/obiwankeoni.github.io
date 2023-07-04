@@ -9,7 +9,7 @@ has_toc: false
 
 {%- include sorted_pages.html pages = child_pages -%}
 
-# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-9 d-inline-block"></i></a>ObiWanKeoni
+# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github d-inline-block"></i>ObiWanKeoni</a>
 Bakersfield, CA • Remote
 
 ***Ask me about my keyboard***
@@ -23,11 +23,6 @@ Bakersfield, CA • Remote
 
 **Software Engineer**
 {: .label .label-blue }
-
-
-<a style="text-decoration: none;" href="https://github.com/ObiWanKeoni">
-  <i class="lni lni-github fs-9 d-inline-block"></i>
-</a>
 
 ## Experience
 {: .mt-10}
