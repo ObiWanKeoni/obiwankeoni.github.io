@@ -8,6 +8,9 @@ has_toc: false
  | where: "parent", page.title
  | where: "grand_parent", page.parent -%}
 
+# Keoni Garner
+#### Ask me about my keyboard
+
 **Dad**
 {: .label .label-blue }
 
@@ -16,8 +19,6 @@ has_toc: false
 
 **Software Engineer**
 {: .label .label-blue }
-# Keoni Garner
-#### Ask me about my keyboard
 
 - [email](mailto:keoni_garner@yahoo.com)
 - [github](https://github.com/ObiWanKeoni)
@@ -33,7 +34,7 @@ has_toc: false
 #### [{{child.title}}]({{child.url}})
 
 {% for history in child.history %}
-**{{ history.title }}** | _{{ history.dates }}_
+**{{ history.title }}** // _{{ history.dates }}_
 {: .mb-2}
 {% endfor %}
 
