@@ -35,9 +35,12 @@ Bakersfield, CA • Remote
    <span class="fs-3">
    {{ post.date }} 
    </span>
-   <h3 class="mt-0 mb-2">
-    {{ post.title }}
+   <h3 class="mt-0 mb-0">
+   {{ post.title }}
    </h3>
+  <p class="mb-2">
+  {{ post.description }}
+  </p>
    <span class="fs-4">
    <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
    </span>
