@@ -29,18 +29,16 @@ Bakersfield, CA • Remote
 
 #### Blog Posts
 {: .mt-10}
-<ul>
+<ul style="list-style: none;">
 {% for post in blog_posts limit:5 %}
  <li> 
    <span class="fs-3">
    {{ post.date }} 
    </span>
-   <br>
-   <h3>
+   <h3 class="mt-0 mb-2">
     {{ post.title }}
    </h3>
-   <br>
-   <span class="fs-4">
+   <span class="fs-4 mb-6">
    <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
    </span>
 </li>
