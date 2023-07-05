@@ -1,9 +1,12 @@
 ---
 title: Proximity Search for Startup Developers
 description: A How-To on the different methods for solving proximity search.
+image_link: "https://i.pinimg.com/736x/f1/16/46/f116465b3e01bf36d6d04773a0da8095.jpg"
 parent: Blog
 date: 2023-06-30
 ---
+
+![]({{ page.image_link }})
 
 # Proximity Search for Startup Developers
 
