@@ -29,9 +29,9 @@ Bakersfield, CA • Remote
 
 #### Recent Blog Posts
 {: .mt-10}
-<ul class="blog">
+<ul>
 {% for post in blog_posts limit:5 %}
- <li class="mb-6"> 
+ <li class="blog mb-6"> 
    <span class="fs-3">
    {{ post.date }} 
    </span>
