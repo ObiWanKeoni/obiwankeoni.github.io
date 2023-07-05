@@ -29,7 +29,7 @@ Bakersfield, CA • Remote
 
 #### Recent Blog Posts
 {: .mt-10}
-<ul style="list-style: none;">
+<ul style="list-style-position: inside;">
 {% for post in blog_posts limit:5 %}
  <li class="mb-6"> 
    <span class="fs-3">
