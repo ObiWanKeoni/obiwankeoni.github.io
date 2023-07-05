@@ -31,13 +31,11 @@ Bakersfield, CA • Remote
 {: .mt-10}
 
 {% for post in blog_posts limit:5 %}
-{{ post.date }}
-{: .fs-3}
-
-[{{ post.title }}<i class="lni lni-arrow-right fs-2"></i>]({{ post.url }})
-
-{{ post.description }}
-{: .fs-4}
+- {{ post.date }}
+   {: .fs-3}  
+   [{{ post.title }}<i class="lni lni-arrow-right fs-2"></i>]({{ post.url }})  
+   {{ post.description }}
+   {: .fs-4}
 {% endfor %}
 [All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
 
