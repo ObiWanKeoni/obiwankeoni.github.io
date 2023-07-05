@@ -12,7 +12,7 @@ has_toc: false
  | where: "parent", "Blog"
  | sort: "date" | reverse -%}
 
-# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-9 d-inline-block"></i>ObiWanKeoni</a>
+# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-8 d-inline-block"></i>ObiWanKeoni</a>
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right d-inline-block"></i></a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
@@ -29,14 +29,27 @@ Bakersfield, CA • Remote
 
 #### Blog Posts
 {: .mt-10}
-
+<ul>
 {% for post in blog_posts limit:5 %}
+ <li> 
+   <span class="fs-3">
+   {{ post.date }} 
+   </span>
+   <br>
+   <span class="fs-6"><a href= "{{ post.url }}">{{ post.title }}</a>
+   </span>
+   <br>
+   <span class="fs-4">
+   {{ post.description }}
+   </span>
+</li>
 - {{ post.date }}
    {: .fs-3}  
    [{{ post.title }}<i class="lni lni-arrow-right fs-2"></i>]({{ post.url }})  
    {{ post.description }}
    {: .fs-4}
 {% endfor %}
+</ul>
 [All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
 
 #### Experience
