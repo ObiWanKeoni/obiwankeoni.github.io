@@ -39,7 +39,7 @@ Bakersfield, CA • Remote
 {{ post.description }}
 {: .fs-4}
 {% endfor %}
-[View More<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
+[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
 
 #### Experience
 {: .mt-10}
