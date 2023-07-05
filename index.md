@@ -36,18 +36,14 @@ Bakersfield, CA • Remote
    {{ post.date }} 
    </span>
    <br>
-   <span class="fs-6"><a href= "{{ post.url }}">{{ post.title }}</a>
-   </span>
+   <h3>
+    {{ post.title }}
+   </h3>
    <br>
    <span class="fs-4">
-   {{ post.description }}
+   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
    </span>
 </li>
-- {{ post.date }}
-   {: .fs-3}  
-   [{{ post.title }}<i class="lni lni-arrow-right fs-2"></i>]({{ post.url }})  
-   {{ post.description }}
-   {: .fs-4}
 {% endfor %}
 </ul>
 [All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
