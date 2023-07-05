@@ -7,7 +7,7 @@ image_link: "https://blog.opto22.com/hs-fs/hubfs/Avadine_logo_horizontal_on_tran
 parent: Experience
 grand_parent: About
 history:
-  - title: Senior Software Engineer
+  - title: Project Manager
     dates: "Jun 2020 - Oct 2020"
   - title: Software Engineer
     dates: "Aug 2018 - Jun 2020"
