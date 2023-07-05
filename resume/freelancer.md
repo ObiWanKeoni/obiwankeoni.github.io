@@ -1,6 +1,6 @@
 ---
 layout: resume
-nav_order: 3
+nav_order: 4
 title: Freelance
 link: https://freelancer.com
 image_link: "https://brandslogo.net/wp-content/uploads/2017/01/freelancer-logo.png"
