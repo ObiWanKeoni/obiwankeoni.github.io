@@ -214,7 +214,7 @@ WIP
 ---
 
 ### Solution 3: Scooby Dooby Doo
-[](https://static.wikia.nocookie.net/scoobydoo/images/5/54/Scooby-Dooby-Doo_%28Dumb_Waiter_Caper%29.png/revision/latest?cb=20180902013520)
+![](https://static.wikia.nocookie.net/scoobydoo/images/5/54/Scooby-Dooby-Doo_%28Dumb_Waiter_Caper%29.png/revision/latest?cb=20180902013520)
 
 {: .warning }
 WIP
