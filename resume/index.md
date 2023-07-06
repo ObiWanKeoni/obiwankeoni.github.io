@@ -21,11 +21,11 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {% for history in child.history %}
 **{{ history.title }}**  
 {{ history.dates }}
-{: fs-3}
+{: .fs-3}
 {% endfor %}
 
 {% for language in child.languages %}
 **{{ language }}**
-{: .label .label-purple }
+{: .label .label-blue }
 {% endfor %}
 {% endfor %}
