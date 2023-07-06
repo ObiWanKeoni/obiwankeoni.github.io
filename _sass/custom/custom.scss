@@ -148,10 +148,10 @@ body {
 .gradient-text {
   background-image: linear-gradient(
     75deg,
-    hsl(217deg 92% 76%) 0%,
-    hsl(315deg 42% 72%) 39%,
-    hsl(348deg 76% 82%) 61%,
-    hsl(10deg 56% 91%) 100%
+    #89B5FA 0%,
+    #D69AC7 39%,
+    #F4AEBC 61%,
+    #F5DFDB 100%
   ) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
