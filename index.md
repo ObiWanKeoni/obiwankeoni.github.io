@@ -13,7 +13,7 @@ has_toc: false
  | sort: "date" | reverse -%}
 
 # <a class="gradient-text" style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github fs-6"></i>ObiWanKeoni</a>
-#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right d-inline-block"></i></a>
+#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
@@ -54,7 +54,7 @@ Bakersfield, CA • Remote
 
 {% for child in sorted_pages limit:2 %}
 
-### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-2 d-inline-block"></i>]({{child.url}})
+### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-2"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
