@@ -62,7 +62,7 @@ I’m going to present three solutions in this section. Each will have its own m
 ---
 
 ### Solution 1: Scrappy Doo
-![](https://media.tenor.com/5nZMegPqCkQAAAAd/scrappy-doo-scooby-doo.gif)
+![](https://mystickermania.com/cdn/stickers/cartoons/scrappy-doo-fighting-512x512.png)
 
 In true startup-fashion, let’s evaluate how we might add this feature with as little infrastructure as possible. 
 
@@ -205,6 +205,8 @@ Realistically, this could just be a single sprint’s worth of work considering 
 ---
 
 ### Solution 2: Scooby Doo
+[](https://i0.wp.com/www.livestickers.com/wp-content/uploads//2020/09/Scooby_Doo_By_Eighteen22.png?resize=304%2C512&ssl=1)
+
 
 {: .warning }
 WIP
