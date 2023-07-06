@@ -62,7 +62,7 @@ I’m going to present three solutions in this section. Each will have its own m
 ---
 
 ### Solution 1: Scrappy Doo
-![](https://mystickermania.com/cdn/stickers/cartoons/scrappy-doo-fighting-512x512.png)
+![](https://www.thekingshabazz.com/wp-content/uploads/2020/05/scrappy.gif)
 
 In true startup-fashion, let’s evaluate how we might add this feature with as little infrastructure as possible. 
 
@@ -205,7 +205,7 @@ Realistically, this could just be a single sprint’s worth of work considering 
 ---
 
 ### Solution 2: Scooby Doo
-[](https://i0.wp.com/www.livestickers.com/wp-content/uploads//2020/09/Scooby_Doo_By_Eighteen22.png?resize=304%2C512&ssl=1)
+![](https://wallpapercave.com/wp/Kn9s8PL.jpg)
 
 
 {: .warning }
@@ -213,7 +213,8 @@ WIP
 
 ---
 
-### Solution 3: Scoobert Doo
+### Solution 3: Scooby Dooby Doo
+[](https://static.wikia.nocookie.net/scoobydoo/images/5/54/Scooby-Dooby-Doo_%28Dumb_Waiter_Caper%29.png/revision/latest?cb=20180902013520)
 
 {: .warning }
 WIP
