@@ -20,9 +20,10 @@ Software engineer with 5+ years of experience across a wide range of industries.
 
 {% for history in child.history %}
 **{{ history.title }}**
+{: .mb-0}
 
 {{ history.dates }}
-{: .fs-3}
+{: .fs-3 .mt-0 .mb-2}
 {% endfor %}
 
 {% for language in child.languages %}
