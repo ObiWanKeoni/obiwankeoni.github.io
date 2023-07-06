@@ -5,12 +5,14 @@ permalink: /blog/
 has_children: true
 has_toc: false
 ---
-# Blog
 
 {%- assign blog_posts = site[page.collection]
  | default: site.html_pages
  | where: "parent", page.title
  | sort: "date" | reverse -%}
+
+
+# Blog
 
 How to guides and disjointed thoughts on varying topics.
 {: .fs-6 .fw-300 }
