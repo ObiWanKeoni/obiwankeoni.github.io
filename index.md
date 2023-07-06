@@ -60,9 +60,8 @@ Bakersfield, CA • Remote
 {% for history in child.history %}
 **{{ history.title }}**
 
-
 {{ history.dates }}
-{: .fs-3}
+{: .fs-3 .mt-0 .mb-2}
 {% endfor %}
 
 {% for language in child.languages %}
