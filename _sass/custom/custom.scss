@@ -157,6 +157,11 @@ body {
   -webkit-text-fill-color: transparent !important;
 }
 
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
 .checkbox-label {
   background-color: #111;
   width: 2.5rem;
