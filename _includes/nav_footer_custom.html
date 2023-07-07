@@ -1,1 +1,20 @@
-<div></div>
+<div>
+  <input type="checkbox" class="checkbox" id="dark-switcher">
+  <label for="checkbox" class="checkbox-label">
+    <i data-feather="moon"></i>
+    <i data-feather="sun"></i>
+    <span class="ball"></span>
+  </label>
+</div>
+
+<script>
+const toggleDarkMode = document.getElementById("dark-switcher");
+
+jtd.addEvent(toggleDarkMode, 'change', function(){
+  if (jtd.getTheme() === 'catppuccin-light') {
+    jtd.setTheme('catppuccin');
+  } else {
+    jtd.setTheme('catppuccin-light');
+  }
+});
+</script>
