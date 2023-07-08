@@ -3,3 +3,18 @@
     <i class="lni lni-night"></i>
   </button>
 </div>
+
+
+<script>
+const toggleDarkMode = document.querySelector('.toggle-theme');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'catppuccin') {
+    jtd.setTheme('catppuccin-light');
+    toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
+  } else {
+    jtd.setTheme('catppuccin');
+    toggleDarkMode.innerHTML = '<i class="lni lni-night"></i>';
+  }
+});
+</script>
