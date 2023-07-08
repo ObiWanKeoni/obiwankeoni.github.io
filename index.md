@@ -30,7 +30,7 @@ Bakersfield, CA • Remote
 - - -
 
 ### Recent Blog Posts
-{: .mt-2}
+{: .mt-2 .mb-6}
 
 <ul>
 {% for post in blog_posts %}
