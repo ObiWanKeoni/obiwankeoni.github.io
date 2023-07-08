@@ -78,5 +78,5 @@ Bakersfield, CA • Remote
 {% endfor %}
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](resume/index){: .mt-8}
+[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](resume/index){: .btn .btn-outline .mt-8 .mx-auto}
 
