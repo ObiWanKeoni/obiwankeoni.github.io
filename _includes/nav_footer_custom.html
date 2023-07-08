@@ -6,6 +6,11 @@
 
 
 <script>
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+  const newColorScheme = event.matches ? "dark" : "light";
+  jtd.setTheme(newColorScheme)
+});
+
 const toggleDarkMode = document.querySelector('.toggle-theme');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
