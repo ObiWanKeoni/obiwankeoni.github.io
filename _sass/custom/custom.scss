@@ -1,6 +1,6 @@
 * {
-  transition: background 0.5s linear,
-              color 0.5s linear;
+  transition: background 0.3s linear,
+              color 0.3s linear;
 }
 
 .main-content {
@@ -173,17 +173,17 @@ body {
 }
 
 .toggle-theme {
-  @include fs-8;
+  @include fs-6;
   padding: 0.6em;
-  height: 2.4em;
-  width: 2.4em;
+  height: 2.2em;
+  width: 2.2em;
   border: none;
   outline: none;
   color: $white;
   background: $grey-dk-300;
   cursor: pointer;
   position: fixed;
-  bottom: 10%;
+  bottom: 8%;
   right: 15%;
   z-index: 0;
   border-radius: 50%;
