@@ -24,7 +24,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
   setTheme(newColorScheme)
 });
 
-jtd.addEvent(toggleDarkMode, 'click', function(){
+jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
   if (jtd.getTheme() === 'catppuccin') {
     setTheme('catppuccin-light')
   } else {
