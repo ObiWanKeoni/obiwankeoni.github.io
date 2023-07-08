@@ -29,24 +29,29 @@ Bakersfield, CA • Remote
 
 #### Recent Blog Posts
 {: .mt-10}
+
 <ul>
-{% for post in blog_posts limit:5 %}
+{% for post in blog_posts %}
  <li class="blog mb-6"> 
-   <span class="fs-3">
-   {{ post.date }} 
-   </span>
-   <h3 class="mt-0 mb-0">
-   {{ post.title }}
-   </h3>
-  <p class="mb-2">
-  {{ post.description }}
-  </p>
-   <span class="fs-4">
-   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
-   </span>
+   <img src="{{ post.image_link }}" alt="{{ post.title }}" class="card-image">
+   <div class="card-body">
+	   <span class="fs-3">
+	   {{ post.date }} 
+	   </span>
+	   <h3 class="mt-0 mb-0">
+	   {{ post.title }}
+	   </h3>
+	  <p class="mb-2">
+	  {{ post.description }}
+	  </p>
+	   <span class="fs-4">
+	   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
+	   </span>
+   </div>
 </li>
 {% endfor %}
 </ul>
+
 [All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
 
 #### Experience
