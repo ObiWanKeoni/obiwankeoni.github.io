@@ -46,12 +46,7 @@ $table-background-color: $grey-dk-300;
 $search-background-color: $grey-dk-300;
 $search-result-preview-color: $grey-lt-000;
 $border-color: $grey-dk-200;
-
-html {
-  font-size: 18px !important;
-  background: $grey-dk-250 !important;
-  min-height: 100vh;
-}
+$background: $grey-dk-250;
 
 
 .filter {
