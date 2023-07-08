@@ -47,8 +47,18 @@
     
     > li.blog {
       border-radius: 10px;
-      border: 1px solid $border-color;
-      padding: .75rem;
+      background-color: $grey-dk-200;
+      box-shadow: 0 8px 8px -4px rgba($blue-000, .5);
+
+      > img.card-image {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      > div.card-body {
+        padding: .75rem;
+      }
       
       &::before {
         content: none;
