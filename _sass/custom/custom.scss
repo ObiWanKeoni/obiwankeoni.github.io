@@ -173,17 +173,18 @@ body {
 }
 
 .toggle-theme {
+  @include fs-8;
   padding: 0.6em;
-  height: 2.2em;
-  width: 2.2em;
+  height: 3.2em;
+  width: 3.2em;
   border: none;
   outline: none;
   color: $white;
   background: $grey-dk-300;
   cursor: pointer;
   position: fixed;
-  bottom: 2em;
-  right: 2em;
+  bottom: 20%;
+  right: 20%;
   z-index: 0;
   border-radius: 50%;
   user-select: none;
