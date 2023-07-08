@@ -27,10 +27,8 @@ Bakersfield, CA • Remote
 **Software Engineer**
 {: .label .label-blue }
 
-- - -
-
 ### Recent Blog Posts
-{: .mt-2 .mb-6}
+- - -
 
 <ul>
 {% for post in blog_posts %}
