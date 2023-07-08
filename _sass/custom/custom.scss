@@ -245,7 +245,11 @@ body {
 
 html {
   font-size: 18px !important;
-  background: $background !important;
+  background: $grey-dk-300;
+  background: -moz-linear-gradient(137deg, $grey-dk-300 4%, $grey-dk-200 98%);
+  background: -webkit-linear-gradient(137deg, $grey-dk-300 4%, $grey-dk-200 98%);
+  background: linear-gradient(137deg, $grey-dk-300 4%, $grey-dk-200 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e2e",endColorstr="#11111b",GradientType=1);
   min-height: 100vh;
 }
 
