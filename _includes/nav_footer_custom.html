@@ -6,9 +6,8 @@
 
 
 <script>
-const toggleDarkMode = document.querySelector('.toggle-theme');
-
-const setTheme = function(theme) {
+function setTheme(theme) {
+  const toggleDarkMode = document.querySelector('.toggle-theme');
   jtd.setTheme(theme);
   switch(theme) {
     case 'catppuccin-light':
