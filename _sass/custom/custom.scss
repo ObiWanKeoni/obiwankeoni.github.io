@@ -176,12 +176,18 @@ body {
   color: $white;
   background: $grey-dk-300;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
   z-index: 0;
   border-radius: 50%;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
+  > i {
+    margin: 0;
+  }
 }
 
 .toggle-theme:before {
