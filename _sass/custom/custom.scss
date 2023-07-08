@@ -48,9 +48,11 @@
     > li.blog {
       border-radius: 10px;
       border: 1px solid $border-color;
+      padding: .25rem;
       
       &::before {
         content: none;
+        margin-left: 0;
       }
     }
   }
