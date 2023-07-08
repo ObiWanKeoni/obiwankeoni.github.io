@@ -16,6 +16,7 @@ function setTheme(theme) {
       toggleDarkMode.innerHTML = '<i class="lni lni-night"></i>';
     default:
       toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
+  }
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
