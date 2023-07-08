@@ -1,3 +1,8 @@
+* {
+  transition: background 0.2s ease,
+              color 0.2s linear;
+}
+
 .main-content {
   ol {
     list-style-type: none;
