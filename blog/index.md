@@ -20,7 +20,7 @@ How to guides and disjointed thoughts on varying topics.
 <ul>
 {% for post in blog_posts %}
  <li class="blog mb-6"> 
-   <img href="{{ post.image_link }}" alt="{{ post.title }}" class="card-image">
+   <img src="{{ post.image_link }}" alt="{{ post.title }}" class="card-image">
    <div class="card-body">
 	   <span class="fs-3">
 	   {{ post.date }} 
