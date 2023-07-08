@@ -52,7 +52,7 @@ Bakersfield, CA • Remote
 {% endfor %}
 </ul>
 
-[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .mt-4}
+[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .btn .btn-outline .mt-4 .mx-auto}
 
 - - -
 
