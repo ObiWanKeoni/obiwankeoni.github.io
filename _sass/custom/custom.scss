@@ -246,9 +246,9 @@ body {
 html {
   font-size: 18px !important;
   background: $grey-dk-300;
-  background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-200 100%);
-  background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-200 100%);
-  background: linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-200 100%);
+  background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
+  background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
+  background: linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e2e",endColorstr="#11111b",GradientType=1);
   min-height: 100vh;
 }
