@@ -189,13 +189,9 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 2.4em;       /* The same as your div height */
-
-  > i {
-    margin: 0 auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toggle-theme:before {
