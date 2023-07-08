@@ -175,18 +175,18 @@ body {
 .toggle-theme {
   @include fs-6;
   padding: 0.6em;
-  height: 2.2em;
-  width: 2.2em;
+  height: 2.4em;
+  width: 2.4em;
   border: none;
   outline: none;
   color: $grey-dk-300;
   background: $white;
   cursor: pointer;
   position: fixed;
-  bottom: 8%;
-  right: 15%;
-  z-index: 999;
-  border-radius: 50%;
+  bottom: 4%;
+  right: 8%;
+  z-index: 0;
+  border-radius: 100%;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
