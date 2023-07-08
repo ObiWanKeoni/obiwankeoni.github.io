@@ -30,7 +30,7 @@ Bakersfield, CA • Remote
 - - -
 
 ### Recent Blog Posts
-{: .mt-10}
+{: .mt-2}
 
 <ul>
 {% for post in blog_posts %}
@@ -59,7 +59,7 @@ Bakersfield, CA • Remote
 - - -
 
 ### Experience
-{: .mt-10}
+{: .mt-2}
 
 {% for child in sorted_pages limit:2 %}
 
