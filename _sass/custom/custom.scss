@@ -47,8 +47,8 @@
     
     > li.blog {
       border-radius: 10px;
-      background-color: $grey-dk-200;
-      box-shadow: 0 8px 8px -4px rgba($blue-000, .5);
+      box-shadow: rgba($blue-300, 0.4) -5px 5px, rgba($blue-300, 0.3) -10px 10px, rgba($blue-300, 0.2) -15px 15px, rgba($blue-300, 0.1) -20px 20px, rgba($blue-300, 0.05) -25px 25px;
+      overflow: hidden;
 
       > img.card-image {
         width: 100%;
