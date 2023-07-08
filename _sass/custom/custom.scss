@@ -174,7 +174,6 @@ body {
 
 .toggle-theme {
   @include fs-7;
-  padding: 0.6em;
   height: 2.4em;
   width: 2.4em;
   border: 1px solid $grey-dk-300;
@@ -190,6 +189,9 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.4em;       /* The same as your div height */
 
   > i {
     margin: 0 auto;
