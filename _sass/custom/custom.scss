@@ -174,7 +174,7 @@ body {
 
 .toggle-theme {
   @include fs-7;
-  padding: 0.6em;
+  padding: 0.7em;
   height: 2.4em;
   width: 2.4em;
   border: none;
@@ -186,7 +186,7 @@ body {
   bottom: 4%;
   right: 8%;
   z-index: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -216,7 +216,7 @@ body {
   height: calc(100% + 4px);
   animation: glowing-button 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 @keyframes glowing-button {
@@ -240,5 +240,5 @@ body {
   background: $white;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 50%;
 }
