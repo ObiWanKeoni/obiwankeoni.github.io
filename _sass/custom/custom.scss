@@ -46,6 +46,9 @@
     }
     
     > li.blog {
+      border-radius: 10px;
+      border: 1px solid $border-color
+      
       &::before {
         content: none;
       }
