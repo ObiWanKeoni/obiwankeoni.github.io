@@ -179,13 +179,13 @@ body {
   width: 2.2em;
   border: none;
   outline: none;
-  color: $white;
-  background: $grey-dk-300;
+  color: $grey-dk-300;
+  background: $white;
   cursor: pointer;
   position: fixed;
   bottom: 8%;
   right: 15%;
-  z-index: 0;
+  z-index: 999;
   border-radius: 50%;
   user-select: none;
   -webkit-user-select: none;
