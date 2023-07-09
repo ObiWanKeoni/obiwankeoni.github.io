@@ -74,8 +74,14 @@ Bakersfield, CA • Remote
 {% endfor %}
 
 {% for language in child.languages %}
-**{{ language }}**
+
+{% if language == "AWS" %}
+<i class="devicon-amazonwebservices-original"></i>**{{ language }}**
 {: .label .label-blue }
+{% else %}
+<i class="devicon-{{ language | downcase }}-original"></i>**{{ language }}**
+{: .label .label-blue }
+{% endif %}
 {% endfor %}
 {% endfor %}
 
