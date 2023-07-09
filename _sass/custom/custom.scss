@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6 {
 .label:not(g),
 .label-blue:not(g) {
   display: inline-block;
-  padding: 0.16em 0.56em;
+  padding: 0.16em 0.30em;
   margin-right: $sp-1;
   text-transform: uppercase;
   vertical-align: middle;
@@ -98,6 +98,10 @@ h1,h2,h3,h4,h5,h6 {
   background-color: rgba($blue-300, .2);
   @include fs-2;
   border-radius: 3px;
+
+  i {
+    margin: 0;
+  }
 }
 
 .label-green:not(g) {
