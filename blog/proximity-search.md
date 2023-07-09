@@ -57,7 +57,7 @@ With so many Nice-to-Haves, how can we properly descope so we don’t overwhelm 
 ---
 
 ## The Solution(s)
-I’m going to present three solutions in this section. Each will have its own merits and drawbacks in addition to a reasonable time estimate for a single software engineer to complete each solution.
+I’m going to present two solutions in this section. Each will have its own merits and drawbacks in addition to a reasonable time estimate for a single software engineer to complete each solution.
 
 ---
 
@@ -184,6 +184,9 @@ HAVING distance < {radius_in_km}
 ORDER BY distance;
 ```
 
+{: .note}
+Be sure to replace `{centroid_latitude}`, `{centroid_longitude}`,  and `{radius_in_km}` with the values you need for your query.
+
 That’s pretty much it. **Radius Search**  in just a few steps. 
 
 #### Estimate
@@ -207,14 +210,172 @@ Realistically, this could just be a single sprint’s worth of work considering 
 ### Solution 2: Scooby Doo
 ![](https://wallpapercave.com/wp/Kn9s8PL.jpg)
 
+As our startup grows, so too must our product. We may push off this solution as long as we can until there is true demand for better geographic accuracy than a simple radius search can give us. For example, let’s say you are a software engineer for a logistics broker. There’s now a high value in showing which destination facilities fall outside of a given region (in this example, we will use the state of Colorado) for invoicing reasons.
 
-{: .warning }
-WIP
+For this, we will use a GIS database extension - PostGIS.
 
----
+#### Step 1: Installation
+Installation is dirt simple. If you are running Postgres in a cloud environment, the likelihood is you already technically have the extension installed - it just needs to be enabled. 
 
-### Solution 3: Scooby Dooby Doo
-![](https://static.wikia.nocookie.net/scoobydoo/images/5/54/Scooby-Dooby-Doo_%28Dumb_Waiter_Caper%29.png/revision/latest?cb=20180902013520)
+{: .info}
+If you are NOT running it in a cloud environment, then just run `brew install postgis` or the Linux/Windows equivalent(s) to install the extension
 
-{: .warning }
-WIP
+To enable PostGIS, simple connect to the database with your `postgres` user and run:
+
+```sql
+CREATE EXTENSION postgis;
+```
+
+#### Step 2: Load the data
+
+We can actually use the load the same shapefiles into PostGIS to generate tables for each layer that we’d need.
+
+Using `ogr2ogr` like before, we can do:
+
+```bash
+ogr2ogr -f "PostgreSQL" PG:"dbname='{database_name}' host='{database_host}' port='{database_port}' user='{database_username}' password='{database_password}'" {shapefile_path} -nln {database_table_name} -s_srs EPSG:4326 -t_srs EPSG:4326
+```
+
+{: .note}
+Be sure to replace `{database_name}`, `{database_host}`,  `{database_port}`, `{database_username}`, `{database_password}`, `{database_table_name}`, and `{shapefile_path}` with the corresponding values.
+
+Command breakdown:
+- `ogr2ogr`: Command to convert simple features data between file formats.
+- `-f`: Determines the output format. In this case, “PostgreSQL”
+- `PG:"…"`: Defines connection parameters for the CLI to use. This command will run the queries to load the data so you’ll need credentials with privileges to do so.
+- `-nln`: Allows you to define a table name for this data.
+- `-s_srs`: Source Spatial Reference System (SRS). Not super useful unless you already know what you’re doing which isn’t really the target audience here. You can read more about SRS [here](https://gsp.humboldt.edu/olm/Lessons/GIS/03%20Projections/IntroductionToCoordinateSystems1.html).
+- `-t_srs`: Transform SRS - you can transform the data into a different SRS if you happen to need it.
+
+After running this command, you should now have a table in the database with the name that you defined. **Congratulations!** You’ve loaded a shapefile into Postgres! 🎉
+
+#### Step 3: Proximity Search
+Okay now that we have our shapefile(s) loaded, let’s actually do this thing!
+
+Going back to the original ask, we are looking for facilities within approximately `x` miles of Colorado. Now how do we do this? Well in the end, each region is just a polygon so some arithmetic should assist us. We can take the shape of the polygon and “resize it whilst keeping the aspect ratio” (think `shift`+`click`+`drag` the corner of a picture) and then search within that resized shape. Luckily, there’s [a PostGIS function] for that!
+
+Visualization
+![](assets/images/colorado-zoomed.jpeg)
+
+The `ST_Buffer` function is exactly what we’re looking for. 
+
+Definition from [postgis.net](postgis.net):
+> Computes a POLYGON or MULTIPOLYGON that represents all points whose distance from a geometry/geography is less than or equal to a given distance.
+
+So we can utilize this to give us the following query:
+
+```sql
+SELECT facilities.*
+FROM facilities, {database_table_name}
+WHERE ST_Contains(
+  ST_Buffer({database_table_name}.geom, {distance_in_meters}),
+  ST_POINT(facilities.latitude, facilities.longitude)
+)
+```
+
+There you have it - a buffered search in PostGIS. 
+
+#### Step 4: Optimization (Optional)
+While technically optional, this section is ***highly recommended*** due to easily fixable performance concerns with the query above. First off, indexes!
+
+##### Spatial Indexes
+
+In order to take full advantage of PostGIS, we really need to index the facilities table. This will allow us to tailor in our results to just the bits we care about. There’s a ton to read about [spatial indexes](http://postgis.net/workshops/postgis-intro/indexing.html), but for the sake of keeping this short (😅) I’ll just do a quick summary:
+
+Spatial indexes are ways of organizing spatial data in a traversable tree-type structure for faster searching.
+
+Visualization:
+![](https://postgis.net/workshops/postgis-intro/_images/index-01.png)
+*From [postgis.net](https://postgis.net/workshops/postgis-intro/_images/index-01.png)
+
+Unfortunately, `ogr2ogr` doesn’t automatically add indexes to the shapefile-generated tables so we’ll have to add one ourselves.
+
+```sql
+CREATE INDEX {database_table_name}_geom_idx
+  ON {database_table_name}
+  USING GIST (geom);
+```
+
+That should speed up the querying for our state geometries but we now need to make sure our facilities are also indexed. As seen above, we already store `latitude` and `longitude` in separate columns. We convert lat/long to a geometry at query runtime. If we want to optimize further (we do), we should add a spatially indexed column to the `facilities` table.
+
+PostGIS ships with a [function](https://postgis.net/docs/AddGeometryColumn.html) to do add the column.
+
+```sql
+SELECT AddGeometryColumn ('{database_name}','facilities','geom',4326,'POINT',2);
+```
+
+Now we need an index:
+
+```sql
+CREATE INDEX facilities_geom_idx
+  ON facilities
+  USING GIST (geom);
+```
+
+Great! But how will we populate this column with data now? I’d suggest a trigger function like the following:
+
+```sql
+CREATE OR REPLACE FUNCTION update_geometries()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    NEW.geom = st_setsrid(st_point(NEW.longitude, NEW.latitude), 4326);
+    
+    RETURN NEW;
+END;
+$$;
+```
+
+And apply it to the `facilities` table
+
+```sql
+CREATE TRIGGER 
+tr_facilities_updategeom
+BEFORE INSERT OR UPDATE of latitude,longitude on 
+facilities_updategeom
+FOR EACH ROW EXECUTE PROCEDURE update_geometries();
+```
+
+With these optimizations in place, we can also simplify the query a bit:
+
+```sql
+SELECT facilities.*
+FROM facilities, {database_table_name}
+WHERE ST_Contains(
+  ST_Buffer({database_table_name}.geom, {distance_in_meters}),
+  facilities.geom
+)
+```
+
+And it should run MUCH faster.
+
+##### Simplifying Polygons
+Colorado is rectangular right? [Wrong](https://www.denverpost.com/2019/10/16/colorado-state-line-rectangle-how-many-sides/amp/)! There are hundreds of vertices on the Colorado border. The amount of vertices is directly correlated with the performance of a buffer for a given region so sometimes it’s worth it to simplify the polygon before calculating the buffer with a (nominal) trade-off of accuracy.
+
+Visualization:
+![](assets/images/simplify-polygons.webp)
+
+Each state is likely to have a different level of simplification based on the amount of vertices but since it’s relatively static, you can create a `simplified_geom` and just load that version in individually. As we get narrower and narrower (i.e. county, city, etc.), that becomes less feasible to do manually. I’d suggest finding a single method of simplification understanding that there will be some sort of distribution where the accuracy may be higher than others.
+
+How do we simplify geometry though? Are you picking up the pattern yet? **There’s a function for that**.
+
+`ST_Simplify` ([docs](https://postgis.net/docs/ST_Simplify.html)) takes a `geometry` and a `tolerance` (in meters) and applies the [Douglas-Peucker algorithm](https://en.m.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm) on the edge of the polygon. You might want to tune this `tolerance` value a bit to your liking to balance accuracy and performance. General guidance from me is somewhere between 1km and 10km for states but the ultimate value will be determined by your requirements.
+
+Now that we’ve added some performance optimizations to our **proximity search**, we should evaluate this approach compared to the radius search.
+
+#### Estimate
+
+*Time estimate: 2-4 weeks*
+
+The extra variance here is mainly due to testing and optimization. It’s not a huge difference but it’s worth taking into account considering the business priorities.
+
+#### Evaluation
+
+| Pros                                                   | Cons                             |     |     |
+| ------------------------------------------------------ | -------------------------------- | --- | --- |
+| Allows for quick iteration on new GIS features         | Additional complexity            |     |     |
+| More performant than Radius Search (with optimization) | Requires more maintenance        |     |     |
+| More flexibility                                       | Much larger storage requirements |     |     |
+| Higher accuracy                                        |                                  |     |     |
+| Low Cost                                               |                                  |     |     |
