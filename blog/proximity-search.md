@@ -372,10 +372,10 @@ The extra variance here is mainly due to testing and optimization. It’s not a 
 
 #### Evaluation
 
-| Pros                                                   | Cons                             |     |     |
-| ------------------------------------------------------ | -------------------------------- | --- | --- |
-| Allows for quick iteration on new GIS features         | Additional complexity            |     |     |
-| More performant than Radius Search (with optimization) | Requires more maintenance        |     |     |
-| More flexibility                                       | Much larger storage requirements |     |     |
-| Higher accuracy                                        |                                  |     |     |
-| Low Cost                                               |                                  |     |     |
+| Pros                                                   | Cons                             |
+| ------------------------------------------------------ | -------------------------------- |
+| Allows for quick iteration on new GIS features         | Additional complexity            |
+| More performant than Radius Search (with optimization) | Requires more maintenance        |
+| More flexibility                                       | Much larger storage requirements |
+| Higher accuracy                                        |                                  |
+| Low Cost                                               |                                  |
