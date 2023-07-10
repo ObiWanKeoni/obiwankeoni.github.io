@@ -255,7 +255,7 @@ Okay now that we have our shapefile(s) loaded, let’s actually do this thing!
 Going back to the original ask, we are looking for facilities within approximately `x` miles of Colorado. Now how do we do this? Well in the end, each region is just a polygon so some arithmetic should assist us. We can take the shape of the polygon and “resize it whilst keeping the aspect ratio” (think `shift`+`click`+`drag` the corner of a picture) and then search within that resized shape. Luckily, there’s [a PostGIS function] for that!
 
 Visualization
-![](assets/images/colorado-zoomed.jpeg)
+![](../assets/images/colorado-zoomed.jpeg)
 
 The `ST_Buffer` function is exactly what we’re looking for. 
 
@@ -286,7 +286,7 @@ Spatial indexes are ways of organizing spatial data in a traversable tree-type s
 
 Visualization:
 ![](https://postgis.net/workshops/postgis-intro/_images/index-01.png)
-*From [postgis.net](https://postgis.net/workshops/postgis-intro/_images/index-01.png)
+*From [postgis.net](https://postgis.net/workshops/postgis-intro/_images/index-01.png)*
 
 Unfortunately, `ogr2ogr` doesn’t automatically add indexes to the shapefile-generated tables so we’ll have to add one ourselves.
 
@@ -354,7 +354,7 @@ And it should run MUCH faster.
 Colorado is rectangular right? [Wrong](https://www.denverpost.com/2019/10/16/colorado-state-line-rectangle-how-many-sides/amp/)! There are hundreds of vertices on the Colorado border. The amount of vertices is directly correlated with the performance of a buffer for a given region so sometimes it’s worth it to simplify the polygon before calculating the buffer with a (nominal) trade-off of accuracy.
 
 Visualization:
-![](assets/images/simplify-polygons.webp)
+![](../assets/images/simplify-polygons.webp)
 
 Each state is likely to have a different level of simplification based on the amount of vertices but since it’s relatively static, you can create a `simplified_geom` and just load that version in individually. As we get narrower and narrower (i.e. county, city, etc.), that becomes less feasible to do manually. I’d suggest finding a single method of simplification understanding that there will be some sort of distribution where the accuracy may be higher than others.
 
