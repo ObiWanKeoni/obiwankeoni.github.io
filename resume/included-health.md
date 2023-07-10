@@ -13,7 +13,7 @@ history:
     dates: "Oct 2021 - Oct 2022"
 languages:
   - React
-  - Vue
+  - VueJS
   - Python
   - Django
   - PostgreSQL
