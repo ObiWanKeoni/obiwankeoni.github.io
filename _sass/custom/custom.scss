@@ -85,8 +85,7 @@ h1,h2,h3,h4,h5,h6 {
 // diagram labels, which also use .label
 // for more, see https://github.com/just-the-docs/just-the-docs/issues/1272
 // and the accompanying PR
-.label:not(g),
-.label-blue:not(g) {
+.label:not(g) {
   display: inline-block;
   padding: 0.16em 0.56em;
   margin-right: $sp-1;
@@ -94,11 +93,17 @@ h1,h2,h3,h4,h5,h6 {
   text-transform: uppercase;
   vertical-align: middle;
   border: 1px solid;
+  color: $grey-dk-200;
+  border-color: $grey-dk-200;
+  background-color: rgba($grey-dk-200, .2);
+  @include fs-2;
+  border-radius: 3px;
+}
+
+.label-blue:not(g) {
   color: $blue-300;
   border-color: $blue-300;
   background-color: rgba($blue-300, .2);
-  @include fs-2;
-  border-radius: 3px;
 }
 
 .label-green:not(g) {
