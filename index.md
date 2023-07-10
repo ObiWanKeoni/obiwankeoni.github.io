@@ -79,7 +79,7 @@ Bakersfield, CA • Remote
 <i class="devicon-amazonwebservices-plain"></i>**{{ language }}**
 {: .label .label-blue }
 {% else %}
-<i class="devicon-{{ language | downcase }}-plain"></i>**{{ language }}**
+<i class="devicon-{{ language | downcase }}-plain fs-1"></i>**{{ language }}**
 {: .label .label-blue }
 {% endif %}
 {% endfor %}
