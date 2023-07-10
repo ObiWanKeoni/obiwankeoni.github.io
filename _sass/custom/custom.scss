@@ -1,6 +1,6 @@
 * {
-  transition: background 0.3s linear,
-              color 0.3s linear;
+  transition: background 200ms linear,
+              color 200ms linear;
 }
 
 .main-content {
@@ -90,6 +90,7 @@ h1,h2,h3,h4,h5,h6 {
   display: inline-block;
   padding: 0.16em 0.56em;
   margin-right: $sp-1;
+  line-height: 100%;
   text-transform: uppercase;
   vertical-align: middle;
   border: 1px solid;
