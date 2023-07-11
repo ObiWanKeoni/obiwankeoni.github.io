@@ -27,7 +27,14 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {% endfor %}
 
 {% for language in child.languages %}
-**{{ language }}**
-{: .label .label-blue }
+
+{% if language == "AWS" %}
+<i class="devicon-amazonwebservices-plain"></i>**{{ language }}**
+{: .label }
+{% else %}
+<i class="devicon-{{ language | downcase }}-plain colored"></i>**{{ language }}**
+{: .label }
+{% endif %}
 {% endfor %}
 {% endfor %}
+
