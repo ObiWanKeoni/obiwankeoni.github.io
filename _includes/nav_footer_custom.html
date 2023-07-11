@@ -22,10 +22,13 @@ function setTheme(theme) {
   }
 }
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+prefers_dark_theme = window.matchMedia('(prefers-color-scheme: dark)');
+prefers_dark_theme.addEventListener('change', event => {
   const newColorScheme = event.matches ? "catppuccin" : "catppuccin-light";
-  setTheme(newColorScheme)
+  setTheme(newColorScheme);
 });
+const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
+setTheme(newColorScheme);
 
 jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
   if (jtd.getTheme() === 'catppuccin') {
@@ -34,5 +37,4 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
     setTheme('catppuccin');
   }
 });
-//setTheme('catppuccin');
 </script>
