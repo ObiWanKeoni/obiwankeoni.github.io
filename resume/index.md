@@ -27,7 +27,7 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {% endfor %}
 
 {% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnet' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"></i>**{{ language }}**
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"></i>**{{ language }}**
 {: .label }
 {% endfor %}
 {% endfor %}
