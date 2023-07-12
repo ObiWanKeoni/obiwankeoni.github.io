@@ -119,7 +119,7 @@ pip install ijson
 ```python
 import ijson
 
-def centroid(points: List):
+def centroid(points: list):
     x, y = zip(*points)
     l = len(x)
     return sum(x) / l, sum(y) / l
@@ -127,8 +127,8 @@ def centroid(points: List):
 mapping = {}
 
 with open("./output.json") as f:
-  for record in ijson.items(f, "item"):
-    mapping[record["zipcode"]] = centroid(record["geometry"])
+  for record in ijson.items(f, "features"):
+    mapping[record["zipcode"]] = centroid(record["geometry"]["coordinates"])
 
 with open("./zipcode-centroid.json") as f:
   json.dumps(f, mapping)
