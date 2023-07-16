@@ -267,8 +267,8 @@ figure,pre {
     -webkit-backdrop-filter: blur(7px);
 }
 
-code {
-  background: none;
+code.hljs {
+  background: none !important;
 }
 
 /* width */
