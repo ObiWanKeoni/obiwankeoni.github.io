@@ -267,6 +267,10 @@ figure,pre {
     -webkit-backdrop-filter: blur(7px);
 }
 
+code {
+  background: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
