@@ -27,3 +27,10 @@ callouts:
 
 
 ga_tracking: G-52GV4FCGC2
+
+highlighter: none
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+
