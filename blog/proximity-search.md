@@ -233,7 +233,16 @@ We can actually use the load the same shapefiles into PostGIS to generate tables
 Using `ogr2ogr` like before, we can do:
 
 ```bash
-ogr2ogr -f "PostgreSQL" PG:"dbname='{database_name}' host='{database_host}' port='{database_port}' user='{database_username}' password='{database_password}'" {shapefile_path} -nln {database_table_name} -s_srs EPSG:4326 -t_srs EPSG:4326
+ogr2ogr -f "PostgreSQL" \
+  PG:"dbname='{database_name}'
+      host='{database_host}'
+      port='{database_port}'
+      user='{database_username}'
+      password='{database_password}'" \
+  {shapefile_path} \
+  -nln {database_table_name} \
+  -s_srs EPSG:4326 \
+  -t_srs EPSG:4326
 ```
 
 {: .note}
