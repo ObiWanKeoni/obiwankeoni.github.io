@@ -20,6 +20,7 @@ function setTheme(theme) {
       toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
       break;
   }
+  hljs.highlightAll();
 }
 
 prefers_dark_theme = window.matchMedia('(prefers-color-scheme: dark)');
