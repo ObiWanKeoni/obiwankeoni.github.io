@@ -258,14 +258,25 @@ html {
 
 
 figure,pre {
-    margin: 0;
-    padding: 0.75em;
-    overflow-x: auto;
-    border: 1px solid #ffffff22;
-    background-color: $grey-dk-300;
-    border-radius: .7rem;
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+  margin: 0;
+  padding: 0.75em;
+  overflow-x: auto;
+  border: 1px solid #ffffff22;
+  background-color: $grey-dk-300;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  > label {
+    display: block;
+    color: $yellow-300;
+  }
+
+  > button {
+    position: relative;
+    top: .25em;
+    right: .25em;
+  }
 }
 
 code.hljs {
