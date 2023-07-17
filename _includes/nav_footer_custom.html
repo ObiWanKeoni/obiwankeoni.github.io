@@ -42,39 +42,41 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
 </script>
 
 <script defer>
-let blocks = document.querySelectorAll("pre");
-console.log(blocks);
-blocks.forEach((block) => {
-  let code = block.querySelector("code");
-  console.log(code);
-  const language = code.classList.filter((item, index) => /^language-/.test(item))[0].replace('language-', '');
-  console.log(language);
-  block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
+document.addEventListener("DOMContentLoaded", function(event) { 
+  let blocks = document.querySelectorAll("pre");
+  console.log(blocks);
+  blocks.forEach((block) => {
+    let code = block.querySelector("code");
+    console.log(code);
+    const language = code.classList.filter((item, index) => /^language-/.test(item))[0].replace('language-', '');
+    console.log(language);
+    block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
+    
+    
+    if (navigator.clipboard) {
+      let button = document.createElement("button");
+      button.classList.add("btn");
   
+      button.innerHTML = '<i class="lni lni-clipboard"></i>';
+      block.insertAdjacentElement("beforebegin", button);
   
-  if (navigator.clipboard) {
-    let button = document.createElement("button");
-    button.classList.add("btn");
-
-    button.innerHTML = '<i class="lni lni-clipboard"></i>';
-    block.insertAdjacentElement("beforebegin", button);
-
-    button.addEventListener("click", async () => {
-      await copyCode(block, button);
-    });
+      button.addEventListener("click", async () => {
+        await copyCode(block, button);
+      });
+    }
+  });
+  
+  async function copyCode(block, button) {
+    let code = block.querySelector("code");
+    let text = code.innerText;
+  
+    await navigator.clipboard.writeText(text);
+  
+    button.innerHTML = "<p>Copied!</p>";
+  
+    setTimeout(() => {
+      button.innerHTML = '<i class="lni lni-clipboard"></i>';
+    }, 700);
   }
 });
-
-async function copyCode(block, button) {
-  let code = block.querySelector("code");
-  let text = code.innerText;
-
-  await navigator.clipboard.writeText(text);
-
-  button.innerHTML = "<p>Copied!</p>";
-
-  setTimeout(() => {
-    button.innerHTML = '<i class="lni lni-clipboard"></i>';
-  }, 700);
-}
 </script>
