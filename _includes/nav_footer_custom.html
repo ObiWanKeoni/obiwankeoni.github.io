@@ -38,4 +38,41 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
     setTheme('catppuccin');
   }
 });
+
+// use a class selector if available
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+  let code = block.querySelector("code");
+  const language = code.result.language;
+  block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`)
+  
+  
+  // only add button if browser supports Clipboard API
+  if (navigator.clipboard) {
+    let button = document.createElement("button");
+    button.classList.add("btn")
+
+    button.innerHtml = '<i class="lni lni-clipboard"></i>';
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      await copyCode(block, button);
+    });
+  }
+});
+
+async function copyCode(block, button) {
+  let code = block.querySelector("code");
+  let text = code.innerText;
+
+  await navigator.clipboard.writeText(text);
+
+  // visual feedback that task is completed
+  button.innerHtml = "<p>Copied!</p>";
+
+  setTimeout(() => {
+    button.innerHtml = '<i class="lni lni-clipboard"></i>';
+  }, 700);
+}
 </script>
