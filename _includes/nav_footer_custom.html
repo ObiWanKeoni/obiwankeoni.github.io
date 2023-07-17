@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log(code);
     const language = code.classList[0].replace('language-', '');
     console.log(language);
-    block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
+    code.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
     
     
     if (navigator.clipboard) {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       button.classList.add("btn");
   
       button.innerHTML = '<i class="lni lni-clipboard"></i>';
-      block.insertAdjacentElement("beforebegin", button);
+      code.insertAdjacentElement("beforebegin", button);
   
       button.addEventListener("click", async () => {
         await copyCode(block, button);
