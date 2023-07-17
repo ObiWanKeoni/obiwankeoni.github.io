@@ -6,9 +6,13 @@ parent: Blog
 date: 2023-06-30
 ---
 
-![]({{ page.image_link }}){: .hero-image}
-
 # Proximity Search for Startup Developers
+
+9 min read • Keoni Garner
+
+{{ page.description }}
+
+![]({{ page.image_link }}){: .hero-image}
 
 ---
 
