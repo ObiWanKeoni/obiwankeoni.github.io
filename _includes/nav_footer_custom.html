@@ -41,10 +41,12 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
 
 // use a class selector if available
 let blocks = document.querySelectorAll("pre");
-
+console.log(blocks)
 blocks.forEach((block) => {
   let code = block.querySelector("code");
+  console.log(code)
   const language = code.classList.filter((item, index) => return /^language-/.test(item);)[0].replace('language-', '');
+  console.log(language)
   block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`)
   
   
