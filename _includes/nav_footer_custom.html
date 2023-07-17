@@ -33,25 +33,25 @@ setTheme(newColorScheme);
 
 jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
   if (jtd.getTheme() === 'catppuccin') {
-    setTheme('catppuccin-light')
+    setTheme('catppuccin-light');
   } else {
     setTheme('catppuccin');
   }
 });
 
 let blocks = document.querySelectorAll("pre");
-console.log(blocks)
+console.log(blocks);
 blocks.forEach((block) => {
   let code = block.querySelector("code");
-  console.log(code)
+  console.log(code);
   const language = code.classList.filter((item, index) => return /^language-/.test(item);)[0].replace('language-', '');
-  console.log(language)
+  console.log(language);
   block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`)
   
   
   if (navigator.clipboard) {
     let button = document.createElement("button");
-    button.classList.add("btn")
+    button.classList.add("btn");
 
     button.innerHTML = '<i class="lni lni-clipboard"></i>';
     block.insertAdjacentElement("beforebegin", button);
