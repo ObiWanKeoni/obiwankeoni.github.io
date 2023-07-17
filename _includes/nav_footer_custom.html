@@ -5,7 +5,7 @@
 </div>
 
 
-<script defer>
+<script>
 function setTheme(theme) {
   const toggleDarkMode = document.querySelector('.toggle-theme');
   jtd.setTheme(theme);
@@ -39,7 +39,6 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
   }
 });
 
-// use a class selector if available
 let blocks = document.querySelectorAll("pre");
 console.log(blocks)
 blocks.forEach((block) => {
