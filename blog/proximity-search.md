@@ -7,6 +7,7 @@ date: 2023-06-30
 ---
 
 ![]({{ page.image_link }})
+{: .card-image}
 
 # Proximity Search for Startup Developers
 
