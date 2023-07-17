@@ -52,7 +52,7 @@ Bakersfield, CA • Remote
 {% endfor %}
 </ul>
 
-[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](blog/index){: .btn .btn-outline}
+[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](/blog){: .btn .btn-outline}
 {: .mt-4 .mx-auto}
 
 - - -
@@ -79,6 +79,6 @@ Bakersfield, CA • Remote
 {% endfor %}
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](resume/index){: .btn .btn-outline}
+[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](/resume){: .btn .btn-outline}
 {: .mt-8 .mx-auto}
 

@@ -1,6 +1,7 @@
 ---
 title: Experience
 parent: About
+permalink: /resume
 has_children: true
 has_toc: false
 ---

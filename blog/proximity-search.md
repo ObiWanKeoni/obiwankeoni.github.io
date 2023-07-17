@@ -1,7 +1,7 @@
 ---
 title: Proximity Search for Startup Developers
 description: A How-To on the different methods for solving proximity search.
-image_link: assets/images/proximity-search.png
+image_link: /assets/images/proximity-search.png
 parent: Blog
 date: 2023-06-30
 ---
