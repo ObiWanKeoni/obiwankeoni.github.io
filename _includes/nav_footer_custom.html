@@ -44,12 +44,9 @@ jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
 <script defer>
 document.addEventListener("DOMContentLoaded", function(event) { 
   let blocks = document.querySelectorAll("pre");
-  console.log(blocks);
   blocks.forEach((block) => {
     let code = block.querySelector("code");
-    console.log(code);
     const language = code.classList[0].replace('language-', '');
-    console.log(language);
     code.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
     
     
@@ -72,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
     await navigator.clipboard.writeText(text);
   
-    button.innerHTML = "<p>Copied!</p>";
+    button.innerHTML = "Copied!";
   
     setTimeout(() => {
       button.innerHTML = '<i class="lni lni-clipboard"></i>';
