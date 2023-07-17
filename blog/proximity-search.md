@@ -9,6 +9,7 @@ date: 2023-06-30
 # Proximity Search for Startup Developers
 
 9 min read • Keoni Garner
+{: .fs-3}
 
 {{ page.description }}
 
