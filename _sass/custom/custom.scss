@@ -296,3 +296,11 @@ code.hljs {
   background: $grey-lt-300; 
 }
 
+img.hero-image {
+  width: 125%;
+  height: 8rem;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
