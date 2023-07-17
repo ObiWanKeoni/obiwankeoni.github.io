@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   blocks.forEach((block) => {
     let code = block.querySelector("code");
     console.log(code);
-    const language = code.result?.language;
+    const language = code.classList[0].replace('language-', '');
     console.log(language);
     block.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
     
