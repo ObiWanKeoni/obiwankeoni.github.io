@@ -277,6 +277,7 @@ figure,pre {
     padding-bottom: 0.75em;
     padding-left: 0.75em;
     padding-right: 0.75em;
+    font-weight: bold;
   }
 
   > button {
@@ -295,7 +296,7 @@ figure,pre {
 
 code.hljs {
   background: none !important;
-  width: 100%;
+  width: 95%;
   margin: 0 1em;
   display: inline-block;
   line-height: 2em;
