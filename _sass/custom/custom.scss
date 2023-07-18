@@ -275,24 +275,40 @@ figure,pre {
     padding: 1em;
     justify-content: center;
     align-items: center;
+    
+    > div.circle {
+      height: 1em;
+      width: 1em;
+      border: 1px solid $white;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 0.45em;
+      flex-grow: 0;
+    }
+  
+    > div.title {
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    
+    > button {
+      background: none;
+      font-size: 1.5em !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: 1px solid $grey-lt-200;
+      color: $grey-lt-200;
+  
+      ::hover {
+        color: $white;
+        outline: 1px solid $white;
+      }
+    }
   }
 
-  > div.circle {
-    height: 1em;
-    width: 1em;
-    border: 1px solid $white;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 0.45em;
-    flex-grow: 0;
-  }
-
-  > div.title {
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
 
   > label {
     display: block;
@@ -308,21 +324,6 @@ figure,pre {
     position: absolute;
     bottom: 0;
     right: 0;
-  }
-
-  > button {
-    background: none;
-    font-size: 1.5em !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 1px solid $grey-lt-200;
-    color: $grey-lt-200;
-
-    ::hover {
-      color: $white;
-      outline: 1px solid $white;
-    }
   }
 }
 
