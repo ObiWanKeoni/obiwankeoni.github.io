@@ -49,15 +49,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const language = code.classList[0].replace('language-', '');
     code.insertAdjacentHTML("afterend",`<label>${language}</label>`);
 
+    const terminalLanguages = ["bash", "shell"];
     
-    const title = block.getAttribute("title") || "Untitled";
+    const title = terminalLanguages.includes(language) ? "Terminal" : (block.getAttribute("title") || "Untitled");
 
-    
     let windowTitle = `<div class="window-container"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="title">${title}</div></div>`;
-    if (language === "bash") {
-      code.insertAdjacentHTML("beforebegin", '<div class="window-container"></div>');
-    } else {
-      code.insertAdjacentHTML("beforebegin", windowTitle);
+    code.insertAdjacentHTML("beforebegin", windowTitle);
+
+    if (terminalLanguages.includes(language)) {
+      code.insertAdjacentHTML("afterbegin", "> ");
     }
 
     let windowContainer = block.querySelector("div.window-container");
