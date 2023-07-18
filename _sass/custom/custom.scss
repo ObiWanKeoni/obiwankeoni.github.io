@@ -279,7 +279,7 @@ figure,pre {
     > div.circle {
       height: 1em;
       width: 1em;
-      border: 1px solid $white;
+      backbround: $grey-lt-200;
       border-radius: 50%;
       display: inline-block;
       margin: 0 0.45em;
@@ -301,6 +301,7 @@ figure,pre {
       align-items: center;
       outline: 1px solid $grey-lt-200;
       color: $grey-lt-200;
+      flex-grow: 0;
   
       ::hover {
         color: $white;
