@@ -47,15 +47,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   blocks.forEach((block) => {
     let code = block.querySelector("code");
     const language = code.classList[0].replace('language-', '');
-    code.insertAdjacentHTML("beforebegin",`<label class="label label-yellow">${language}</label>`);
+    code.insertAdjacentHTML("afterend",`<label>${language}</label>`);
     
-    
+    let windowTitle = '<div class="window-container"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="title">Untitled</div></div>'
+    code.insertAdjacentHTML("beforebegin", windowTitle);
+
+    let windowContainer = code.querySelector("div")
     if (navigator.clipboard) {
       let button = document.createElement("button");
       button.classList.add("btn");
   
       button.innerHTML = '<i class="lni lni-clipboard"></i>';
-      code.insertAdjacentElement("beforebegin", button);
+      windowContainer.insertAdjacentElement("beforeend", button);
   
       button.addEventListener("click", async () => {
         await copyCode(block, button);
@@ -69,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
     await navigator.clipboard.writeText(text);
   
-    button.innerHTML = "Copied!";
+    button.innerHTML = '<i class="lni lni-checkmark"></i>';
   
     setTimeout(() => {
       button.innerHTML = '<i class="lni lni-clipboard"></i>';
