@@ -48,9 +48,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let code = block.querySelector("code");
     const language = code.classList[0].replace('language-', '');
     code.insertAdjacentHTML("afterend",`<label>${language}</label>`);
+
     
-    let windowTitle = '<div class="window-container"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="title">Untitled</div></div>';
-    code.insertAdjacentHTML("beforebegin", windowTitle);
+    const title = block.getAttribute("title") || "Untitled"
+
+    
+    let windowTitle = `<div class="window-container"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="title">${title}</div></div>`;
+    if (language === "bash") {
+      code.insertAdjacentHTML("beforebegin", '<div class="window-container"></div>');
+    } else {
+      code.insertAdjacentHTML("beforebegin", windowTitle);
+    }
 
     let windowContainer = block.querySelector("div.window-container");
     if (navigator.clipboard) {
