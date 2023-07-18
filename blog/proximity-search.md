@@ -95,13 +95,13 @@ We will need a file for each “layer” we want to support (e.g. [ZCTA520](http
 
 Install the [GDAL](https://gdal.org/download.html) library
 
-```bash
+```shell
 brew install gdal
 ```
 
 Once that’s complete, you should have the ogr2ogr command and you should be able to do a straightforward conversion to GeoJSON with the following command:
 
-```bash
+```shell
 ogr2ogr -f GeoJSON output.json input.shp
 ```
 
@@ -117,7 +117,7 @@ If we want to achieve greater accuracy with the centroid, we might want to move 
 So with that, we would write a script that looks something like this:
 
 Get [ijson](https://github.com/ICRAR/ijson) for efficient parsing of this large file
-```bash
+```shell
 pip install ijson
 ```
 
@@ -238,7 +238,7 @@ We can actually use the load the same shapefiles into PostGIS to generate tables
 
 Using `ogr2ogr` like before, we can do:
 
-```bash
+```shell
 ogr2ogr -f "PostgreSQL" \
   PG:"dbname='{database_name}'
       host='{database_host}'
