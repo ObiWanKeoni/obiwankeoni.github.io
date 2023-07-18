@@ -142,7 +142,6 @@ with open("./zipcode-centroid.json") as f:
 
 Which should result in a mapping file like:
 
-zipcode-centroid.json
 ```json
 {
   "93301": [35.3843365, -119.0205616],
@@ -150,6 +149,7 @@ zipcode-centroid.json
   …
 }
 ```
+{: title="zipcode-centroid.json"}
 
 {: .info }
 Repeat this for each file/layer that you need to support.
@@ -189,6 +189,7 @@ FROM customer_addresses
 HAVING distance < {radius_in_km} 
 ORDER BY distance;
 ```
+{: title="haversine.sql"}
 
 {: .note}
 Be sure to replace `{centroid_latitude}`, `{centroid_longitude}`,  and `{radius_in_km}` with the values you need for your query.
