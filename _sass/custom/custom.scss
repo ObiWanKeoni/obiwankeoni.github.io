@@ -86,7 +86,9 @@ h1,h2,h3,h4,h5,h6 {
 // for more, see https://github.com/just-the-docs/just-the-docs/issues/1272
 // and the accompanying PR
 .label:not(g) {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.16em 0.56em;
   margin-right: $sp-1;
   text-transform: uppercase;
