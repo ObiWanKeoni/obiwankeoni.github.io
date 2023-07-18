@@ -138,6 +138,7 @@ with open("./output.json") as f:
 with open("./zipcode-centroid.json") as f:
   json.dumps(f, mapping)
 ```
+{: title="script.py"}
 
 Which should result in a mapping file like:
 
