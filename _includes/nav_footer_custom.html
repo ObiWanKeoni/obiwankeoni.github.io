@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   blocks.forEach((block) => {
     let code = block.querySelector("code");
     const language = code.classList[0].replace('language-', '');
-    code.insertAdjacentHTML("beforebegin",`<label>${language}</label>`);
+    code.insertAdjacentHTML("beforebegin",`<label class="label label-yellow">${language}</label>`);
     
     
     if (navigator.clipboard) {
