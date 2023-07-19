@@ -102,7 +102,9 @@ brew install gdal
 Once that’s complete, you should have the ogr2ogr command and you should be able to do a straightforward conversion to GeoJSON with the following command:
 
 ```shell
-ogr2ogr -f GeoJSON output.json input.shp
+ogr2ogr -f GeoJSON \
+  output.json \
+  input.shp
 ```
 
 This output file will be much larger than you’ll likely want to store. For this reason, we will convert the geometries into centroids for a given layer in the next step.
@@ -241,10 +243,10 @@ Using `ogr2ogr` like before, we can do:
 
 ```shell
 ogr2ogr -f "PostgreSQL" \
-  PG:"dbname='{database_name}'
-      host='{database_host}'
-      port='{database_port}'
-      user='{database_username}'
+  PG:"dbname='{database_name}'\
+      host='{database_host}'\
+      port='{database_port}'\
+      user='{database_username}'\
       password='{database_password}'" \
   {shapefile_path} \
   -nln {database_table_name} \
