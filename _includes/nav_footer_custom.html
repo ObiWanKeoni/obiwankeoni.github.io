@@ -12,9 +12,11 @@ function setTheme(theme) {
   switch(theme) {
     case 'catppuccin-light':
       toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
+      localStorage.setItem("theme", "catppuccin-light");
       break;
     case 'catppuccin':
       toggleDarkMode.innerHTML = '<i class="lni lni-night"></i>';
+      localStorage.setItem("theme", "catppuccin");
       break;
     default:
       toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
@@ -29,13 +31,13 @@ prefers_dark_theme.addEventListener('change', event => {
   setTheme(newColorScheme);
 });
 const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
-setTheme(newColorScheme);
+setTheme(localStorage.getItem("theme") || newColorScheme);
 
 jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
-  if (jtd.getTheme() === 'catppuccin') {
-    setTheme('catppuccin-light');
-  } else {
+  if (localStorage.getItem("theme") === 'catppuccin-light') {
     setTheme('catppuccin');
+  } else {
+    setTheme('catppuccin-light');
   }
 });
 
