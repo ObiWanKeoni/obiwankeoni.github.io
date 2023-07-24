@@ -426,3 +426,7 @@ thead {
     border-top: 0;
   }
 }
+
+i::before {
+  vertical-align: middle;
+}
