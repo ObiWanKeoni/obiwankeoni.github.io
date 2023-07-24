@@ -422,5 +422,6 @@ tbody {
 thead {
   th {
     border-bottom: $border $border-color;
+    border-top: 0;
   }
 }
