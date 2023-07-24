@@ -45,14 +45,14 @@ Bakersfield, CA • Remote
 	  {{ post.description }}
 	  </p>
 	   <span class="fs-4">
-	   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right fs-2"></i></a>
+	   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right"></i></a>
 	   </span>
    </div>
 </li>
 {% endfor %}
 </ul>
 
-[All Blog Posts<i class="lni lni-arrow-right fs-2"></i>](/blog){: .btn .btn-purple .inverse-text}
+[All Blog Posts<i class="lni lni-arrow-right-circle"></i>](/blog){: .btn .btn-purple .inverse-text}
 {: .mt-4 .mx-auto}
 
 - - -
@@ -62,7 +62,7 @@ Bakersfield, CA • Remote
 
 {% for child in sorted_pages limit:2 %}
 
-### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-2"></i>]({{child.url}})
+### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
@@ -79,6 +79,6 @@ Bakersfield, CA • Remote
 {% endfor %}
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right fs-2"></i>](/resume){: .btn .btn-purple .inverse-text}
+[View Full Résumé<i class="lni lni-arrow-right-circle"></i>](/resume){: .btn .btn-purple .inverse-text}
 {: .mt-8 .mx-auto}
 
