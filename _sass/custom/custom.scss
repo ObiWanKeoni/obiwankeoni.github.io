@@ -264,7 +264,7 @@ figure,pre {
   font-family: $mono-font-family;
   margin: 0;
   position: relative;
-  border: 1px solid #ffffff22;
+  border: 1px solid $border-color;
   border-radius: 0.7rem;
   background-color: $grey-dk-300;
   backdrop-filter: blur(7px);
