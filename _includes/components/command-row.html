@@ -1,0 +1,4 @@
+<tr>
+  <td>{% include.command | split: " + " | join: "</kbd> + <kbd>" | prepend: "<kbd>" | append: "</kbd>" %}</td>
+  <td>{% include.description %}</td>
+</tr>
