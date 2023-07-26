@@ -23,7 +23,7 @@ parent: Notes
     <th>ACTION</th>
   </thead>
   <tbody>
-    {% include "components/command-row.html" command="shift + ctrl + U" description="Move window North" %}
+    {% include components/command-row.html command='shift + ctrl + U' description='Move window North' %}
   </tbody>
 </table>
 </div>
