@@ -17,7 +17,7 @@ parent: Notes
 | `shift` + `ctrl` + `I` | Move window east  |
 |                        |                   |
 <div class="table-wrapper">
-<table class="table-wrapper">
+<table>
   <thead>
     <th>COMMAND</th>
     <th>ACTION</th>
