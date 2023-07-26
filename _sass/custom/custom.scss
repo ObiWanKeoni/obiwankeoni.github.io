@@ -392,7 +392,6 @@ img.hero-image,
 table {
   display: table;
   min-width: 100%;
-  border-collapse: collapse;
 }
 
 th,
@@ -402,20 +401,21 @@ td {
   min-width: 7.5rem;
   padding: $sp-2 $sp-3;
   background-color: $table-background-color;
-  border: $border $border-color;
+}
+
+th {
+  background-color: darken($table-background-color, 20%);
 }
 
 tbody {
   tr {
     &:last-of-type {
-      th,
-      td {
-        border-bottom: 0;
-      }
-
       td {
         padding-bottom: $sp-3;
       }
+    }
+    &:nth-child(odd) {
+      background-color: darken($table-background-color, 10%);
     }
   }
 }
@@ -423,7 +423,6 @@ tbody {
 thead {
   th {
     border-bottom: $border $border-color;
-    border-top: 0;
   }
 }
 
