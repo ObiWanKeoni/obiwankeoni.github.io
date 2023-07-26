@@ -467,9 +467,10 @@ kbd {
   // Make narrow numbers and letters look less odd
   min-width: 0.75rem;
   // `min-width` doesn’t work on inline elements
-  display: block;
+  display: inline-block;
   // Keep the characters centred when narrower than the `max-width`
   text-align: center;
+  text-transform: uppercase;
 
   // Seemed to look more key-like with more horizontal padding 🤷
   padding: 2px 5px;
