@@ -398,12 +398,8 @@ td {
   @include fs-3;
 
   min-width: 7.5rem;
-  padding: $sp-2 $sp-3;
+  padding: $sp-1 $sp-1;
   border: none;
-}
-
-th {
-  background-color: $blue-300;
 }
 
 tbody {
@@ -424,8 +420,9 @@ tbody {
 }
 
 thead {
+  border-bottom: $border $border-color;
   th {
-    border-bottom: $border $border-color;
+    text-transform: uppercase;
   }
 }
 
