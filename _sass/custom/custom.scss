@@ -399,24 +399,26 @@ td {
 
   min-width: 7.5rem;
   padding: $sp-2 $sp-3;
-  background-color: $table-background-color;
   border: none;
 }
 
 th {
-  background-color: darken($table-background-color, 20%);
+  background-color: $blue-300;
 }
 
 tbody {
   tr {
     border: none;
+    background-color: $table-background-color;
+    
     &:last-of-type {
       td {
         padding-bottom: $sp-3;
       }
     }
+    
     &:nth-child(odd) {
-      background-color: darken($table-background-color, 10%);
+      background-color: $blue-000;
     }
   }
 }
