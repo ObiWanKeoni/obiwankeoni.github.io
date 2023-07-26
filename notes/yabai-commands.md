@@ -4,7 +4,6 @@ parent: Notes
 
 # Yabai Commands
 
-<div class="table-wrapper">
 <table>
   <thead>
     <th>COMMAND</th>
@@ -35,4 +34,3 @@ parent: Notes
     {% include components/command-row.html command='⇧ + ⌥ + t' description='Float and Center/Unfloat Window (Large)' %}
   </tbody>
 </table>
-</div>
