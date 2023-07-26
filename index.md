@@ -16,7 +16,9 @@ has_toc: false
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
-
+<kbd>shift</kbd>
+<kbd>A</kbd>
+<kbd>shift + A</kbd>
 
 **Dad**
 {: .label .label-blue }
