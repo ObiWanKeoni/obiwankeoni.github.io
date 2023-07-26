@@ -17,10 +17,6 @@ has_toc: false
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
-<kbd>shift</kbd>
-<kbd>A</kbd>
-<kbd>shift + A</kbd>
-
 **Dad**
 {: .label .label-blue }
 
