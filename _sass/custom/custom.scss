@@ -383,7 +383,6 @@ img.hero-image,
   margin-bottom: $sp-5;
   overflow-x: auto;
   border-radius: $border-radius;
-  border: $border $table-background-color;
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.12),
     0 3px 10px rgba(0, 0, 0, 0.08);
@@ -428,6 +427,6 @@ thead {
   }
 }
 
-i::before {
+i.lni:not(.lni-night,.lni-sun)::before {
   vertical-align: middle;
 }
