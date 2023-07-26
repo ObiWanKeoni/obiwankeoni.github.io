@@ -401,6 +401,7 @@ td {
   min-width: 7.5rem;
   padding: $sp-2 $sp-3;
   background-color: $table-background-color;
+  border: none;
 }
 
 th {
@@ -409,6 +410,7 @@ th {
 
 tbody {
   tr {
+    border: none;
     &:last-of-type {
       td {
         padding-bottom: $sp-3;
