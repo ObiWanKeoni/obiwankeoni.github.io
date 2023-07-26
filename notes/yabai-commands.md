@@ -16,7 +16,7 @@ parent: Notes
 | `shift` + `ctrl` + `N` | Move window west  |
 | `shift` + `ctrl` + `I` | Move window east  |
 |                        |                   |
-
+<div class="table-wrapper">
 <table class="table-wrapper">
   <thead>
     <th>COMMAND</th>
@@ -26,3 +26,4 @@ parent: Notes
     {% include "components/command-row.html" command="shift + ctrl + U" description= "Move window North"
   </tbody>
 </table>
+</div>
