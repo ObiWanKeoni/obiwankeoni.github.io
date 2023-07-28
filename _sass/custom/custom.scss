@@ -330,6 +330,11 @@ figure,pre {
   }
 }
 
+code {
+  background: $blue-000;
+  color: $blue-300;
+}
+
 code.hljs {
   background: none !important;
   width: 95%;
