@@ -330,9 +330,16 @@ figure,pre {
   }
 }
 
-code {
-  background: $blue-000;
-  color: $blue-300;
+:not(pre, figure) {
+  & > code {
+    padding: 0.2em 0.15em;
+    font-weight: 600;
+    border: none;
+    border-radius: $border-radius; 
+    color: $blue-300;
+    border-color: $blue-300;
+    background-color: rgba($blue-300, .2);
+  }
 }
 
 code.hljs {
