@@ -157,11 +157,7 @@ Which should result in a mapping file like:
 {: .info }
 Repeat this for each file/layer that you need to support.
 
-
 And there you have it! A file you can now use to get the centroid from an address qualifier. 
-
-{: .note }
-Alternatively, for this step you could also use [Geocoder.ca](http://geocoder.ca/), but the data is crowdsourced and not exactly under your control. Use at your own risk!
 
 #### Step 4: Use the [file] Luke
 Assuming you have a `customer_addresses` table with `latitude` and `longitude` columns, a query for the radius search (in kilometers) could look like this:
