@@ -42,12 +42,13 @@ This ask is no exception. For the intents of this situation though, let’s assu
 
 >  - Proximity Search: given an address qualifier and a proximity bound, find all customer addresses within the region + the proximity bound
 >  - Radius Search: given an address qualifier and a radius, find all customer addresses within the radius from the centroid of the region
->  - Assume US postal codes only
+>  - Assume US addresses only
 > -  REQUIRED: For regions whose granularity is **greater than or equal to** a 3-digit zip code, use **Radius Search**
 >  - NICE TO HAVE: For regions whose granularity is **less than** a 3-digit zip code (e.g.. county or state), use **Proximity Search**.
 >  - NICE TO HAVE: Accuracy **97%** or higher
 >  - NICE TO HAVE: Proximity search on all address qualifiers:
 >    - Full Address
+>    - City/State
 >    - 3-digit zip
 >    - 5-digit zip
 >    - 9-digit zip
@@ -206,13 +207,13 @@ Realistically, this could just be a single sprint’s worth of work considering 
 
 #### Evaluation
 
-| Pros                         | Cons                                                    |
-| ---------------------------- | ------------------------------------------------------- |
-| No/Low Additional Complexity | Limited to Radius Search                                |
-| Tiny Timeline                | Non-performant with a large `customer_addresses` table  |
-| Easily replaceable           | Doesn’t add additional capabilities for future features |
-| “Buys time”                  |                                                         |
-| No/Low Cost                  |                                                         |
+| Pros                                           | Cons                                                    |
+| ---------------------------------------------- | ------------------------------------------------------- |
+| No/Low Additional Complexity                   | Limited to Radius Search                                |
+| Tiny Timeline                                  | Non-performant with a large `customer_addresses` table  |
+| Easily replaceable                             | Doesn’t add additional capabilities for future features |
+| "Buys time" to implement the "right" solution" |                                                         |
+| No/Low Cost                                    |                                                         |
 
 ---
 
@@ -401,3 +402,28 @@ The extra variance here is mainly due to testing and optimization. It’s not a 
 | More flexibility                                       | Much larger storage requirements |
 | Higher accuracy                                        |                                  |
 | Low Cost                                               |                                  |
+
+
+### Alternatives
+What? You thought it was over? Of course there are other ways to go about this!
+
+1. **Bounding Box search**: Similar to Solution 1, this is an overlay style search that would use the "radius" as a lat/lng adjustment. This is a good idea if you have a lot of addresses or highly clustered data because Haversine requires calculating the distance regardless of the location of the facility. Using bounding box math, we can filter for only those with latitudes or longitudes within the adjusted values. 
+```sql
+SELECT *
+FROM customer_addresses
+WHERE
+latitude <= (centroid_latitude + radius) AND
+latitude >= (centroid_latitude - radius) AND
+longitude <= (centroid_longitude + radius) AND
+longitude >= (centroid_longitude - radius)
+```
+2. **PostGIS Anyway**: You don't only need to install PostGIS if you want to do a buffer search. PostGIS is capable of calculating centroids on the fly as well as managing your Haversine/Radius/Bounding Box searches in great time! Please take it into account if the benefits outweigh the additional complexity costs.
+3. **Third Party Services**: In many cases, I prefer to build over buy because there's often a desire for new or improved features on top of it. That said, this specific instance is the perfect "buy" decision. Geocoder.ca has very affordable [pricing options](https://geocoder.ca/pricing) for the growing startup that needs something quick. A sprint's worth of work for one engineer is more expensive than this service. The drawbacks (of course) are that it's not as easy to build off of.
+4. Others? If you have any other suggestions for solving this problem, feel free to reach out at my email on my [GitHub](https://github.com/ObiWanKeoni).
+
+## Conclusion
+Proximity Searching is a fun, non-trivial problem that, as presented above, can be solved in a plethora of ways. 
+
+If you like my writing style, presentation, and/or solutions, please consider sharing this with a friend! 
+
+*Check out my less serious writing over [here](/writing/)!*
