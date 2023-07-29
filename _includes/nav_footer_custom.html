@@ -1,13 +1,6 @@
-<div>
-  <button class="toggle-theme">
-    <i class="lni lni-night"></i>
-  </button>
-</div>
-
-
 <script>
 function setTheme(theme) {
-  const toggleDarkMode = document.querySelector('.toggle-theme');
+  const toggleDarkMode = document.querySelector('#toggle-theme');
   jtd.setTheme(theme);
   switch(theme) {
     case 'catppuccin-light':
@@ -33,7 +26,7 @@ prefers_dark_theme.addEventListener('change', event => {
 const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
 setTheme(localStorage.getItem("theme") || newColorScheme);
 
-jtd.addEvent(document.querySelector('.toggle-theme'), 'click', function(){
+jtd.addEvent(document.querySelector('#toggle-theme'), 'click', function(){
   if (localStorage.getItem("theme") === 'catppuccin-light') {
     setTheme('catppuccin');
   } else {
