@@ -2,6 +2,10 @@
   color: $grey-dk-300 !important;
 }
 
+.main {
+  padding-top: 3.75rem;
+}
+
 .main-content {
   ol {
     list-style-type: none;
@@ -166,6 +170,14 @@ body {
 
 .site-header {
   border-bottom: $border $border-color;
+  
+}
+
+.side-bar {
+  background-color: rgba($sidebar-color, .6) !important;
+  backdrop-filter: blur(16px);
+  position: fixed;
+  z-index: 99999999;
 }
 
 .gradient-text {
