@@ -179,6 +179,7 @@ body {
 .side-bar {
   background-color: rgba($sidebar-color, .6) !important;
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   position: fixed;
   z-index: 99999999;
   width: 100%;
