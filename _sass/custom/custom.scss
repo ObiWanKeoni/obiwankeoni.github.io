@@ -396,17 +396,22 @@ i.lni:not(.lni-night,.lni-sun)::before {
 
 kbd {
   @include fs-2;
-      display: inline-block;
-      margin: 0 0.1em;
-      padding: 0.1em 0.6em;
-      font-family: $body-font-family;
-      color: hsl(210,8%,15%);
-      text-shadow: 0 1px 0 hsl(0,0%,100%);
-      background-color: hsl(210,8%,90%);
-      border: 1px solid hsl(210,8%,65%);
-      border-radius: 2px;
-      box-shadow: 0 1px 1px hsl(210deg, 8%, 5% / 15%), inset 0 1px 0 0 hsl(0deg, 0%, 100%);
-      overflow-wrap: break-word;
-      white-space: nowrap;
+  display: inline-block;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  font-family: $body-font-family;
+  color: hsl(210,8%,15%);
+  text-shadow: 0 1px 0 hsl(0,0%,100%);
+  background-color: hsl(210,8%,90%);
+  border: 1px solid hsl(210,8%,65%);
+  border-radius: 2px;
+  box-shadow: 0 1px 1px hsl(210deg, 8%, 5% / 15%), inset 0 1px 0 0 hsl(0deg, 0%, 100%);
+  overflow-wrap: break-word;
+  white-space: nowrap;
   text-transform: uppercase;
+}
+
+.site-nav.nav-open {
+  display: block;
+  height: calc(100vh - 3.75rem);
 }
