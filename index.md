@@ -61,6 +61,8 @@ Bakersfield, CA • Remote
 
 {% for child in sorted_pages limit:2 %}
 
+<div class="experience" markdown=1>
+
 ### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right"></i>]({{child.url}})
 {: .mb-2}
 
@@ -76,6 +78,8 @@ Bakersfield, CA • Remote
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>**{{ language }}**
 {: .label }
 {% endfor %}
+
+</div>
 {% endfor %}
 
 [View Full Résumé<i class="lni lni-arrow-right-circle"></i>](/resume){: .btn .btn-purple .inverse-text}
