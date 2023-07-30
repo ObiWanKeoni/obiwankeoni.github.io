@@ -16,7 +16,10 @@ Software engineer with 5+ years of experience across a wide range of industries.
 
 {% for child in sorted_pages %}
 - - -
-#### {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0}{% endif %} [{{child.title}}<i class="lni lni-arrow-right fs-1"></i>]({{child.url}})
+
+{% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0 .my-0}{% endif %}
+
+####  [{{child.title}}<i class="lni lni-arrow-right fs-1"></i>]({{child.url}})
 {: .mb-2}
 
 {% for history in child.history %}
@@ -28,7 +31,7 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {% endfor %}
 
 {% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"></i>**{{ language }}**
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>**{{ language }}**
 {: .label }
 {% endfor %}
 {% endfor %}
