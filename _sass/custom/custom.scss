@@ -54,10 +54,11 @@
     }
     
     > li.blog {
-      border-radius: 10px;
+      border-radius: 3px;
       margin-left: -1.4em;
       overflow: hidden;
       border: 1px solid $border-color;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 
       > img.card-image {
         width: 100%;
@@ -450,4 +451,8 @@ kbd {
 
 #main-header {
   width: $content-width;
+}
+
+.experience {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
