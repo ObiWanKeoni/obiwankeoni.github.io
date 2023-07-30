@@ -185,8 +185,8 @@ body {
   width: 100%;
 
   
-  @include mq(md) {
-    width: calc((100% - 66.5rem) / 2 + 16.5rem) !important;
+  @include mq(lg) {
+    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}) important;
   }
 }
 
