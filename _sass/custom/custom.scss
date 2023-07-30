@@ -185,8 +185,13 @@ body {
   width: 100%;
 
   
+  @include mq(md) {
+    width: $nav-width important;
+  }
+
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}) important;
+    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}) !important ;
+    min-width: $nav-width;
   }
 }
 
