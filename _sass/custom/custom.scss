@@ -181,8 +181,9 @@ body {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   position: fixed;
-  z-index: 99999999;
+  z-index: 1;
   width: 100%;
+  
 
   
   @include mq(md) {
@@ -423,7 +424,8 @@ kbd {
 
 .site-nav.nav-open {
   display: block;
-  height: calc(100vh - 3.75rem);
+  height: calc(100vh - 7.5rem);
+  margin-top: 3.75rem;
   overflow-y: scroll;
 }
 
@@ -433,5 +435,15 @@ kbd {
 
 .site-header #toggle-theme {
   display: block !important;
+}
+
+.main-header.nav-open {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+.search-results {
+  max-height: calc(100vh - 4rem);
 }
 
