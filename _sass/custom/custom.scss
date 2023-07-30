@@ -396,8 +396,12 @@ thead {
   }
 }
 
-i.lni:not(.lni-night,.lni-sun)::before {
+i.lni::before {
   vertical-align: middle;
+}
+
+i.lni-night,i.lni-sun {
+  font-size: 1.5em;
 }
 
 kbd {
@@ -420,6 +424,11 @@ kbd {
 .site-nav.nav-open {
   display: block;
   height: calc(100vh - 3.75rem);
+  overflow-y: scroll;
+}
+
+.main.nav-open {
+  overflow-y: hidden;
 }
 
 .site-header #toggle-theme {
