@@ -186,7 +186,7 @@ body {
 
   
   @include mq(md) {
-    width: $nav-width important;
+    width: $nav-width !important;
   }
 
   @include mq(lg) {
