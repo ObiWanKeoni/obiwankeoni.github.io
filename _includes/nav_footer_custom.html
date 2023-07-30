@@ -85,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
 
 
-<script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function(event) { 
   const siteNav = document.getElementById('site-nav');
   const main = document.getElementById('main');
   const mainHeader = document.getElementById('main-header');
@@ -106,4 +107,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       menuButton.ariaPressed = false;
     }
   });
+});
 </script>
