@@ -448,3 +448,6 @@ kbd {
   max-height: calc(100vh - 4rem);
 }
 
+#main-header {
+  width: $content-width;
+}
