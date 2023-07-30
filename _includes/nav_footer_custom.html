@@ -87,24 +87,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 <script defer>
 document.addEventListener("DOMContentLoaded", function(event) { 
-  const siteNav = document.getElementById('site-nav');
   const main = document.getElementById('top');
-  const mainHeader = document.getElementById('main-header');
   const menuButton = document.getElementById('menu-button');
 
   jtd.addEvent(menuButton, 'click', function(e){
     e.preventDefault();
 
-    if (menuButton.classList.toggle('nav-open')) {
-      siteNav.classList.add('nav-open');
-      main.classList.add('nav-open');
-      mainHeader.classList.add('nav-open');
-      menuButton.ariaPressed = true;
-    } else {
-      siteNav.classList.remove('nav-open');
+    if (menuButton.classList.includes('nav-open')) {
       main.classList.remove('nav-open');
-      mainHeader.classList.remove('nav-open');
-      menuButton.ariaPressed = false;
+    } else {
+      main.classList.add('nav-open');
     }
   });
 });
