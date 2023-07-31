@@ -61,11 +61,11 @@ Bakersfield, CA • Remote
 
 {% for child in sorted_pages limit:2 %}
 
-<div class="experience mt-2" markdown=1>
+<div class="experience mt-5" markdown=1>
  {% if child.nav_order == 1 %}**CURRENT**{: .label .label-green .ml-0 .my-0}{% endif %}
 
 ### [{{child.title}}<i class="lni lni-arrow-right"></i>]({{child.url}})
-{: .mb-2}
+{: .mb-2 .mt-0}
 
 {% for history in child.history %}
 **{{ history.title }}**
