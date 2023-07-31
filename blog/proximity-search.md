@@ -56,7 +56,7 @@ I’m going to present two solutions in this section. Each will have its own mer
 ---
 
 ### Solution 1: Scrappy Doo
-![](https://www.thekingshabazz.com/wp-content/uploads/2020/05/scrappy.gif)
+![](https://www.thekingshabazz.com/wp-content/uploads/2020/05/scrappy.gif){: .blog-img}
 
 In true startup-fashion, let’s evaluate how we might add this feature with as little infrastructure as possible. 
 
@@ -202,7 +202,7 @@ Realistically, this could just be a single sprint’s worth of work considering 
 ---
 
 ### Solution 2: Scooby Doo
-![](https://wallpapercave.com/wp/Kn9s8PL.jpg)
+![](https://wallpapercave.com/wp/Kn9s8PL.jpg){: .blog-img}
 
 As our startup grows, so too must our product. We may push off this solution as long as we can until there is true demand for better geographic accuracy than a simple radius search can give us. For example, let’s say you are a software engineer for a logistics broker. There’s now a high value in showing which destination facilities fall outside of a given region (in this example, we will use the state of Colorado) for invoicing reasons.
 
@@ -259,7 +259,7 @@ Going back to the original ask, we are looking for facilities within approximate
 
 Visualization:
 
-![](../assets/images/colorado-zoomed.jpeg)
+![](../assets/images/colorado-zoomed.jpeg){: .blog-img}
 
 The `ST_Buffer` function is exactly what we’re looking for. 
 
@@ -290,7 +290,7 @@ Spatial indexes are ways of organizing spatial data in a traversable tree-type s
 
 Visualization:
 
-![](https://postgis.net/workshops/postgis-intro/_images/index-01.png)
+![](https://postgis.net/workshops/postgis-intro/_images/index-01.png){: .blog-img}
 
 *From [postgis.net](https://postgis.net/workshops/postgis-intro/_images/index-01.png)*
 
@@ -361,7 +361,7 @@ Colorado is rectangular right? [Wrong](https://www.denverpost.com/2019/10/16/col
 
 Visualization:
 
-![](../assets/images/simplify-polygons.webp)
+![](../assets/images/simplify-polygons.webp){: .blog-img}
 
 Each state is likely to have a different level of simplification based on the amount of vertices but since it’s relatively static, you can create a `simplified_geom` and just load that version in individually. As we get narrower and narrower (i.e. county, city, etc.), that becomes less feasible to do manually. I’d suggest finding a single method of simplification understanding that there will be some sort of distribution where the accuracy may be higher than others.
 
