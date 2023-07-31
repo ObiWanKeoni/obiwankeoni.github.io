@@ -64,7 +64,7 @@ Bakersfield, CA • Remote
 <div class="experience mt-5" markdown=1>
  {% if child.nav_order == 1 %}
  **CURRENT**
- {: .label .label-green .ml-0 .my-0}
+ {: .label .label-green .ml-0 .mt-0}
  {% endif %}
 
 ### [{{child.title}}<i class="lni lni-arrow-right"></i>]({{child.url}})
