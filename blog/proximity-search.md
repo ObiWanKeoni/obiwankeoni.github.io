@@ -4,11 +4,13 @@ description: A How-To on the different methods for solving proximity search.
 image_link: /assets/images/proximity-search.png
 parent: Blog
 date: 2023-06-30
+time_to_read: 9 min
+disclaimer: I use MacOS and only MacOS so all examples will be for MacOS.
 ---
 
-# Proximity Search for Startup Developers
+# {{ page.title }}
 
-9 min read • Keoni Garner
+{{ page.time_to_read }} read • Keoni Garner
 {: .fs-3}
 
 {{ page.description }}
@@ -18,9 +20,9 @@ date: 2023-06-30
 ---
 
 {: .info }
-I use MacOS and only MacOS so all examples will be for MacOS.
+{{ page.disclaimer }}
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>
