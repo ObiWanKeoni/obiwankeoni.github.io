@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p class="fs-3">{{ page.time_to_read }} read • Keoni Garner</p>
+
+<p>{{ page.description }}</p>
+
+<img class="hero-image" src="{{ page.image_link }}">
+
+---
+
+<p class="info">{{ page.disclaimer }}</p>
+
+<details markdown="block">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+1. TOC
+{:toc}
+</details>
+
+{{ content }}
