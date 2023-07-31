@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: Proximity Search for Startup Developers
 description: A How-To on the different methods for solving proximity search.
 image_link: /assets/images/proximity-search.png
@@ -7,29 +8,6 @@ date: 2023-06-30
 time_to_read: 9 min
 disclaimer: I use MacOS and only MacOS so all examples will be for MacOS.
 ---
-
-# {{ page.title }}
-
-{{ page.time_to_read }} read • Keoni Garner
-{: .fs-3}
-
-{{ page.description }}
-
-![]({{ page.image_link }}){: .hero-image}
-
----
-
-{: .info }
-{{ page.disclaimer }}
-
-<details markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
 Hypothetical
 > You are a software engineer at a startup with access to your customer’s addresses. You have been asked to evaluate a solution to a product ask: **Searching for other addresses near an address qualifier**. 
