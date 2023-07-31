@@ -9,6 +9,14 @@ time_to_read: 9 min
 disclaimer: I use MacOS and only MacOS so all examples will be for MacOS.
 ---
 
+<details markdown="block">
+  <summary class="text-delta">
+    Table of contents
+  </summary>
+1. TOC
+{:toc}
+</details>
+
 Hypothetical
 > You are a software engineer at a startup with access to your customer’s addresses. You have been asked to evaluate a solution to a product ask: **Searching for other addresses near an address qualifier**. 
 
