@@ -64,7 +64,7 @@ img.blog-img {
     }
     
     > li.blog {
-      border-radius: 3px;
+      border-radius: 4px;
       margin-left: -1.4em;
       overflow: hidden;
       border: 1px solid $border-color;
@@ -494,9 +494,9 @@ kbd {
   }
 }
 
-.btn-blue {
-  box-shadow: 0 0 12px 0px $blue-300, 0 0 12px $blue-300;
+.btn-purple {
+  box-shadow: 0 0 12px 0px $purple-300, 0 0 12px $purple-000;
   &:hover {
-    box-shadow: 0 0 16px 0px $blue-300, 0 0 16px $blue-300;
+    box-shadow: 0 0 16px 0px $purple-300, 0 0 16px $purple-000;
   }
 }
