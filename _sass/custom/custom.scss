@@ -495,10 +495,8 @@ kbd {
 }
 
 .btn-blue {
-  background: $blue-300;
   box-shadow: 0 0 12px 0px $blue-300, 0 0 12px $blue-300;
   &:hover {
-    background: $blue-300;
     box-shadow: 0 0 16px 0px $blue-300, 0 0 16px $blue-300;
   }
 }
