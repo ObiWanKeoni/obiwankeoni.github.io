@@ -494,11 +494,11 @@ kbd {
   }
 }
 
-.btn-purple {
-  background: $purple-200;
-  box-shadow: 0 0 12px 0px $purple-200, 0 0 12px $purple-200;
+.btn-blue {
+  background: $blue-100;
+  box-shadow: 0 0 12px 0px $blue-100, 0 0 12px $blue-100;
   &:hover {
-    background: $purple-000;
-    box-shadow: 0 0 12px 0px $purple-000, 0 0 12px $purple-000;
+    background: $blue-000;
+    box-shadow: 0 0 12px 0px $blue-000, 0 0 12px $blue-000;
   }
 }
