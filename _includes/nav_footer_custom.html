@@ -42,9 +42,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   blocks.forEach((block) => {
     let code = block.querySelector("code");
     const language = code.classList[0].replace('language-', '');
-    code.insertAdjacentHTML("afterend",`<label>${language}</label>`);
-
     const terminalLanguages = ["bash", "shell"];
+
+    if (terminalLanguages.includes(language)) {
+      code.insertAdjacentHTML("afterend",`<label><i class="devicon-${language}-plain"></i></label>`);
+    }
     
     const title = terminalLanguages.includes(language) ? "Terminal" : (block.getAttribute("title") || "Untitled");
 
