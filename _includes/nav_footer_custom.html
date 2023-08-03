@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const language = code.classList[0].replace('language-', '');
     const terminalLanguages = ["bash", "shell"];
 
-    if (terminalLanguages.includes(language)) {
+    if (!terminalLanguages.includes(language)) {
       code.insertAdjacentHTML("afterend",`<label><i class="devicon-${language}-plain"></i></label>`);
     }
     
