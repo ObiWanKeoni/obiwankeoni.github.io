@@ -5,14 +5,10 @@
 img.blog-img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0.3px 0.5px 0.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 1),
-    0.4px 0.7px 0.6px -0.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.89),
-    1.1px 2.2px 1.8px -1.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.76),
-    3.2px 6.4px 5.4px -2.1px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.63),
-    7.2px 14.4px 12.1px -2.9px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.51),
-    13.8px 27.7px 23.2px -3.6px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.38),
-    23.7px 47.4px 39.7px -4.3px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.25),
-    37.5px 75px 62.9px -5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.13);
+  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
 }
 
 .main {
@@ -72,14 +68,10 @@ img.blog-img {
       overflow: hidden;
       border: 1px solid $border-color;
       /* inner glow 👇 */
-      box-shadow: 0.3px 0.5px 0.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 1),
-        0.4px 0.7px 0.6px -0.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.89),
-        1.1px 2.2px 1.8px -1.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.76),
-        3.2px 6.4px 5.4px -2.1px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.63),
-        7.2px 14.4px 12.1px -2.9px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.51),
-        13.8px 27.7px 23.2px -3.6px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.38),
-        23.7px 47.4px 39.7px -4.3px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.25),
-        37.5px 75px 62.9px -5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.13);
+      box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+        0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+        0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+        0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
 
       > img.card-image {
         width: 100%;
@@ -245,14 +237,10 @@ figure,pre {
   font-family: $mono-font-family;
   margin: 0;
   position: relative;
-  box-shadow: 0.3px 0.5px 0.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 1),
-    0.4px 0.7px 0.6px -0.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.89),
-    1.1px 2.2px 1.8px -1.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.76),
-    3.2px 6.4px 5.4px -2.1px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.63),
-    7.2px 14.4px 12.1px -2.9px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.51),
-    13.8px 27.7px 23.2px -3.6px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.38),
-    23.7px 47.4px 39.7px -4.3px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.25),
-    37.5px 75px 62.9px -5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.13);
+  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
   padding: 0.5rem;
   border-radius: 0.7rem;
   background-color: $grey-dk-300;
@@ -484,14 +472,10 @@ kbd {
 
 .experience {
   /* inner glow 👇 */
-  box-shadow: 0.3px 0.5px 0.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 1),
-    0.4px 0.7px 0.6px -0.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.89),
-    1.1px 2.2px 1.8px -1.4px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.76),
-    3.2px 6.4px 5.4px -2.1px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.63),
-    7.2px 14.4px 12.1px -2.9px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.51),
-    13.8px 27.7px 23.2px -3.6px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.38),
-    23.7px 47.4px 39.7px -4.3px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.25),
-    37.5px 75px 62.9px -5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.13);
+  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid $border-color;
@@ -504,12 +488,8 @@ kbd {
 }
 
 .btn-purple {
-  box-shadow: 0.3px 0.5px 0.4px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 1),
-    0.4px 0.7px 0.6px -0.7px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.89),
-    1.1px 2.2px 1.8px -1.4px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.76),
-    3.2px 6.4px 5.4px -2.1px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.63),
-    7.2px 14.4px 12.1px -2.9px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.51),
-    13.8px 27.7px 23.2px -3.6px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.38),
-    23.7px 47.4px 39.7px -4.3px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.25),
-    37.5px 75px 62.9px -5px hsla($purple-shadow-color-hue, $purple-shadow-color-saturation, $purple-shadow-color-lightness, 0.13);
+  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+    0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
 }
