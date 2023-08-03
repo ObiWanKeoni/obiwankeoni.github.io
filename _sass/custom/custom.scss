@@ -494,6 +494,7 @@ kbd {
     37.5px 75px 62.9px -5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.13);
   padding: 1rem;
   border-radius: 5px;
+  border: 1px solid $border-color;
 }
 
 .search-input {
