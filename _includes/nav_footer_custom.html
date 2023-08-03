@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const terminalLanguages = ["bash", "shell"];
 
     if (!terminalLanguages.includes(language)) {
-      code.insertAdjacentHTML("afterend",`<label><i class="devicon-${language}-plain"></i></label>`);
+      code.insertAdjacentHTML("afterend",`<label><i class="devicon-${language.replace("sql","postgresql")}-plain"></i></label>`);
     }
     
     const title = terminalLanguages.includes(language) ? "Terminal" : (block.getAttribute("title") || "Untitled");
