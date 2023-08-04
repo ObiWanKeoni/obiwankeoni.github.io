@@ -34,12 +34,26 @@ That's the history lesson. Not so bad right? Let's get into the juicy bits now -
 
 ## Ergonomic Keyboards
 
-> What even is *ergonomics*?
+> What even are *ergonomics*?
 
 Honestly, you'll probably get a different definition from ergonomists, corporate executives, and hobbyists like myself. What I can give you though is what I would define it as: **Adjusting your work environment to reduce risk of injury and discomfort.** What might surprise you is that what will be ergonomic for me is not what will be ergonomic for you, so take everything with a grain of salt - try it out if you're able and see what works for you.
 
+> Time to dive head first down the rabbit hole...
+
 ### Membrane Keyboards
-These are usually the first think you think of when you hear "ergonomic keyboard". They are often sculpted, membrane keyboards that are usually very cheap. I advise staying away from these as they provide very little benefit over a flat keyboard. The goal for these is that your hands will be slightly less prone which can help torsion-related RSI, but if the keyboard is really cheap, you might end up with keys getting stuck or the wear and tear may be horrendous so you'd be reversing your benefits by mashing the keys to get a proper stroke. If you must have one of these keyboards, I will only recommend the Microsoft Sculpt Keyboard which is already pretty steep (at around $100). The cost of this could be better put toward a different type of keyboard that you can remap to your liking.
+These are usually the first think you think of when you hear "ergonomic keyboard". They are often sculpted keyboards that are usually very cheap. I advise staying away from these as they provide very little benefit over a flat keyboard. The goal for these is that your hands will be slightly less prone which can help ulnar-torsion-related RSI, but if the keyboard is really cheap, you might end up with keys getting stuck or the wear and tear may be horrendous so you'd be reversing your benefits by mashing the keys to get a proper stroke. If you must have one of these keyboards, I will only recommend the Microsoft Sculpt Keyboard which is already pretty steep (at around $100). The cost of this could be better put toward a different type of keyboard that you can remap to your liking.
+
+### Mecha-Membrane Keyboards
+Razer is the king of these. These combine the low cost nature of membrane keyboards with a mechanical-like feel. Purists might tell you that it feels nothing like a mechanical keyboard and that wouldn't be totally incorrect - the membrane mechanism is simply too different from the mechanical switch that the feel cannot be identically replicated. It's honestly pretty close though if you have a tight budget. I have yet to see a tented, sculpted, or split version of this but any keyboard that will get you to type less is a good one.
+
+> Going deeper...
 
 ### Mechanical Keyboards
-CLICK-CLACK-CLICK-CLACK! These are often very loud and present only nominal benefits to flat, membrane keyboards. One benefit is the key mechanism - the additional key travel length means you don't need to bottom-out (push the key all the way down to the bottom of the board) in order to get a stroke. You can theoretically float your hands above the keyboard and reduce impact on your fingers. This is, however, extremely hard to do consistently so it's not advised that you rely on this for your ergonomics. The other benefit is that you typically have the ability to re-map the layout. If the keyboard supports QMK/Via(l) or ZMK firmware, then you can move keys around and add key combos, chording,
+These are often very loud and present only nominal benefits to (mecha-)membrane keyboards. One benefit is the key mechanism - the additional key travel length means you don't need to bottom-out (push the key all the way down to the bottom of the board) in order to get a stroke. You can theoretically float your hands above the keyboard and reduce impact on your fingers. This is, however, extremely hard to do consistently so it's not advised that you rely on this for your ergonomics. The other benefit is that you typically have the ability to re-map the layout. If the keyboard supports QMK/Via(l) or ZMK firmware, then you can move keys around and add key combos, chording, macros, you name it! Customization is its own form of ergonomics because you can move keys to the places that make the most sense for you, your hands, and your typing style.
+For entry-level pricing, you really can't beat Nuphy or Keychron here. 
+
+> Going deeper...
+
+### Split Keyboards (Flat)
+> What's the deal with split keyboards anyway?
+
