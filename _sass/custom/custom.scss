@@ -429,16 +429,16 @@ kbd {
   display: inline-block;
   margin: 0 0.1em;
   padding: 0.1em 0.6em;
-  font-family: $body-font-family;
+  font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
   color: hsl(210,8%,15%);
-  text-shadow: 0 1px 0 hsl(0,0%,100%);
   background-color: hsl(210,8%,90%);
   border: 1px solid hsl(210,8%,65%);
-  border-radius: 2px;
-  box-shadow: 0 1px 1px hsl(210deg, 8%, 5% / 15%), inset 0 1px 0 0 hsl(0deg, 0%, 100%);
+  border-radius: 4px;
+  box-shadow: 0 3px 0px #737475;
   overflow-wrap: break-word;
   white-space: nowrap;
   text-transform: uppercase;
+  font-weight: bolt;
 }
 
 .site-nav.nav-open {
