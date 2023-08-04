@@ -28,13 +28,13 @@ As with most requests from customers, clients, or product, the scope can be nebu
 
 This ask is no exception. For the intents of this situation though, let’s assume we have a decently-scoped product spec.
 
->  - Proximity Search: given an address qualifier and a proximity bound, find all customer addresses within the region + the proximity bound
+>  - Buffer Search: given an address qualifier and a proximity bound, find all customer addresses within the region + the proximity bound ("as the crow flies")
 >  - Radius Search: given an address qualifier and a radius, find all customer addresses within the radius from the centroid of the region
 >  - Assume US addresses only
 > -  REQUIRED: For regions whose granularity is **greater than or equal to** a 3-digit zip code, use **Radius Search**
->  - NICE TO HAVE: For regions whose granularity is **less than** a 3-digit zip code (e.g.. county or state), use **Proximity Search**.
+>  - NICE TO HAVE: For regions whose granularity is **less than** a 3-digit zip code (e.g.. county or state), use **Buffer Search**.
 >  - NICE TO HAVE: Accuracy **97%** or higher
->  - NICE TO HAVE: Proximity search on all address qualifiers:
+>  - NICE TO HAVE: Buffer search on all address qualifiers:
 >    - Full Address
 >    - City/State
 >    - 3-digit zip
@@ -70,9 +70,12 @@ With these in mind, let’s get into the solution.
 
 *drum roll* 🥁
 
-JSON files!
+🎉 JSON files! 🎉
 
-That’s right! Let’s pre-process the geometry files and create a mapping of `qualifier: centroid` to give us our centroid for the calculation.
+{: .note}
+If you later want to seed your database with these files, you can fairly easily do so.
+
+That’s right! Let’s pre-process the geometry files and create a mapping of `qualifier: centroid` to give us our centroid for the calculation. 
 
 #### Step 1: Download the file
 
@@ -115,6 +118,8 @@ pip install ijson
 ```python
 import ijson
 
+# alternatively, if you're worried about oddly shaped polygons, you can use
+# the polylabel algorithm to ensure the point lands in the "visual center"
 def centroid(points: list):
     x, y = zip(*points)
     l = len(x)
@@ -124,12 +129,15 @@ mapping = {}
 
 with open("./output.json") as f:
   for record in ijson.items(f, "features"):
-    mapping[record["zipcode"]] = centroid(record["geometry"]["coordinates"])
+    mapping[record["properties"]["ZCTA520"]] = centroid(record["geometry"]["coordinates"])
 
 with open("./zipcode-centroid.json") as f:
   json.dumps(f, mapping)
 ```
 {: title="script.py"}
+
+{: .note}
+Each layer will have its own mapping, so there may be better ways to do this and richer logic paths to accommodate them in one script. This is just one example.
 
 Which should result in a mapping file like:
 
@@ -143,7 +151,7 @@ Which should result in a mapping file like:
 {: title="zipcode-centroid.json"}
 
 {: .info }
-Repeat this for each file/layer that you need to support.
+Repeat this for each file/layer/address qualifier that you need to support.
 
 And there you have it! A file you can now use to get the centroid from an address qualifier. 
 
@@ -152,7 +160,7 @@ Assuming you have a `customer_addresses` table with `latitude` and `longitude` c
 
 ```sql
 SELECT id, (
-  3959 * 
+  6371 * 
   acos(
     cos(
       radians({centroid_latitude})
@@ -183,9 +191,24 @@ Be sure to replace `{centroid_latitude}`, `{centroid_longitude}`,  and `{radius_
 
 That’s pretty much it. **Radius Search**  in just a few steps. 
 
+#### Step 5: Optimization (Optional)
+Note that the Haversine calculation must be run for each record in the database. If your database is millions of records large, this will become problematic. The easiest way to filter this down is to do basic geometry.
+
+If Haversine can be viewed as a circle around a given point with a supplied radius, we can also use that radius to overlay a "bounding box" around the circle such that the sides of the bounding box are equal to the diameter of the circle. In this way, we can do a very rudimentary query to filter our results first before calculating the Haversine distance:
+
+```sql
+SELECT *
+FROM customer_addresses
+WHERE
+latitude BETWEEN (centroid_latitude + radius) AND (centroid_latitude - radius) 
+AND
+longitude BETWEEN (centroid_longitude + radius) AND
+(centroid_longitude - radius)
+```
+
 #### Estimate
 
-*Time estimate: 1-2 weeks*
+`Time estimate: 1-2 weeks`
 
 Realistically, this could just be a single sprint’s worth of work considering differing PR processes, testing and validation, etc. I would be surprised if an engineer took longer than 2 weeks to do this but there may be unexpected issues with this approach given all of the variables that could affect this.
 
@@ -373,7 +396,7 @@ Now that we’ve added some performance optimizations to our **proximity search*
 
 #### Estimate
 
-*Time estimate: 2-4 weeks*
+`Time estimate: 2-4 weeks`
 
 The extra variance here is mainly due to testing and optimization. It’s not a huge difference but it’s worth taking into account considering the business priorities.
 
@@ -391,17 +414,17 @@ The extra variance here is mainly due to testing and optimization. It’s not a 
 ### Alternatives
 What? You thought it was over? Of course there are other ways to go about this!
 
-1. **Bounding Box search**: Similar to Solution 1, this is an overlay style search that would use the "radius" as a lat/lng adjustment. This is a good idea if you have a lot of addresses or highly clustered data because Haversine requires calculating the distance regardless of the location of the facility. Using bounding box math, we can filter for only those with latitudes or longitudes within the adjusted values. 
+1. **Bounding Box Only Search**: Simpler than Solution 1, this is an overlay style search that would use the "radius" as a lat/lng adjustment. This is a good idea if you can sacrifice accuracy for performance since this is an easily optimized query:
 ```sql
 SELECT *
 FROM customer_addresses
 WHERE
-latitude <= (centroid_latitude + radius) AND
-latitude >= (centroid_latitude - radius) AND
-longitude <= (centroid_longitude + radius) AND
-longitude >= (centroid_longitude - radius)
+latitude BETWEEN (centroid_latitude + radius) AND (centroid_latitude - radius) 
+AND
+longitude BETWEEN (centroid_longitude + radius) AND
+(centroid_longitude - radius)
 ```
-2. **PostGIS Anyway**: You don't only need to install PostGIS if you want to do a buffer search. PostGIS is capable of calculating centroids on the fly as well as managing your Haversine/Radius/Bounding Box searches in great time! Please take it into account if the benefits outweigh the additional complexity costs.
+2. **PostGIS Anyway**: PostGIS is more than capable of calculating centroids on the fly as well as managing your Haversine/Radius/Bounding Box searches in great time! Please take it into account if the benefits outweigh the additional complexity costs.
 3. **Third Party Services**: In many cases, I prefer to build over buy because there's often a desire for new or improved features on top of it. That said, this specific instance is the perfect "buy" decision. Geocoder.ca has very affordable [pricing options](https://geocoder.ca/pricing) for the growing startup that needs something quick. A sprint's worth of work for one engineer is more expensive than this service. The drawbacks (of course) are that it's not as easy to build off of.
 4. Others? If you have any other suggestions for solving this problem, feel free to reach out at my email on my [GitHub](https://github.com/ObiWanKeoni).
 
