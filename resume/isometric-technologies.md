@@ -22,4 +22,5 @@ languages:
 
 - Worked with our DevOps engineer to transition our legacy CloudFormation IAC to Terraform
 - Worked with two other engineers to establish a new external API philosophy at the company
-- Implemented PostGIS and [Proximity Search](proximity-search)
+- Implemented [Proximity Search](proximity-search).
+- Built out a richer Analytics integration with Looker
