@@ -13,7 +13,7 @@ has_toc: false
  | sort: "date" | reverse -%}
 
 # Keoni Garner
-<a class="gradient-text fs-3 mt-0" href="https://github.com/ObiWanKeoni"><i class="lni lni-github"></i>ObiWanKeoni<i class="lni lni-arrow-top-right"></i></a>
+<a style="text-decoration: none; font-weight: bold;" class="gradient-text fs-3 mt-0" href="https://github.com/ObiWanKeoni"><i class="lni lni-github"></i>ObiWanKeoni<i class="lni lni-arrow-top-right"></i></a>
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
 Bakersfield, CA • Remote
