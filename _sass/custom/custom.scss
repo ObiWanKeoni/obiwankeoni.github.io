@@ -2,6 +2,17 @@
   color: $grey-dk-300 !important;
 }
 
+a:not([class]) {
+  text-decoration: underline;
+  text-decoration-color: $yellow-000;
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration-color: lighten($yellow-000, 25%);
+    color: lighten($yellow-000, 25%);
+  }
+}
+
 img.blog-img {
   width: 100%;
   border-radius: 5px;
