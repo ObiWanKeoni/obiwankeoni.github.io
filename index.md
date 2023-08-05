@@ -12,7 +12,13 @@ has_toc: false
  | where: "parent", "Blog"
  | sort: "date" | reverse -%}
 
-# <a style="text-decoration: none;" href="https://github.com/ObiWanKeoni"><i class="lni lni-github gradient-text fs-6"></i>ObiWanKeoni</a>
+# Keoni Garner
+<a class="gradient-text fs-3" href="https://github.com/ObiWanKeoni">
+  <i class="lni lni-github"></i>
+  ObiWanKeoni
+  <i class="lni lni-arrow-top-right"></i>
+</a>
+
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
