@@ -261,7 +261,7 @@ figure,pre {
       width: 1em;
       background-color: $grey-lt-200;
       border-radius: 50%;
-      display: inline-block;
+      display: none;
       margin: 0 0.45em;
       flex-grow: 0;
     }
@@ -380,6 +380,7 @@ img.hero-image,
 table {
   display: table;
   min-width: 100%;
+  border-collapse: collapse;
 }
 
 th,
@@ -387,7 +388,7 @@ td {
   @include fs-3;
 
   min-width: 7.5rem;
-  padding: $sp-1 $sp-2;
+  padding: $sp-2 $sp-3;
   border: none;
 }
 
@@ -412,6 +413,8 @@ thead {
   border-bottom: $border $border-color;
   th {
     text-transform: uppercase;
+    background-color: $table-header-background-color;
+    color: $table-header-color;
   }
 }
 
