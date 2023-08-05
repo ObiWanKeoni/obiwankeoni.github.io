@@ -15,8 +15,10 @@ has_toc: false
 # Keoni Garner
 {: .mb-0}
 
-<a style="text-decoration: none; font-weight: bold;" class="gradient-text" href="https://github.com/ObiWanKeoni"><i class="lni lni-github"></i>ObiWanKeoni</a>
+<a style="text-decoration: none; font-weight: bold;" class="gradient-text" href="https://github.com/ObiWanKeoni">ObiWanKeoni</a>
 {: .mt-0}
+
+<i class="lni lni-github"></i>
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
 Bakersfield, CA • Remote
