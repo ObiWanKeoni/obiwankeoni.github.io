@@ -315,7 +315,7 @@ Visualization:
 
 ![](https://postgis.net/workshops/postgis-intro/_images/index-01.png){: .blog-img}
 
-*From [postgis.net](https://postgis.net/workshops/postgis-intro/_images/index-01.png)*
+*From [postgis.net](http://postgis.net/workshops/postgis-intro/indexing.html)*
 
 Unfortunately, `ogr2ogr` doesn’t automatically add indexes to the shapefile-generated tables so we’ll have to add one ourselves.
 

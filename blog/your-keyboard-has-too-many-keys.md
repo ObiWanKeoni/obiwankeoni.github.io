@@ -50,7 +50,7 @@ Razer is the king of these. These combine the low cost nature of membrane keyboa
 
 ### Mechanical Keyboards
 These are often very loud and present only nominal benefits to (mecha-)membrane keyboards. One benefit is the key mechanism - the additional key travel length means you don't need to bottom-out (push the key all the way down to the bottom of the board) in order to get a stroke. You can theoretically float your hands above the keyboard and reduce impact on your fingers. This is, however, extremely hard to do consistently so it's not advised that you rely on this for your ergonomics. The other benefit is that you typically have the ability to re-map the layout. If the keyboard supports QMK/Via(l) or ZMK firmware, then you can move keys around and add key combos, chording, macros, you name it! Customization is its own form of ergonomics because you can move keys to the places that make the most sense for you, your hands, and your typing style.
-For entry-level pricing, you really can't beat Nuphy or Keychron here. 
+For entry-level value, you really can't beat Nuphy or Keychron here. 
 
 > Going deeper...
 
