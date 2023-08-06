@@ -453,11 +453,9 @@ kbd {
 
 .site-nav {
   display: block;
-  transition: height .75s cubic-bezier(0.075, 0.82, 0.165, 1);
-  
-  @include mq(sm) {
-    height: 0;
-  }
+  transition: height .75s ease-in;
+  height: 0;
+  overflow: hidden;
 }
 
 .site-nav.nav-open {
@@ -482,10 +480,6 @@ kbd {
 
 .search-results {
   max-height: calc(100vh - 4rem);
-}
-
-#main-header {
-  width: $content-width;
 }
 
 .experience {
