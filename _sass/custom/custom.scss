@@ -24,7 +24,7 @@ img.blog-img {
 
 .main {
   padding-top: 3.75rem;
-  animation: fadeInUpBig;
+  animation: fadeInUpBig 0.75s linear;
 }
 
 .main-content {
@@ -433,8 +433,7 @@ i.lni::before {
 i.lni-night,i.lni-sun {
   font-size: 1.25em;
   color: $link-color;
-  animation: rubberBand;
-  animation-duration: 0.1s;
+  animation: rubberBand 1s linear;
 }
 
 kbd {
