@@ -482,6 +482,10 @@ kbd {
   max-height: calc(100vh - 4rem);
 }
 
+#main-header {
+  width: 100vw;
+}
+
 .experience {
   /* inner glow 👇 */
   box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),

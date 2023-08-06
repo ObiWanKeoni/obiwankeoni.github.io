@@ -59,3 +59,12 @@ $purple-shadow-color-hue: 221deg;$purple-shadow-color-saturation: 8%;$purple-sha
   -webkit-filter: brightness(0) invert(0) !important;
   filter: brightness(0) invert(0) !important;
 }
+
+a:not([class]) {
+  text-decoration-color: $blue-100 !important;
+
+  &:hover {
+    text-decoration-color: darken($blue-100, 25%) !important;
+    color: darken($blue-100, 25%) !important;
+  }
+}
