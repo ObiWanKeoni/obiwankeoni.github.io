@@ -1,4 +1,4 @@
-<script defer>
+<script>
 function setTheme(theme) {
   const toggleDarkMode = document.querySelector('#toggle-theme');
   document.querySelector(`link[title]:not([title="${theme}"])`).setAttribute("disabled", "disabled");
@@ -20,22 +20,20 @@ function setTheme(theme) {
   hljs.highlightAll();
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  prefers_dark_theme = window.matchMedia('(prefers-color-scheme: dark)');
-  prefers_dark_theme.addEventListener('change', event => {
-    const newColorScheme = event.matches ? "catppuccin" : "catppuccin-light";
-    setTheme(newColorScheme);
-  });
-  const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
-  setTheme(localStorage.getItem("theme") || newColorScheme);
+prefers_dark_theme = window.matchMedia('(prefers-color-scheme: dark)');
+prefers_dark_theme.addEventListener('change', event => {
+  const newColorScheme = event.matches ? "catppuccin" : "catppuccin-light";
+  setTheme(newColorScheme);
+});
+const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
+setTheme(localStorage.getItem("theme") || newColorScheme);
 
-  jtd.addEvent(document.querySelector('#toggle-theme'), 'click', function(){
-    if (localStorage.getItem("theme") === 'catppuccin-light') {
-      setTheme('catppuccin');
-    } else {
-      setTheme('catppuccin-light');
-    }
-  });
+jtd.addEvent(document.querySelector('#toggle-theme'), 'click', function(){
+  if (localStorage.getItem("theme") === 'catppuccin-light') {
+    setTheme('catppuccin');
+  } else {
+    setTheme('catppuccin-light');
+  }
 });
 </script>
 
