@@ -1,6 +1,8 @@
 <script defer>
 function setTheme(theme) {
   const toggleDarkMode = document.querySelector('#toggle-theme');
+  document.querySelector(`link:not([title="${theme}"])`).setAttribute("disabled", "disabled");
+  document.querySelector(`link[title="${theme}"]`).removeAttribute("disabled");
   jtd.setTheme(theme);
   switch(theme) {
     case 'catppuccin-light':
