@@ -453,7 +453,7 @@ kbd {
 
 .site-nav {
   display: block;
-  transition: height .75s ease-in;
+  transition: height .75s linear;
   height: 0;
   overflow: hidden;
 }
@@ -509,3 +509,25 @@ kbd {
     0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
 }
+
+.site-button path {
+  stroke-dasharray: 24 126.64183044433594;
+  stroke-dashoffset: -38;
+  transition: all .8s cubic-bezier(.645, .045, .355, 1);
+
+
+  .line--2 {
+    stroke-dasharray: 24 70;
+  }
+}
+
+.site-button.nav-open path {
+  .line--1,
+  .line--3 {
+    stroke-dashoffset: -94.1149185097;
+  }
+  .line--2 {
+    stroke-dashoffset: -50;
+  }
+}
+
