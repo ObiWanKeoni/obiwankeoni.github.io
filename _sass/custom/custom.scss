@@ -413,10 +413,6 @@ tbody {
         padding-bottom: $sp-3;
       }
     }
-    
-    &:nth-child(odd) {
-      background-color: $blue-000;
-    }
   }
 }
 
@@ -456,16 +452,15 @@ kbd {
 }
 
 .site-nav {
-  opacity: 0;
-  transition: display 0s linear, opacity .75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: block;
+  transition: height .75s cubic-bezier(0.075, 0.82, 0.165, 1);
   
-  @include mq(md) {
-    opacity: 100%;
+  @include mq(sm) {
+    height: 0;
   }
 }
 
 .site-nav.nav-open {
-  opacity: 100%;
   height: calc(100vh - 7.5rem);
   margin-top: 3.75rem;
   overflow-y: scroll;
