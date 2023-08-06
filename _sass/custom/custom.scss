@@ -472,6 +472,7 @@ kbd {
 
 .site-header #toggle-theme {
   display: block !important;
+  touch-action: manipulation;
 }
 
 .main-header.nav-open {
