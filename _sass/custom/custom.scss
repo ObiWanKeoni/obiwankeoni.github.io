@@ -455,8 +455,14 @@ kbd {
   font-weight: bold;
 }
 
-.site-nav.nav-open {
+.site-nav {
   display: block;
+  opacity: 0;
+  transition: opacity .75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.site-nav.nav-open {
+  opacity: 100%;
   height: calc(100vh - 7.5rem);
   margin-top: 3.75rem;
   overflow-y: scroll;
