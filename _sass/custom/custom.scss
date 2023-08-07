@@ -129,9 +129,11 @@ h1,h2,h3,h4,h5,h6 {
   vertical-align: middle;
   color: $white;
   border-color: $white;
+  text-transform: none;
+  border: 0.5px solid;
   background-color: rgba($white, .2);
   @include fs-2;
-  border-radius: 3px;
+  border-radius: 1em;
 }
 
 .label-blue:not(g) {
