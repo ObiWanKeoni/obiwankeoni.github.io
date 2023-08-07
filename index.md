@@ -18,7 +18,7 @@ has_toc: false
 <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni"><span class="gradient-text">@</span>ObiWanKeoni</a>
 {: .mt-0 .fs-2}
 
-#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io<i class="lni lni-arrow-top-right"></i></a>
+#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
@@ -49,14 +49,14 @@ Bakersfield, CA • Remote
 	  {{ post.description }}
 	  </p>
 	   <span class="fs-4">
-	   <a href= "{{ post.url }}">Read More<i class="lni lni-arrow-right"></i></a>
+	   <a href= "{{ post.url }}">Read More</a>
 	   </span>
    </div>
 </li>
 {% endfor %}
 </ul>
 
-[All Blog Posts<i class="lni lni-arrow-right-circle"></i>](/blog){: .btn .btn-purple .inverse-text}
+[All Blog Posts](/blog)
 {: .mt-4 .mx-auto}
 
 - - -
@@ -72,7 +72,7 @@ Bakersfield, CA • Remote
  {: .label .label-green .ml-0 .mt-0}
  {% endif %}
 
-### [{{child.title}}<i class="lni lni-arrow-right"></i>]({{child.url}})
+### [{{child.title}}]({{child.url}})
 {: .mb-2 .mt-0}
 
 {% for history in child.history %}
@@ -91,6 +91,6 @@ Bakersfield, CA • Remote
 </div>
 {% endfor %}
 
-[View Full Résumé<i class="lni lni-arrow-right-circle"></i>](/resume){: .btn .btn-purple .inverse-text}
+[View Full Résumé](/resume)
 {: .mt-8 .mx-auto}
 
