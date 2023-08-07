@@ -253,13 +253,7 @@ figure,pre {
   font-family: $mono-font-family;
   margin: 0;
   position: relative;
-  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
-    0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
-    0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
-    0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
-  padding: 0.5rem;
   border-radius: 0.7rem;
-  border: 0.5px solid $border-color;
   background-color: $grey-dk-300;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
@@ -284,8 +278,6 @@ figure,pre {
   
     > div.title {
       flex-grow: 1;
-      justify-content: center;
-      align-items: center;
       display: flex;
     }
     
@@ -298,7 +290,8 @@ figure,pre {
       color: $grey-lt-200;
       flex-grow: 0;
       box-shadow: none;
-      padding: 0;
+      padding: 0.25em;
+      // border: 1px solid $grey-lt-100
   
       &:hover {
         color: $white;
