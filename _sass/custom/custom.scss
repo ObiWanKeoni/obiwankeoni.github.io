@@ -283,23 +283,23 @@ figure,pre {
 
       > span {
         font-family: $body-font-family;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 100%;
-          width: 100%;
-          left: 0;
-          height: 4px;
-          border-radius: 2px;
-          background: linear-gradient(
-            75deg,
-            $blue-300 0%,
-            $purple-300 39%,
-            $red-300 61%,
-            $yellow-300 100%
-          );
-        }
+      }
+      
+      > span::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        height: 4px;
+        border-radius: 2px;
+        background: linear-gradient(
+          75deg,
+          $blue-300 0%,
+          $purple-300 39%,
+          $red-300 61%,
+          $yellow-300 100%
+        );
       }
     }
     
