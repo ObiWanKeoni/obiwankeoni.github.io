@@ -68,7 +68,7 @@ Software Engineer
 
 <div class="experience mt-5" markdown=1>
  {% if child.nav_order == 1 %}
- **CURRENT**
+ CURRENT
  {: .label .label-green .ml-0 .mt-0}
  {% endif %}
 
@@ -84,7 +84,7 @@ Software Engineer
 {% endfor %}
 
 {% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>{{ language }}
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>{{ language | capitalize }}
 {: .label }
 {% endfor %}
 
