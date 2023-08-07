@@ -22,13 +22,13 @@ has_toc: false
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
-**Dad**
+Dad
 {: .label .label-blue }
 
-**Husband**
+Husband
 {: .label .label-blue }
 
-**Software Engineer**
+Software Engineer
 {: .label .label-blue }
 
 ### Recent Blog Posts
@@ -84,7 +84,7 @@ Bakersfield, CA • Remote
 {% endfor %}
 
 {% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>**{{ language }}**
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>{{ language }}
 {: .label }
 {% endfor %}
 
