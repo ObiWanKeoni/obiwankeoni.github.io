@@ -13,6 +13,10 @@ a:not([class]) {
   }
 }
 
+svg.checkmark {
+  color: $green-300;
+}
+
 img.blog-img {
   width: 100%;
   border-radius: 5px;
