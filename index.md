@@ -15,7 +15,7 @@ has_toc: false
 # Keoni Garner
 {: .mb-0}
 
-<a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni"><span class="gradient-text">@</span>ObiWanKeoni</a>
+<a style="text-decoration: none; font-weight: bold;" class="no-arrow" href="https://github.com/ObiWanKeoni"><span class="gradient-text">@</span> ObiWanKeoni</a>
 {: .mt-0 .fs-2}
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
