@@ -2,10 +2,6 @@
   color: $grey-dk-300 !important;
 }
 
-strong {
-  color: $white;
-}
-
 a:not([class]) {
   text-decoration: underline;
   text-decoration-color: $yellow-000;
@@ -430,11 +426,11 @@ thead {
   }
 }
 
-i.lni::before {
+svg::before {
   vertical-align: middle;
 }
 
-i.lni-night,i.lni-sun {
+#toggle-theme > svg {
   font-size: 1.25em;
   color: $link-color;
   animation: rubberBand 0.5s linear;
@@ -515,26 +511,5 @@ kbd {
     0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
-}
-
-.site-button path {
-  stroke-dasharray: 24 126.64183044433594;
-  stroke-dashoffset: -38;
-  transition: all .8s cubic-bezier(.645, .045, .355, 1);
-
-
-  .line--2 {
-    stroke-dasharray: 24 70;
-  }
-}
-
-.site-button.nav-open path {
-  .line--1,
-  .line--3 {
-    stroke-dashoffset: -94.1149185097;
-  }
-  .line--2 {
-    stroke-dashoffset: -50;
-  }
 }
 
