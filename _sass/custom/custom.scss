@@ -254,9 +254,10 @@ figure,pre {
   margin: 0;
   position: relative;
   border-radius: 0.7rem;
-  background-color: $grey-dk-300;
+  background-color: $code-background-color;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
+  padding: 0.5em;
 
   > div.window-container {
     @include fs-2;
