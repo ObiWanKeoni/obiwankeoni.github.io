@@ -514,3 +514,7 @@ kbd {
     0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
 }
 
+p > a:not(.no-arrow) > svg {
+  margin-left: 0.25em;
+}
+
