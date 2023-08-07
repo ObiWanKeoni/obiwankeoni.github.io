@@ -2,6 +2,10 @@
   color: $grey-dk-300 !important;
 }
 
+strong {
+  color: $white;
+}
+
 a:not([class]) {
   text-decoration: underline;
   text-decoration-color: $yellow-000;
