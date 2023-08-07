@@ -281,18 +281,17 @@ figure,pre {
       flex-grow: 1;
       display: flex;
 
-      > span {
+      > h4 {
         font-family: $body-font-family;
       }
       
-      > span::before {
+      > h4::before {
         content: "";
         position: absolute;
-        top: 100%;
+        top: 125%;
         width: 100%;
         left: 0;
-        height: 4px;
-        border-radius: 2px;
+        height: 2px;
         background: linear-gradient(
           75deg,
           $blue-300 0%,
