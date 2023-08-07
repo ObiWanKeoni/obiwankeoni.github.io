@@ -4,11 +4,11 @@ function setTheme(theme) {
   jtd.setTheme(theme);
   switch(theme) {
     case 'catppuccin-light':
-      toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
+      toggleDarkMode.innerHTML = '<i class="lni lni-night"></i>';
       localStorage.setItem("theme", "catppuccin-light");
       break;
     case 'catppuccin':
-      toggleDarkMode.innerHTML = '<i class="lni lni-night"></i>';
+      toggleDarkMode.innerHTML = '<i class="lni lni-sun"></i>';
       localStorage.setItem("theme", "catppuccin");
       break;
     default:
