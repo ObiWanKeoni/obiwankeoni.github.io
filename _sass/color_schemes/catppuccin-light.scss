@@ -37,6 +37,8 @@ $body-background-color: $grey-dk-250;
 $body-heading-color: $white;
 $body-text-color: $white;
 $link-color: $white;
+$link-underline-color: $blue-100;
+$link-hover-color: darken($link-underline-color, 25%);
 $nav-child-link-color: $white;
 $sidebar-color: $grey-dk-250;
 $base-button-color: $grey-dk-100;
@@ -58,13 +60,4 @@ $purple-shadow-color-hue: 221deg;$purple-shadow-color-saturation: 8%;$purple-sha
 .filter {
   -webkit-filter: brightness(0) invert(0) !important;
   filter: brightness(0) invert(0) !important;
-}
-
-a:not([class]) {
-  text-decoration-color: $blue-100 !important;
-
-  &:hover {
-    text-decoration-color: darken($blue-100, 25%) !important;
-    color: darken($blue-100, 25%) !important;
-  }
 }

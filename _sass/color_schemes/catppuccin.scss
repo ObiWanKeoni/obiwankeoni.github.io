@@ -36,6 +36,8 @@ $body-background-color: $grey-dk-250;
 $body-heading-color: $white;
 $body-text-color: $grey-lt-100;
 $link-color: $white;
+$link-underline-color: $yellow-000;
+$link-hover-color: lighten($link-underline-color, 25%);
 $nav-child-link-color: $white;
 $sidebar-color: $grey-dk-250;
 $base-button-color: $grey-dk-100;

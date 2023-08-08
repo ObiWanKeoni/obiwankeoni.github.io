@@ -4,12 +4,12 @@
 
 a:not([class]) {
   text-decoration: underline;
-  text-decoration-color: $yellow-000;
+  text-decoration-color: $link-underline-color;
   text-underline-offset: 2px;
 
   &:hover {
-    text-decoration-color: lighten($yellow-000, 25%);
-    color: lighten($yellow-000, 25%);
+    text-decoration-color: lighten($link-underline-color, 25%);
+    color: lighten($link-underline-color, 25%);
   }
 }
 
