@@ -49,7 +49,7 @@ Software Engineer
 	  {{ post.description }}
 	  </p>
 	   <span class="fs-4">
-	   <a href= "{{ post.url }}">Read More</a>
+	   <a href= "{{ post.url }}">Read Article</a>
 	   </span>
    </div>
 </li>
@@ -68,7 +68,7 @@ Software Engineer
 
 <div class="experience mt-5" markdown=1>
  {% if child.nav_order == 1 %}
- CURRENT
+ Active
  {: .label .label-green .ml-0 .mt-0}
  {% endif %}
 

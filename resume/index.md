@@ -18,7 +18,7 @@ Software engineer with 5+ years of experience across a wide range of industries.
 - - -
 
 {% if child.nav_order == 1 %}
-Current
+Active
 {: .label .label-green .ml-0 .my-0}
 {% endif %}
 
