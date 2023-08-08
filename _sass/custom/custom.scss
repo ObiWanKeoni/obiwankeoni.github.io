@@ -538,5 +538,5 @@ p > a:not(.no-arrow) > svg {
 }
 
 [class^=devicon-], [class*=" devicon-"] {
-  line-height: inherit;
+  line-height: inherit !important;
 }
