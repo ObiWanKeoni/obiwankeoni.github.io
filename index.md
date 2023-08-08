@@ -40,7 +40,7 @@ Software Engineer
    <img src="{{ post.image_link }}" alt="{{ post.title }}" class="card-image">
    <div class="card-body">
 	   <span class="fs-3">
-	   {{ post.date }} 
+	   {{ post.date | date_to_string }} 
 	   </span>
 	   <h3 class="mt-0 mb-0">
 	   {{ post.title }}
