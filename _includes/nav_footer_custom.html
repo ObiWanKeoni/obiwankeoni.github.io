@@ -1,116 +1,135 @@
 <script defer>
-function setTheme(theme) {
-  console.log(`changing theme to ${theme}`);
-  const toggleDarkMode = document.querySelector('#toggle-theme');
-  switch(theme) {
-    case 'catppuccin-light':
-      toggleDarkMode.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>';
-      document.querySelector(`link[title="catppuccin"]`).setAttribute("disabled", "disabled");
-      localStorage.setItem("theme", "catppuccin-light");
-      break;
-    case 'catppuccin':
-      toggleDarkMode.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>';
-      document.querySelector(`link[title="catppuccin"]`).removeAttribute("disabled");
-      localStorage.setItem("theme", "catppuccin");
-      break;
-    default:
-      toggleDarkMode.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>';
-      break;
-  }
-  hljs.highlightAll();
-}
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  prefers_dark_theme = window.matchMedia('(prefers-color-scheme: dark)');
-  prefers_dark_theme.addEventListener('change', event => {
-    const newColorScheme = event.matches ? "catppuccin" : "catppuccin-light";
-    setTheme(newColorScheme);
-  });
-  const newColorScheme = prefers_dark_theme.matches ? "catppuccin" : "catppuccin-light";
-  setTheme(localStorage.getItem("theme") || newColorScheme);
-
-  jtd.addEvent(document.querySelector('#toggle-theme'), 'click', function(){
-    if (localStorage.getItem("theme") === 'catppuccin-light') {
-      setTheme('catppuccin');
-    } else {
-      setTheme('catppuccin-light');
+  function setTheme(theme) {
+    console.log(`changing theme to ${theme}`);
+    const toggleDarkMode = document.querySelector("#toggle-theme");
+    switch (theme) {
+      case "catppuccin-light":
+        toggleDarkMode.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>';
+        document
+          .querySelector(`link[title="catppuccin"]`)
+          .setAttribute("disabled", "disabled");
+        localStorage.setItem("theme", "catppuccin-light");
+        break;
+      case "catppuccin":
+        toggleDarkMode.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>';
+        document
+          .querySelector(`link[title="catppuccin"]`)
+          .removeAttribute("disabled");
+        localStorage.setItem("theme", "catppuccin");
+        break;
+      default:
+        toggleDarkMode.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 icon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>';
+        break;
     }
+    hljs.highlightAll();
+  }
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    prefers_dark_theme = window.matchMedia("(prefers-color-scheme: dark)");
+    prefers_dark_theme.addEventListener("change", (event) => {
+      const newColorScheme = event.matches ? "catppuccin" : "catppuccin-light";
+      setTheme(newColorScheme);
+    });
+    const newColorScheme = prefers_dark_theme.matches
+      ? "catppuccin"
+      : "catppuccin-light";
+    setTheme(localStorage.getItem("theme") || newColorScheme);
+
+    jtd.addEvent(document.querySelector("#toggle-theme"), "click", function () {
+      if (localStorage.getItem("theme") === "catppuccin-light") {
+        setTheme("catppuccin");
+      } else {
+        setTheme("catppuccin-light");
+      }
+    });
   });
-});
 </script>
 
 <script defer>
-document.addEventListener("DOMContentLoaded", function(event) { 
-  let blocks = document.querySelectorAll("pre");
-  blocks.forEach((block) => {
-    let code = block.querySelector("code");
-    const language = code.classList[0].replace('language-', '');
-    const terminalLanguages = ["bash", "shell"];
-    
-    const title = terminalLanguages.includes(language) ? "Terminal" : (block.getAttribute("title") || language);
+  document.addEventListener("DOMContentLoaded", function (event) {
+    let blocks = document.querySelectorAll("pre");
+    blocks.forEach((block) => {
+      let code = block.querySelector("code");
+      const language = code.classList[0].replace("language-", "");
+      const terminalLanguages = ["bash", "shell"];
 
-    if (terminalLanguages.includes(language)) {
-      code.insertAdjacentHTML("afterbegin", "$ ");
+      const title = terminalLanguages.includes(language)
+        ? "Terminal"
+        : block.getAttribute("title") || language;
+
+      if (terminalLanguages.includes(language)) {
+        code.insertAdjacentHTML("afterbegin", "$ ");
+      }
+
+      let windowContainer = block.querySelector("div.window-container");
+      if (navigator.clipboard) {
+        let button = document.createElement("button");
+        button.classList.add("btn");
+
+        button.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" /></svg>';
+        code.insertAdjacentElement("beforebegin", button);
+
+        button.addEventListener("click", async () => {
+          await copyCode(block, button);
+        });
+      }
+    });
+
+    async function copyCode(block, button) {
+      let code = block.querySelector("code");
+      let text = code.innerText.replace("$ ", "");
+
+      await navigator.clipboard.writeText(text);
+
+      button.innerHTML =
+        '<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" /></svg>';
+
+      setTimeout(() => {
+        button.innerHTML =
+          '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" /></svg>';
+      }, 1000);
     }
+  });
+</script>
 
-    let windowContainer = block.querySelector("div.window-container");
-    if (navigator.clipboard) {
-      let button = document.createElement("button");
-      button.classList.add("btn");
-  
-      button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" /></svg>';
-      code.insertAdjacentElement("beforebegin", button);
-  
-      button.addEventListener("click", async () => {
-        await copyCode(block, button);
+<script defer>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    const main = document.getElementById("top");
+    const menuButton = document.getElementById("menu-button");
+
+    jtd.addEvent(menuButton, "click", function (e) {
+      e.preventDefault();
+
+      if (main.classList.contains("nav-open")) {
+        main.classList.remove("nav-open");
+      } else {
+        main.classList.add("nav-open");
+      }
+    });
+  });
+</script>
+
+<script defer>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    const internalLinkSVG =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>';
+    const externalLinkSVG =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" /></svg>';
+
+    document
+      .querySelectorAll(
+        "h4>a:not(.no-arrow):not(.anchor-heading),p>a:not(.no-arrow)"
+      )
+      .forEach((link) => {
+        if (link.hostname !== location.hostname) {
+          link.insertAdjacentHTML("beforeend", externalLinkSVG);
+        } else {
+          link.insertAdjacentHTML("beforeend", internalLinkSVG);
+        }
       });
-    }
   });
-  
-  async function copyCode(block, button) {
-    let code = block.querySelector("code");
-    let text = code.innerText.replace("$ ", "");
-  
-    await navigator.clipboard.writeText(text);
-  
-    button.innerHTML = '<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" /></svg>';
-  
-    setTimeout(() => {
-      button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" /></svg>';
-    }, 1000);
-  }
-});
-</script>
-
-
-<script defer>
-document.addEventListener("DOMContentLoaded", function(event) { 
-  const main = document.getElementById('top');
-  const menuButton = document.getElementById('menu-button');
-
-  jtd.addEvent(menuButton, 'click', function(e){
-    e.preventDefault();
-
-    if (main.classList.contains('nav-open')) {
-      main.classList.remove('nav-open');
-    } else {
-      main.classList.add('nav-open');
-    }
-  });
-});
-</script>
-
-<script defer>
-document.addEventListener("DOMContentLoaded", function(event) { 
-  const internalLinkSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>';
-  const externalLinkSVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" /></svg>';
-  
-  document.querySelectorAll("h4>a:not(.no-arrow):not(.anchor-heading),p>a:not(.no-arrow)").forEach((link) => {
-    if (link.hostname !== location.hostname) {
-      link.insertAdjacentHTML("beforeend", externalLinkSVG);
-    } else {
-      link.insertAdjacentHTML("beforeend", internalLinkSVG);
-    }
-  });
-});
 </script>

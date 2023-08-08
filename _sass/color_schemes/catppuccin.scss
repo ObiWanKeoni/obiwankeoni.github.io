@@ -50,8 +50,26 @@ $table-header-background-color: rgba($yellow-300, 0.2);
 $table-header-color: $yellow-300;
 $search-background-color: $grey-dk-300;
 $search-result-preview-color: $grey-lt-000;
-$border-color: rgba($grey-dk-200, .6);
-$background: linear-gradient(to left top, #11111b, #11111b, #11111b, #11111b, #11111b, #12121d, #13141e, #141520, #161723, #191a27, #1b1c2a, #1e1e2e);
-$shadow-color-hue: 240deg;$shadow-color-saturation: 37%;$shadow-color-lightness: 0%;
-$purple-shadow-color-hue: 268deg;$purple-shadow-color-saturation: 45%;$purple-shadow-color-lightness: 36%;
+$border-color: rgba($grey-dk-200, 0.6);
+$background: linear-gradient(
+    to left top,
+    #11111b,
+    #11111b,
+    #11111b,
+    #11111b,
+    #11111b,
+    #12121d,
+    #13141e,
+    #141520,
+    #161723,
+    #191a27,
+    #1b1c2a,
+    #1e1e2e
+);
+$shadow-color-hue: 240deg;
+$shadow-color-saturation: 37%;
+$shadow-color-lightness: 0%;
+$purple-shadow-color-hue: 268deg;
+$purple-shadow-color-saturation: 45%;
+$purple-shadow-color-lightness: 36%;
 $image-filter: brightness(0) invert(1);

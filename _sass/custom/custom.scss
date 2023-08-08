@@ -21,7 +21,8 @@ svg.checkmark {
 img.blog-img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+  box-shadow:
+    0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
@@ -78,13 +79,13 @@ img.blog-img {
         content: "•";
       }
     }
-    
+
     > li.blog {
       border-radius: 20px;
       margin-left: -1.4em;
       overflow: hidden;
       border: 1px solid $border-color;
-      
+
       > img.card-image {
         width: 100%;
         height: 12em;
@@ -93,7 +94,6 @@ img.blog-img {
         object-position: center center;
         border-radius: inherit;
 
-        
         @include mq(md) {
           height: 16em;
         }
@@ -102,7 +102,7 @@ img.blog-img {
       > div.card-body {
         padding: 1em;
       }
-      
+
       &::before {
         content: none;
         margin-left: 0;
@@ -115,7 +115,12 @@ img.blog-img {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: $white;
 }
@@ -135,8 +140,8 @@ h1,h2,h3,h4,h5,h6 {
   border-color: $white;
   text-transform: capitalize;
   border: 0.5px solid;
-  background-color: rgba(205,214,244,0.2);
-  font-size: .6875rem !important;
+  background-color: rgba(205, 214, 244, 0.2);
+  font-size: 0.6875rem !important;
   border-radius: 1em;
   vertical-align: middle;
   backdrop-filter: blur(23px);
@@ -145,31 +150,31 @@ h1,h2,h3,h4,h5,h6 {
 .label-blue:not(g) {
   color: $blue-300;
   border-color: $blue-300;
-  background-color: rgba($blue-300, .2);
+  background-color: rgba($blue-300, 0.2);
 }
 
 .label-green:not(g) {
   color: $green-300;
   border-color: $green-300;
-  background-color: rgba($green-300, .2);
+  background-color: rgba($green-300, 0.2);
 }
 
 .label-purple:not(g) {
   color: $purple-300;
   border-color: $purple-300;
-  background-color: rgba($purple-300, .2);
+  background-color: rgba($purple-300, 0.2);
 }
 
 .label-red:not(g) {
   color: $red-300;
   border-color: $red-300;
-  background-color: rgba($red-300, .2);
+  background-color: rgba($red-300, 0.2);
 }
 
 .label-yellow:not(g) {
   color: $yellow-300;
   border-color: $yellow-300;
-  background-color: rgba($yellow-300, .2);
+  background-color: rgba($yellow-300, 0.2);
 }
 
 div.highlight {
@@ -178,7 +183,7 @@ div.highlight {
 }
 
 i {
- margin: 0 .2em;
+  margin: 0 0.2em;
 }
 
 .filter {
@@ -194,10 +199,10 @@ body {
 }
 
 .main-header {
-  background-color: rgba($sidebar-color, .6) !important;
+  background-color: rgba($sidebar-color, 0.6) !important;
   backdrop-filter: blur(5px);
   z-index: 2;
-  
+
   @include mq(md) {
     display: block !important;
     position: fixed !important;
@@ -214,15 +219,13 @@ body {
 }
 
 .side-bar {
-  background-color: rgba($sidebar-color, .6) !important;
+  background-color: rgba($sidebar-color, 0.6) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   position: fixed;
   z-index: 1;
   width: 100%;
-  
 
-  
   @include mq(md) {
     width: $nav-width !important;
   }
@@ -234,13 +237,7 @@ body {
 }
 
 .gradient-text {
-  background-image: linear-gradient(
-    75deg,
-    $blue-300 0%,
-    $purple-300 39%,
-    $red-300 61%,
-    $yellow-300 100%
-  ) !important;
+  background-image: linear-gradient(75deg, $blue-300 0%, $purple-300 39%, $red-300 61%, $yellow-300 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -254,8 +251,8 @@ html {
   min-height: 100vh;
 }
 
-
-figure,pre {
+figure,
+pre {
   font-family: $mono-font-family;
   margin: 0;
   position: relative;
@@ -273,7 +270,7 @@ figure,pre {
     justify-content: center;
     align-items: center;
     display: none;
-    
+
     > div.circle {
       height: 1em;
       width: 1em;
@@ -283,7 +280,7 @@ figure,pre {
       margin: 0 0.45em;
       flex-grow: 0;
     }
-  
+
     > div.title {
       flex-grow: 1;
       display: flex;
@@ -291,7 +288,7 @@ figure,pre {
       > h4 {
         font-family: $body-font-family;
       }
-      
+
       > h4::before {
         content: "";
         position: absolute;
@@ -299,18 +296,11 @@ figure,pre {
         width: 100%;
         left: 0;
         height: 2px;
-        background: linear-gradient(
-          75deg,
-          $blue-300 0%,
-          $purple-300 39%,
-          $red-300 61%,
-          $yellow-300 100%
-        );
+        background: linear-gradient(75deg, $blue-300 0%, $purple-300 39%, $red-300 61%, $yellow-300 100%);
       }
     }
-    
   }
-  
+
   > button {
     background: none !important;
     display: flex;
@@ -330,7 +320,6 @@ figure,pre {
       border-color: $white !important;
     }
   }
-
 
   > label {
     display: block;
@@ -354,10 +343,10 @@ figure,pre {
     padding: 0.2em 0.15em;
     font-weight: 400;
     border: none;
-    border-radius: $border-radius; 
+    border-radius: $border-radius;
     color: $blue-300;
     border-color: $blue-300;
-    background-color: rgba($blue-300, .2);
+    background-color: rgba($blue-300, 0.2);
   }
 }
 
@@ -378,19 +367,19 @@ code.hljs {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $grey-dk-300; 
+  background: $grey-dk-300;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $white; 
+  background: $white;
   border: 1px solid $grey-dk-300;
-  border-radius: 20px;       /* roundness of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $grey-lt-300; 
+  background: $grey-lt-300;
 }
 
 img.hero-image,
@@ -401,7 +390,6 @@ img.hero-image,
   object-fit: cover;
   object-position: center center;
 }
-
 
 // Tables
 // stylelint-disable max-nesting-depth, selector-no-type, selector-max-type
@@ -434,7 +422,7 @@ tbody {
   tr {
     border: none;
     background-color: $table-background-color;
-    
+
     &:last-of-type {
       td {
         padding-bottom: $sp-3;
@@ -469,10 +457,18 @@ kbd {
   display: inline-block;
   margin: 0 0.1em;
   padding: 0.1em 0.6em;
-  font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
-  color: hsl(210,8%,15%);
-  background-color: hsl(210,8%,90%);
-  border: 1px solid hsl(210,8%,65%);
+  font-family:
+    system-ui,
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    roboto,
+    "Helvetica Neue",
+    arial,
+    sans-serif;
+  color: hsl(210, 8%, 15%);
+  background-color: hsl(210, 8%, 90%);
+  border: 1px solid hsl(210, 8%, 65%);
   border-radius: 4px;
   box-shadow: 0 3px 0px #737475;
   overflow-wrap: break-word;
@@ -483,7 +479,7 @@ kbd {
 
 .site-nav {
   display: block;
-  transition: height .5s linear;
+  transition: height 0.5s linear;
   height: 0;
   overflow: hidden;
 }
@@ -530,12 +526,13 @@ kbd {
 
 .search-input {
   @include mq(md) {
-    background: transparent
+    background: transparent;
   }
 }
 
 .btn-purple {
-  box-shadow: 0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
+  box-shadow:
+    0px 0.4px 0.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.1px 1.4px 1.6px -0.8px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.3px 3.5px 4px -1.7px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36),
     0.7px 8.6px 9.7px -2.5px hsla($shadow-color-hue, $shadow-color-saturation, $shadow-color-lightness, 0.36);
@@ -545,6 +542,7 @@ p > a:not(.no-arrow) > svg {
   margin-left: 0.25em;
 }
 
-[class^=devicon-], [class*=" devicon-"] {
+[class^="devicon-"],
+[class*=" devicon-"] {
   line-height: inherit !important;
 }

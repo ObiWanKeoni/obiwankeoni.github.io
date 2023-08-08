@@ -2,16 +2,17 @@
 layout: default
 ---
 
-<img class="filter" src="{{ page.image_link }}" alt="{{ page.title }}">
+<img class="filter" src="{{ page.image_link }}" alt="{{ page.title }}" />
 
 {% for history in page.history %}
 <span class="mb-0 mt-1">{{ history.dates }}</span>
 <h4 class="mb-1 mt-0"><strong>{{ history.title }}</strong></h4>
-<br>
-{% endfor %}
-
-{% for language in page.languages %}
-<span class="label mt-2"><i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnet' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"></i><strong>{{ language }}</strong></span>
-{% endfor %}
-
-{{ content }}
+<br />
+{% endfor %} {% for language in page.languages %}
+<span class="label mt-2"
+  ><i
+    class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnet' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"
+  ></i
+  ><strong>{{ language }}</strong></span
+>
+{% endfor %} {{ content }}
