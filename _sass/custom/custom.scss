@@ -122,18 +122,18 @@ h1,h2,h3,h4,h5,h6 {
 // and the accompanying PR
 .label:not(g) {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.16em 0.56em;
-  margin-right: $sp-1;
+  padding: 0.26em 0.76em;
+  margin-right: 0.25rem;
   vertical-align: middle;
-  color: $white;
-  border-color: $white;
-  text-transform: none;
+  color: #cdd6f4;
+  border-color: #cdd6f4;
+  text-transform: capitalize;
   border: 0.5px solid;
-  background-color: rgba($white, .2);
-  @include fs-2;
+  background-color: rgba(205,214,244,0.2);
+  font-size: .6875rem !important;
   border-radius: 1em;
+  vertical-align: middle;
+  backdrop-filter: blur(23px);
 }
 
 .label-blue:not(g) {
@@ -537,3 +537,6 @@ p > a:not(.no-arrow) > svg {
   margin-left: 0.25em;
 }
 
+[class^=devicon-], [class*=" devicon-"] {
+  line-height: inherit;
+}
