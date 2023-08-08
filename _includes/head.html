@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
     <script>
     // Render blocking JS:
     if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
@@ -18,7 +19,6 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-    <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
   
     {% if site.ga_tracking != nil %}
       {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
