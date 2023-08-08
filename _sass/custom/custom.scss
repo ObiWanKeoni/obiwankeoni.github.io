@@ -182,8 +182,8 @@ i {
 }
 
 .filter {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
+  -webkit-filter: $image-filter;
+  filter: $image-filter;
   height: 8rem;
   margin: 0 auto;
   display: block;

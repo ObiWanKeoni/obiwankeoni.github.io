@@ -55,9 +55,4 @@ $border-color: rgba($grey-dk-200, .6);
 $background: $grey-dk-250;
 $shadow-color-hue: 221deg;$shadow-color-saturation: 8%;$shadow-color-lightness: 48%;
 $purple-shadow-color-hue: 221deg;$purple-shadow-color-saturation: 8%;$purple-shadow-color-lightness: 48%;
-
-
-.filter {
-  -webkit-filter: brightness(0) invert(0) !important;
-  filter: brightness(0) invert(0) !important;
-}
+$image-filter: brightness(0) invert(0);
