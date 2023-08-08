@@ -246,7 +246,6 @@ body {
 }
 
 html {
-  font-size: 18px !important;
   background: $grey-dk-300;
   background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
   background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
@@ -368,7 +367,6 @@ code.hljs {
   display: block;
   line-height: 2em;
   overflow-x: auto;
-  font-size: .9em !important;
   padding: 0.5em !important;
 }
 
