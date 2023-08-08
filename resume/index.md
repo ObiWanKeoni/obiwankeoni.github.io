@@ -17,7 +17,10 @@ Software engineer with 5+ years of experience across a wide range of industries.
 {% for child in sorted_pages %}
 - - -
 
-{% if child.nav_order == 1 %}Current{: .label .label-green .ml-0 .my-0}{% endif %}
+{% if child.nav_order == 1 %}
+Current
+{: .label .label-green .ml-0 .my-0}
+{% endif %}
 
 ####  [{{child.title}}]({{child.url}})
 {: .mb-2}
