@@ -272,6 +272,7 @@ figure,pre {
     padding: 0.25em 0.5em;
     justify-content: center;
     align-items: center;
+    display: none;
     
     > div.circle {
       height: 1em;
@@ -308,21 +309,25 @@ figure,pre {
       }
     }
     
-    > button {
-      background: none;
-      font-size: 1.5em !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $grey-lt-200;
-      flex-grow: 0;
-      box-shadow: none;
-      padding: 0.25em;
-      // border: 1px solid $grey-lt-100
+  }
   
-      &:hover {
-        color: $white;
-      }
+  > button {
+    background: none;
+    font-size: 1.5em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: $grey-lt-200;
+    flex-grow: 0;
+    box-shadow: none;
+    padding: 0.25em;
+    border: 1px solid $grey-lt-200;
+
+    &:hover {
+      color: $white;
     }
   }
 
