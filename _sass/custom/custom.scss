@@ -130,8 +130,8 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0.26em 0.76em;
   margin-right: 0.25rem;
   vertical-align: middle;
-  color: #cdd6f4;
-  border-color: #cdd6f4;
+  color: $white;
+  border-color: $white;
   text-transform: capitalize;
   border: 0.5px solid;
   background-color: rgba(205,214,244,0.2);
@@ -496,6 +496,7 @@ kbd {
 .site-header #toggle-theme {
   display: block !important;
   touch-action: manipulation;
+  cursor: pointer;
 }
 
 .main-header.nav-open {
