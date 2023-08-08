@@ -182,8 +182,8 @@ i {
 }
 
 .filter {
-  -webkit-filter: invert(95%) sepia(11%) saturate(1274%) hue-rotate(298deg) brightness(107%) contrast(93%);
-  filter: invert(95%) sepia(11%) saturate(1274%) hue-rotate(298deg) brightness(107%) contrast(93%);
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
   height: 8rem;
   margin: 0 auto;
   display: block;
