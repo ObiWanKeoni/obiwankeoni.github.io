@@ -34,7 +34,7 @@ Current
 {% endfor %}
 
 {% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>{{ language | capitalize }}
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain"></i>{{ language }}
 {: .label }
 {% endfor %}
 {% endfor %}
