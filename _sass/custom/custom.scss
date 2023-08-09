@@ -2,7 +2,7 @@
 
 
 .catppuccin {
-    --white: #cdd6f4;
+  --white: #cdd6f4;
   --grey-dk-000: #313244;
   --grey-dk-100: #45475a;
   --grey-dk-200: #585b70;
@@ -38,14 +38,12 @@
   --body-text-color: var(--grey-lt-100);
   --link-color: var(--white);
   --link-underline-color: var(--yellow-000);
-  --link-hover-color: lighten(var(--link-underline-color), 25%);
   --nav-child-link-color: var(--white);
   --sidebar-color: var(--grey-dk-250);
   --base-button-color: var(--grey-dk-100);
   --btn-primary-color: var(--purple-200);
   --code-background-color: var(--grey-dk-300); // OneDarkJekyll default for syntax-one-dark-vivid
   --code-linenumber-color: var(--white); // OneDarkJekyll .nf for syntax-one-dark-vivid
-  --feedback-color: darken(var(--sidebar-color), 3%);
   --table-background-color: var(--grey-dk-250);
   --table-header-background-color: rgba(var(--yellow-300), 0.2);
   --table-header-color: var(--yellow-300);
@@ -112,14 +110,14 @@ $body-heading-color: var(--body-heading-color);
 $body-text-color: var(--body-text-color);
 $link-color: var(--link-color);
 $link-underline-color: var(--link-underline-color);
-$link-hover-color: var(--link-hover-color);
+$link-hover-color: lighten($link-underline-color, 25%;
 $nav-child-link-color: var(--nav-child-link-color);
 $sidebar-color: var(--sidebar-color);
 $base-button-color: var(--base-button-color);
 $btn-primary-color: var(--btn-primary-color);
 $code-background-color: var(--code-background-color);
 $code-linenumber-color: var(--code-linenumber-color);
-$feedback-color: var(--feedback-color);
+$feedback-color: darken($sidebar-color 3%);
 $table-background-color: var(--table-background-color);
 $table-header-background-color: var(--table-header-background-color);
 $table-header-color: var(--table-header-color);
