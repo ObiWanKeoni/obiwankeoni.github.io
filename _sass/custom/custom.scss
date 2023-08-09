@@ -1,8 +1,8 @@
-@import "//unpkg.com/@catppuccin/highlightjs/css/catppuccin-mocha.css";
+
 
 
 .catppuccin {
-  --white: #cdd6f4;
+    --white: #cdd6f4;
   --grey-dk-000: #313244;
   --grey-dk-100: #45475a;
   --grey-dk-200: #585b70;
@@ -33,25 +33,25 @@
   --red-200: #eba0ac;
   --red-300: #f38ba8;
 
-  --body-background-color:   --grey-dk-250;
-  --body-heading-color:   --white;
-  --body-text-color:   --grey-lt-100;
-  --link-color:   --white;
-  --link-underline-color:   --yellow-000;
-  --link-hover-color: lighten(  --link-underline-color, 25%);
-  --nav-child-link-color:   --white;
-  --sidebar-color:   --grey-dk-250;
-  --base-button-color:   --grey-dk-100;
-  --btn-primary-color:   --purple-200;
-  --code-background-color:   --grey-dk-300; // OneDarkJekyll default for syntax-one-dark-vivid
-  --code-linenumber-color:   --white; // OneDarkJekyll .nf for syntax-one-dark-vivid
-  --feedback-color: darken(  --sidebar-color, 3%);
-  --table-background-color:   --grey-dk-250;
-  --table-header-background-color: rgba(  --yellow-300, 0.2);
-  --table-header-color:   --yellow-300;
-  --search-background-color:   --grey-dk-300;
-  --search-result-preview-color:   --grey-lt-000;
-  --border-color: rgba(  --grey-dk-200, 0.6);
+  --body-background-color: var(--grey-dk-250);
+  --body-heading-color: var(--white);
+  --body-text-color: var(--grey-lt-100);
+  --link-color: var(--white);
+  --link-underline-color: var(--yellow-000);
+  --link-hover-color: lighten(var(--link-underline-color), 25%);
+  --nav-child-link-color: var(--white);
+  --sidebar-color: var(--grey-dk-250);
+  --base-button-color: var(--grey-dk-100);
+  --btn-primary-color: var(--purple-200);
+  --code-background-color: var(--grey-dk-300); // OneDarkJekyll default for syntax-one-dark-vivid
+  --code-linenumber-color: var(--white); // OneDarkJekyll .nf for syntax-one-dark-vivid
+  --feedback-color: darken(var(--sidebar-color), 3%);
+  --table-background-color: var(--grey-dk-250);
+  --table-header-background-color: rgba(var(--yellow-300), 0.2);
+  --table-header-color: var(--yellow-300);
+  --search-background-color: var(--grey-dk-300);
+  --search-result-preview-color: var(--grey-lt-000);
+  --border-color: rgba(var(--grey-dk-200), 0.6);
   --background: linear-gradient(
     to left top,
     #11111b,
@@ -66,7 +66,7 @@
     #191a27,
     #1b1c2a,
     #1e1e2e
-);
+  );
   --shadow-color-hue: 240deg;
   --shadow-color-saturation: 37%;
   --shadow-color-lightness: 0%;
