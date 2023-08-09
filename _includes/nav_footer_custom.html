@@ -8,7 +8,7 @@
       .querySelector(`link[title="${theme}"]`)
       .removeAttribute("disabled");
     document
-      .querySelector(`link:not([title="${theme}"])`)
+      .querySelector(`link[title]:not([title="${theme}"])`)
       .setAttribute("disabled", "disabled");
     const toggleDarkMode = document.querySelector("#toggle-theme");
     switch (theme) {
