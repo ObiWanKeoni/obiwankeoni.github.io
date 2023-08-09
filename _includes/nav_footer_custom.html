@@ -4,7 +4,12 @@
     localStorage.setItem("theme", theme);
     root = document.querySelector("html");
     root.className = theme;
-    jtd.setTheme(theme);
+    document
+      .querySelector(`link[title="${theme}"]`)
+      .removeAttribute("disabled");
+    document
+      .querySelector(`link:not([title="${theme}"])`)
+      .setAttribute("disabled", "disabled");
     const toggleDarkMode = document.querySelector("#toggle-theme");
     switch (theme) {
       case "catppuccin-light":
