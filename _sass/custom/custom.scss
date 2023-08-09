@@ -145,8 +145,7 @@ a:not([class]) {
   text-underline-offset: 2px;
 
   &:hover {
-    text-decoration-color: lighten($link-underline-color, 25%);
-    color: lighten($link-underline-color, 25%);
+    color: $link-underline-color;
   }
 }
 
