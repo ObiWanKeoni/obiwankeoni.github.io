@@ -35,7 +35,7 @@ $body-background-color: var(--body-background-color);
 $body-heading-color: var(--body-heading-color);
 $body-text-color: var(--body-text-color);
 $link-color: $white;
-$link-underline-color: var(--link-underline-color);
+$link-underline-color: $yellow-000;
 $link-hover-color: lighten($link-underline-color, 25%);
 $nav-child-link-color: var(--nav-child-link-color);
 $sidebar-color: var(--sidebar-color);
