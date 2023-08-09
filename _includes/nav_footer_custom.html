@@ -2,7 +2,7 @@
   function setTheme(theme) {
     console.log(`changing theme to ${theme}`);
     localStorage.setItem("theme", theme);
-    document.querySelector("body").classList.add(theme);
+    document.querySelector("html").classList.add(theme);
     const toggleDarkMode = document.querySelector("#toggle-theme");
     switch (theme) {
       case "catppuccin-light":
