@@ -40,11 +40,12 @@
   --code-background-color: var(--grey-dk-300); // OneDarkJekyll default for syntax-one-dark-vivid
   --code-linenumber-color: var(--white); // OneDarkJekyll .nf for syntax-one-dark-vivid
   --table-background-color: var(--grey-dk-250);
-  --table-header-background-color: rgba(var(--yellow-300), 0.2);
+  --table-header-background-color: var(--yellow-300);
   --table-header-color: var(--yellow-300);
   --search-background-color: var(--grey-dk-300);
   --search-result-preview-color: var(--grey-lt-000);
-  --border-color: rgba(var(--grey-dk-200), 0.6);
+  --border-color: var(--grey-dk-200);
+  --border-opacity: 0.6;
   --background: linear-gradient(
     to left top,
     #11111b,
@@ -113,11 +114,12 @@
   --code-background-color: var(--grey-dk-300); // OneDarkJekyll default for syntax-one-dark-vivid
   --code-linenumber-color: var(--white); // OneDarkJekyll .nf for syntax-one-dark-vivid
   --table-background-color: var(--grey-dk-250);
-  --table-header-background-color: rgba(var(--blue-300), 0.2);
+  --table-header-background-color: var(--blue-300);
   --table-header-color: var(--blue-300);
   --search-background-color: var(--grey-dk-300);
   --search-result-preview-color: var(--grey-lt-000);
-  --border-color: rgba(var(--grey-dk-200), 0.6);
+  --border-color: var(--grey-dk-200);
+  --border-opacity: 0.6;
   --background: var(--grey-dk-250);
   --shadow-color-hue: 221deg;
   --shadow-color-saturation: 8%;
@@ -173,11 +175,11 @@ $code-background-color: var(--code-background-color);
 $code-linenumber-color: var(--code-linenumber-color);
 $feedback-color: $sidebar-color;
 $table-background-color: var(--table-background-color);
-$table-header-background-color: var(--table-header-background-color);
+$table-header-background-color: rgba(var(--table-header-background-color), 0.2);
 $table-header-color: var(--table-header-color);
 $search-background-color: var(--search-background-color);
 $search-result-preview-color: var(--search-result-preview-color);
-$border-color: var(--border-color);
+$border-color: rgba(var(--border-color), var(--border-opacity));
 $background: var(--background);
 $shadow-color-hue: var(--shadow-color-hue);
 $shadow-color-saturation: var(--shadow-color-saturation);
@@ -439,7 +441,7 @@ html {
   background: linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e2e",endColorstr="#11111b",GradientType=1);
   min-height: 100vh;
-  font-size: 16px !important;
+  font-size: 17px !important;
 }
 
 figure,
@@ -741,4 +743,10 @@ p > a:not(.no-arrow) > svg {
 
 p.devicon {
   display: inline-block;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.active {
+  background-image: none;
+  color: $link-hover-color;
+  font-weight: bold;
 }
