@@ -1,6 +1,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="preload" href="{{ '/assets/css/just-the-docs-catppuccin-light.css' | relative_url }}" as="style">
+  <link rel="preload" href="{{ '/assets/css/just-the-docs-catppuccin.css' | relative_url }}" as="style">
+  <script>
+    const theme = localStorage.getItem('theme') || 'catppuccin';
+    document.querySelector("html").className = theme;
+  </script>
   <link
     title="catppuccin-light"
     rel="stylesheet"
