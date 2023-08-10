@@ -32,7 +32,7 @@ How to guides and disjointed thoughts on varying topics.
 	  {{ post.description }}
 	  </p>
 	   <span class="fs-4">
-	   <a href= "{{ post.url }}">Read More</a>
+	   <a class="btn btn-outline" href= "{{ post.url }}">Read More</a>
 	   </span>
    </div>
 </li>
