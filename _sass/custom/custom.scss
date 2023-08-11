@@ -277,21 +277,18 @@ img.blog-img {
       margin-left: -1.4em;
       overflow: hidden;
       border: 1px solid $border-color;
+      display: flex;
 
       > img.card-image {
-        width: 100%;
-        height: 12em;
-        display: block;
-        object-fit: cover;
+        height: 4em;
+        display: flex;
         object-position: center center;
         border-radius: inherit;
-
-        @include mq(md) {
-          height: 16em;
-        }
+        flex-grow: 0;
       }
 
       > div.card-body {
+        flex-grow: 1;
         padding: 1em;
       }
 
