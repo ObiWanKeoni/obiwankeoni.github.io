@@ -42,12 +42,9 @@ Software Engineer
 	   <span class="fs-3">
 	   {{ post.date | date_to_string }} 
 	   </span>
-	   <h3 class="mt-0 mb-0">
+	   <h3 class="mt-0 mb-2">
 	   {{ post.title }}
 	   </h3>
-	  <p class="mb-2">
-	  {{ post.description }}
-	  </p>
 	   <span class="fs-4">
 	   <a class="btn btn-outline" href= "{{ post.url }}">Read Article</a>
 	   </span>
