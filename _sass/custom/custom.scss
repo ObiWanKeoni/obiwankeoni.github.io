@@ -278,9 +278,10 @@ img.blog-img {
       overflow: hidden;
       border: 1px solid $border-color;
       display: flex;
+      align-items: center;
 
       > img.card-image {
-        height: 4em;
+        height: 6em;
         display: flex;
         object-position: center center;
         border-radius: inherit;
