@@ -388,9 +388,9 @@ i {
   background-color: rgba($sidebar-color, 0.6) !important;
   backdrop-filter: blur(16px);
   z-index: 2;
+  display: block !important;
 
   @include mq(md) {
-    display: block !important;
     position: fixed !important;
     top: 0;
   }
