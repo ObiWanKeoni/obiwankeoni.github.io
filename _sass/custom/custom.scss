@@ -774,14 +774,14 @@ p.devicon {
 .ham3 .bottom {
   stroke-dasharray: 40 205;
 }
-.ham3.active .top {
+#menu-button.nav-open .ham3 .top {
   stroke-dasharray: 75 130;
   stroke-dashoffset: -63px;
 }
-.ham3.active .middle {
+#menu-button.nav-open .ham3 .middle {
   stroke-dashoffset: -102px;
 }
-.ham3.active .bottom {
+#menu-button.nav-open .ham3 .bottom {
   stroke-dasharray: 110 205;
   stroke-dashoffset: -86px;
 }
