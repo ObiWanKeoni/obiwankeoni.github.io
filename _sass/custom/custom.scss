@@ -384,18 +384,6 @@ i {
   display: block;
 }
 
-.main-header {
-  background-color: rgba($sidebar-color, 0.6) !important;
-  backdrop-filter: blur(16px);
-  z-index: 2;
-
-  @include mq(md) {
-    position: fixed !important;
-    display: block !important;
-    top: 0;
-  }
-}
-
 .site-header {
   border-bottom: $border $border-color;
 }
@@ -695,6 +683,27 @@ kbd {
   width: 100%;
   z-index: 2;
   position: fixed;
+  height: 3.75rem !important;
+}
+
+
+.main-header {
+  background-color: rgba($sidebar-color, 0.6) !important;
+  backdrop-filter: blur(32px);
+  z-index: 2;
+  display: block !important;
+  height: 0;
+  -webkit-transition: height 400ms;
+  transition: height 400ms;
+  -o-transition: height 400ms;
+  transition: height 400ms;
+  transition: height 400ms;
+  
+  @include mq(md) {
+    height: 3.75rem !important;
+    position: fixed !important;
+    top: 0;
+  }
 }
 
 .search-results {
