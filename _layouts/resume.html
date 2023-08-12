@@ -9,10 +9,5 @@ layout: default
 <h4 class="mb-1 mt-0"><strong>{{ history.title }}</strong></h4>
 <br />
 {% endfor %} {% for language in page.languages %}
-<span class="label mt-2"
-  ><i
-    class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnet' | replace: 'mssql', 'microsoftsqlserver' }}-plain colored"
-  ></i
-  ><strong>{{ language }}</strong></span
->
+<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dotnetcore' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 {% endfor %} {{ content }}
