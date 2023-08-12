@@ -684,8 +684,8 @@ kbd {
   z-index: 2;
   position: fixed;
   height: 3.75rem !important;
+  opacity: 100 !important;
 }
-
 
 .main-header {
   background-color: rgba($sidebar-color, 0.6) !important;
@@ -693,14 +693,14 @@ kbd {
   z-index: 2;
   display: block !important;
   height: 0;
-  -webkit-transition: height 400ms;
-  transition: height 400ms;
-  -o-transition: height 400ms;
-  transition: height 400ms;
-  transition: height 400ms;
+  opacity: 0;
+  -webkit-transition: height 400ms, opacity 400ms;
+  transition: height 400ms, opacity 400ms;
+  -o-transition: height 400ms, opacity 400ms;
   
   @include mq(md) {
     height: 3.75rem !important;
+    opacity: 100 !important;
     position: fixed !important;
     top: 0;
   }
