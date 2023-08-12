@@ -12,7 +12,7 @@ history:
 languages:
   - Python
   - PostgreSQL
-  - JavaScript
+  - Java
   - C#
 ---
 
