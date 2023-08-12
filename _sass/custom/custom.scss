@@ -388,10 +388,10 @@ i {
   background-color: rgba($sidebar-color, 0.6) !important;
   backdrop-filter: blur(16px);
   z-index: 2;
-  display: block !important;
 
   @include mq(md) {
     position: fixed !important;
+    display: block !important;
     top: 0;
   }
 }
