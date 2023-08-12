@@ -384,10 +384,6 @@ i {
   display: block;
 }
 
-body {
-  background: none;
-}
-
 .main-header {
   background-color: rgba($sidebar-color, 0.6) !important;
   backdrop-filter: blur(16px);
@@ -433,16 +429,11 @@ body {
 }
 
 html {
-  background: $background;
-  background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
-  background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
-  background: linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e2e",endColorstr="#11111b",GradientType=1);
-  min-height: 100vh;
   font-size: 17px !important;
 }
 
 body {
+  background-color: $grey-dk-300;
   background: $background;
   background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
   background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
