@@ -442,6 +442,15 @@ html {
   font-size: 17px !important;
 }
 
+body {
+  background: $background;
+  background: -moz-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
+  background: -webkit-linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
+  background: linear-gradient(227deg, $grey-dk-300 14%, $grey-dk-250 49%, $grey-dk-300 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1e2e",endColorstr="#11111b",GradientType=1);
+  min-height: 100vh;
+}
+
 figure,
 pre {
   font-family: $mono-font-family;
