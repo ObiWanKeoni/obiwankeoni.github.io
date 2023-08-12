@@ -406,8 +406,8 @@ i {
 
 .side-bar {
   background-color: rgba($sidebar-color, 0.6) !important;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
   position: fixed;
   z-index: 1;
   width: 100%;
