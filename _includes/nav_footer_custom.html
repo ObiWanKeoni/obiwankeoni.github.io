@@ -102,6 +102,7 @@
 <script defer>
   document.addEventListener("DOMContentLoaded", function (event) {
     const main = document.getElementById("top");
+    const ham = document.querySelector(".ham");
     const menuButton = document.getElementById("menu-button");
 
     jtd.addEvent(menuButton, "click", function (e) {
@@ -109,8 +110,10 @@
 
       if (main.classList.contains("nav-open")) {
         main.classList.remove("nav-open");
+        ham.classList.remove("active");
       } else {
         main.classList.add("nav-open");
+        ham.classList.add("active");
       }
     });
   });
