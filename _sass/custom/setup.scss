@@ -22,3 +22,7 @@ $table-header-color: $blue-300;
 $link-underline-color: $blue-100;
 $link-hover-color: darken($link-underline-color, 25%);
 $image-filter: brightness(0) invert(0);
+
+:root {
+  color-scheme: light dark;
+}
