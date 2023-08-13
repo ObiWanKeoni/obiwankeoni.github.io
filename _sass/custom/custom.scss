@@ -525,7 +525,7 @@ pre {
     border-radius: $border-radius;
     color: $blue-300;
     border-color: $blue-300;
-    background-color: rgba($blue-300, 0.2);
+    background-color: color-mix(in srgb, $blue-300 20%, transparent);
   }
 }
 
