@@ -329,8 +329,8 @@ h6 {
   color: $white;
   border-color: $white;
   text-transform: capitalize;
-  border: 0px;
-  background-color: color-mix(in srgb, currentColor 20%, transparent);
+  border: 0px solid currentColor;
+  background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
   font-size: 0.6875rem !important;
   border-radius: 1em;
   vertical-align: middle;
@@ -339,32 +339,22 @@ h6 {
 
 .label-blue:not(g) {
   color: $blue-300;
-  border-color: $blue-300;
-  background-color: inherit;
 }
 
 .label-green:not(g) {
   color: $green-300;
-  border-color: $green-300;
-  background-color: inherit;
 }
 
 .label-purple:not(g) {
   color: $purple-300;
-  border-color: $purple-300;
-  background-color: inherit;
 }
 
 .label-red:not(g) {
   color: $red-300;
-  border-color: $red-300;
-  background-color: inherit;
 }
 
 .label-yellow:not(g) {
   color: $yellow-300;
-  border-color: $yellow-300;
-  background-color: inherit;
 }
 
 div.highlight {
