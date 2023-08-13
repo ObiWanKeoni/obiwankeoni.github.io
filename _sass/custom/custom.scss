@@ -383,7 +383,7 @@ i {
 }
 
 .side-bar {
-  background-color: rgba($sidebar-color, 0.6) !important;
+  background-color: color-mix(in srgb, $grey-dk-300 60%, transparent) !important;
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   position: fixed;
@@ -478,7 +478,7 @@ pre {
     top: 1em;
     right: 1em;
     color: $grey-lt-200;
-    background: inherit;
+    background: inherit !important;
     flex-grow: 0;
     box-shadow: none !important;
     padding: 0 0.25em !important;
