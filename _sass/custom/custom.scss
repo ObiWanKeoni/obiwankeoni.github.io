@@ -471,22 +471,25 @@ pre {
   }
 
   > button {
-    background: none !important;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 1em;
     right: 1em;
-    color: $grey-lt-200 !important;
+    color: $grey-lt-200;
+    background: color-mix(in srgb, currentColor 80%, $white);
     flex-grow: 0;
     box-shadow: none !important;
     padding: 0 0.25em !important;
-    border: 1px solid $grey-lt-200 !important;
+    border: 1px solid currentColor;
 
     &:hover {
-      color: $white !important;
-      border-color: $white !important;
+      color: $white;
+    }
+
+    .checkmark {
+      color: $green-300 !important;
     }
   }
 
