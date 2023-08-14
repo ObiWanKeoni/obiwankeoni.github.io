@@ -82,7 +82,7 @@ Software Engineer
 
 {% for language in child.languages %}
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
-{: .fs-6 devicon}
+{: .fs-6 .devicon}
 {% endfor %}
 
 </div>
