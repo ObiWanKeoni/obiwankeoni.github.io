@@ -81,8 +81,6 @@ That’s right! Let’s pre-process the geometry files and create a mapping of `
 
 [Shapefile Directory By Layer](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/)
 
-<script src="https://gist.github.com/ObiWanKeoni/b216f7fad9236a5039e816033090484f.js"></script>
-
 We will need a file for each “layer” we want to support (e.g. [ZCTA520](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/ZCTA520/) for both 3 and 5 digit zip codes)
 
 #### Step 2: Convert Shapefile to GeoJSON
