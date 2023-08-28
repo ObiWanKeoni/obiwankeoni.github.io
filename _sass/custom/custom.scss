@@ -810,3 +810,7 @@ p.devicon {
   transition: opacity 400ms;
   z-index: 0;
 }
+
+.card:hover:before {
+  opacity: 1;
+}
