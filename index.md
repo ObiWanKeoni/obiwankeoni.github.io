@@ -46,7 +46,7 @@ Software Engineer
 	   {{ post.title }}
 	   </h3>
 	   <span class="fs-4">
-	   <a class="btn btn-outline" href= "{{ post.url }}">Read Article</a>
+	   <a class="button" href= "{{ post.url }}">Read Article</a>
 	   </span>
    </div>
 </li>
