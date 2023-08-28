@@ -794,3 +794,19 @@ p.devicon {
   stroke-dasharray: 110 205;
   stroke-dashoffset: -86px;
 }
+
+.card:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    $yellow-300 50%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
