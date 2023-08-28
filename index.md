@@ -63,7 +63,7 @@ Software Engineer
 
 {% for child in sorted_pages limit:2 %}
 
-<div class="experience mt-5" markdown=1>
+<div class="experience card mt-5" markdown=1>
  {% if child.nav_order == 1 %}
  Active
  {: .label .label-green .ml-0 .mt-0}
