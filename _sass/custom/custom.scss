@@ -797,12 +797,8 @@ p.devicon {
 
 .card {
   border: 1px solid;
-  border-image: linear-gradient(
-    45deg,
-    transparent 5%,
-    $yellow-300 50%,
-    transparent 99%
-  );
+  border-color: transparent !important;
+  background: linear-gradient($grey-dk-250, $grey-dk-250) padding-box, linear-gradient(45deg, transparent 5%, $yellow-000 49%, transparent 99%) border-box
 }
 
 /* CSS */
