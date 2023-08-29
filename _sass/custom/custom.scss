@@ -798,13 +798,13 @@ p.devicon {
 .card {
   border: 1px solid;
   border-color: transparent !important;
-  background: linear-gradient($grey-dk-250, $grey-dk-250) padding-box, linear-gradient(45deg, transparent 5%, $yellow-000 49%, transparent 99%) border-box
+  background: radial-gradient(circle, $grey-dk-100 0%, $grey-dk-250 88%, $grey-dk-250 100%); padding-box, linear-gradient(90, transparent -12%, $link-underline-color 50%, transparent 112%) border-box
 }
 
 /* CSS */
 .button {
   appearance: none;
-  background-color: $blue-300;
+  background-color: $link-underline-color;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
@@ -828,7 +828,7 @@ p.devicon {
 }
 
 .button:hover {
-  background-color: $grey-lt-300;
+  background-color: $link-hover-color;
   text-decoration: none;
   transition-duration: 0.1s;
 }
@@ -841,7 +841,7 @@ p.devicon {
 }
 
 .button:active {
-  background-color: #EDEFF2;
+  background-color: $link-underline-color;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
