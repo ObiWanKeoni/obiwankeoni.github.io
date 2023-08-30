@@ -68,6 +68,7 @@
   --purple-shadow-color-saturation: 45%;
   --purple-shadow-color-lightness: 36%;
   --image-filter: brightness(0) invert(1);
+  --image-filter-background: var(--grey-dk-250);
 }
 
 .catppuccin-light {
@@ -128,6 +129,7 @@
   --purple-shadow-color-saturation: 8%;
   --purple-shadow-color-lightness: 48%;
   --image-filter: brightness(0) invert(0);
+  --image-filter-background: var(--grey-dk-300);
 }
 
 $white: var(--white);
@@ -189,6 +191,9 @@ $purple-shadow-color-saturation: var(--purple-shadow-color-saturation);
 $purple-shadow-color-lightness: var(--purple-shadow-color-lightness);
 $image-filter: var(--image-filter);
 
+html {
+  background-color: $body-background-color;
+}
 
 
 .inverse-text {
@@ -878,7 +883,7 @@ p.devicon {
 
 .card > p:first-of-type {
   border-radius: 10px;
-  background: var(--grey-dk-250);
+  background: var(--image-filter-background);
   margin-top: 0;
   padding: 2em;
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
