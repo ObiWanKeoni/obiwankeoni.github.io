@@ -857,3 +857,29 @@ p.devicon {
 .button:-webkit-details-marker {
   display: none;
 }
+
+.card-container-horizontal {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 400%;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+
+}
+
+.card-container-horizontal > .card{
+  width: 300px;    
+  scroll-snap-align: center;
+}
+
+.card > p:first-of-type {
+  border-radius: 10px;
+  background: var(--grey-dk-250);
+  margin-top: 0;
+  padding: 2em;
+  border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
+}
