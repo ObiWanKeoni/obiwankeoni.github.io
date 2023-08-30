@@ -60,17 +60,21 @@ Software Engineer
 
 ### Experience
 {: .mt-2}
-
-{% for child in sorted_pages limit:2 %}
-
+<div class="card-container-horizontal" markdown=1>
+{% for child in sorted_pages %}
 <div class="experience card mt-5" markdown=1>
- {% if child.nav_order == 1 %}
- Active
- {: .label .label-green .ml-0 .mt-0}
- {% endif %}
 
+<img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
+
+<div class="blog-title" markdown=1>
 ### [{{child.title}}]({{child.url}})
-{: .mb-2 .mt-0}
+{: .mb-2 .mt-0 .flex-grow-1}
+
+{% if child.nav_order == 1 %}
+Active
+{: .label .label-green .ml-0 .mt-0 .flex-grow-0}
+{% endif %}
+</div>
 
 {% for history in child.history %}
 **{{ history.title }}**
@@ -87,7 +91,4 @@ Software Engineer
 
 </div>
 {% endfor %}
-
-[View Full Résumé](/resume)
-{: .mt-8 .mx-auto}
-
+</div>
