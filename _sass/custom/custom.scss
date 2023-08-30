@@ -882,4 +882,8 @@ p.devicon {
   margin-top: 0;
   padding: 2em;
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
+
+  img.filter {
+    height: 5em;
+  }
 }
