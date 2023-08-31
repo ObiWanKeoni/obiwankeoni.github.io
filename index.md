@@ -69,7 +69,7 @@ I am a software engineer with experience across a variety of industries and a pr
 <img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
 
 <div class="blog-title" markdown=1>
-### [{{child.title}}]({{child.url}})
+### {{child.title}}
 {: .mb-2 .mt-0 .flex-grow-1}
 
 {% if child.nav_order == 1 %}
@@ -89,6 +89,8 @@ Active
 {% for language in child.languages %}
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 {: .fs-6 .devicon}
+
+[Learn More]({{child.url}}){: .button}
 {% endfor %}
 
 </div>
