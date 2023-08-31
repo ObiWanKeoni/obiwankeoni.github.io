@@ -47,13 +47,13 @@ I am a software engineer with experience across a variety of industries and a pr
 
 <div class="blog-title" markdown=1>
 ### {{post.title}}
-{: .mb-2 .mt-0 .float-left}
+{: .mb-2 .mt-0 .float-left style="width: 50%;"}
 
 {{ post.date | date_to_string }} 
 {: .float-right}
 </div>
 
-{{post.excerpt}}
+{{post.description}}
 
 [Read Article]({{child.url}}){: .button .float-right}
 </div>
