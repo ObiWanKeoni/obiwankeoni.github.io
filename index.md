@@ -23,12 +23,11 @@ has_toc: false
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
 Bakersfield, CA • Remote
-> ***Ask me about my keyboard***
-
 GitHub: <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">@ObiWanKeoni</a>
 {: .mt-0 .fs-2}
+> ***Ask me about my keyboard***
 
-👋 Hello there, my name is ***Keoni Garner***
+👋 Hello there, my name is **Keoni Garner**
 {: .mb-0}
 
 I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
