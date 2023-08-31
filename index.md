@@ -14,11 +14,15 @@ layout: hero
  | sort: "date" | reverse -%}
 
 <div class="hero" markdown=1>
+<div class="orb"></div>
 
-# Solutions Built From <span class="gradient-text">Dialogue</span>
+# Listen, Understand, Code. <span class="gradient-text">In that order.</span>
 {: .mt-0 .fs-10}
 
 </div>
+
+👋 Hello there, my name is **Keoni Garner**
+{: .mb-0}
 
 ### About
 
@@ -26,9 +30,6 @@ layout: hero
 Bakersfield, CA • Remote • <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">GitHub</a>
 {: .mt-0 .fs-2}
 > ***Ask me about my keyboard***
-
-👋 Hello there, my name is **Keoni Garner**
-{: .mb-0}
 
 I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
