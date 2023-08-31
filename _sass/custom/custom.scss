@@ -903,10 +903,11 @@ p.devicon {
   border-radius: 10px;
   background: var(--image-filter-background);
   margin-top: 0;
-  padding: 2em;
+  height: 9em;
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
-
+  
   img.filter {
+    margin: 2em;
     height: 5em;
   }
 }
@@ -950,3 +951,10 @@ p.devicon {
   left: 2rem;
 }
 
+.blog-card-image {
+  object-position: center center;
+  border-radius: inherit;
+  height: 9em;
+  width: 100%;
+  object-fit: cover;
+}
