@@ -820,8 +820,8 @@ p.devicon {
 .card {
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
   background: color-mix(in srgb, $grey-dk-250 70%, transparent);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 /* CSS */
