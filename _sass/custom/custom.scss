@@ -195,7 +195,7 @@ $image-filter: var(--image-filter);
 @function randomBall($size: 100, $spread: 3) {
   $colors: $blue-000, $red-000, $yellow-000;
   $randomColor: nth($colors, random(length($colors)));
-  $singleBall: radial-gradient(random()*$size+px at random()*$size*$spread+px random()*$size*$spread+px, $randomColor, $randomColor 96%, transparent);
+  $singleBall: radial-gradient(random()*$size+px at random()*$size*$spread+px random()*$size*$spread+px, $randomColor, $randomColor 50%, transparent);
   @return $singleBall;
 }
 
@@ -893,7 +893,7 @@ p.devicon {
   mix-blend-mode: screen;
   filter: opacity(.3);
   -webkit-filter: opacity(.3);
-  background: gimmeBalls(120, 60, 20);
+  background: gimmeBalls(10, 100, 3);
 }
 
 .card-container-horizontal > .card{
