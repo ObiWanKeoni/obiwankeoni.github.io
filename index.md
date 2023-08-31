@@ -51,12 +51,9 @@ I am a software engineer with experience across a variety of industries and a pr
 
 {{ post.date | date_to_string }} 
 {: .float-right}
-
-{% if child.nav_order == 1 %}
-New
-{: .label .label-green .ml-0 .mt-0 .abs-top-left}
-{% endif %}
 </div>
+
+{{post.excerpt}}
 
 [Read Article]({{child.url}}){: .button .float-right}
 </div>
