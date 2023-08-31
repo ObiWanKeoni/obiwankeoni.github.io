@@ -12,24 +12,22 @@ has_toc: false
  | where: "parent", "Blog"
  | sort: "date" | reverse -%}
 
+<div class="hero" markdown=1>
+
 # Keoni Garner
 {: .mb-0}
 
 <a style="text-decoration: none; font-weight: bold;" class="no-arrow" href="https://github.com/ObiWanKeoni"><span class="gradient-text">@</span> ObiWanKeoni</a>
 {: .mt-0 .fs-2}
 
+# Explaining <span class="gradient-text">technical concepts</span> to non-technical people
+
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
 Bakersfield, CA • Remote
 > ***Ask me about my keyboard***
 
-Dad
-{: .label .label-blue }
 
-Husband
-{: .label .label-blue }
-
-Software Engineer
-{: .label .label-blue }
+</div>
 
 ### Recent Blog Posts
 - - -
