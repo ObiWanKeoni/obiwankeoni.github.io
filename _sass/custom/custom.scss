@@ -890,9 +890,6 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  mix-blend-mode: screen;
-  filter: opacity(.3);
-  -webkit-filter: opacity(.3);
   background: gimmeBalls(10, 100, 3);
 }
 
