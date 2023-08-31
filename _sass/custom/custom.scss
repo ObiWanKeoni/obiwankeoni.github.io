@@ -895,7 +895,7 @@ p.devicon {
 }
 
 .card-container-horizontal > .card{
-  width: 300px;    
+  width: 350px;    
   scroll-snap-align: center;
 }
 
@@ -912,15 +912,13 @@ p.devicon {
 }
 
 .hero {
-  height: 60vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
   .orb {
-    //content: '';
-    //animation:spin 8s linear infinite;
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
@@ -928,7 +926,7 @@ p.devicon {
         inset 0 0 50px #fff,
         inset 20px 0 60px $purple-300,
         inset -20px 0 60px $blue-300,
-        inset 20px 0 300px $purple-300,
+        inset 20px 0 300px $red-300,
         inset -20px 0 300px $blue-300,
           0 0 50px #fff,
           -10px 0 60px $purple-300,
@@ -937,3 +935,9 @@ p.devicon {
 }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
