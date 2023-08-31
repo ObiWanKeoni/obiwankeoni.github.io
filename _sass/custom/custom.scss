@@ -191,6 +191,23 @@ $purple-shadow-color-saturation: var(--purple-shadow-color-saturation);
 $purple-shadow-color-lightness: var(--purple-shadow-color-lightness);
 $image-filter: var(--image-filter);
 
+
+@function randomBall($size: 100, $spread: 3) {
+  $colors: $blue-000, $red-000, $yellow-000;
+  $randomColor: nth($colors, random(length($colors)));
+  $singleBall: radial-gradient(random()*$size+px at random()*$size*$spread+px random()*$size*$spread+px, $randomColor, $randomColor 96%, transparent);
+  @return $singleBall;
+}
+
+@function gimmeBalls($howMany: 10, $size: 100, $spread: 3) {
+  $bgList: ();
+  @for $i from 1 through $howMany { 
+    $bgList: append($bgList, randomBall($size, $spread), comma);
+  }
+  @return $bgList;
+}
+
+
 html {
   background-color: $body-background-color;
 }
@@ -873,7 +890,10 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-
+  mix-blend-mode: screen;
+  filter: opacity(.3);
+  -webkit-filter: opacity(.3);
+  background: gimmeBalls(120, 60, 20);
 }
 
 .card-container-horizontal > .card{
