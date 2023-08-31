@@ -14,14 +14,10 @@ has_toc: false
 
 <div class="hero" markdown=1>
 
-# I listen.
-{: mb-0}
-# I understand.
-{: my-0}
-# I code.
-{: my-0}
+# I listen. I understand. I code.
+{: .mb-0}
 # In that order.
-{: mt-0}
+{: .mt-0}
 
 👋 Hello there, my name is <span class="gradient-text">Keoni Garner</span>
 {: .mb-0 .fs-4}
@@ -30,7 +26,6 @@ GitHub: <a style="text-decoration: none; font-weight: bold;" class="no-arrow" hr
 </div>
 
 ### About
-- - -
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
 Bakersfield, CA • Remote
@@ -38,8 +33,9 @@ Bakersfield, CA • Remote
 
 I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
-### Recent Blog Posts
 - - -
+
+### Recent Blog Posts
 
 <ul>
 {% for post in blog_posts %}
