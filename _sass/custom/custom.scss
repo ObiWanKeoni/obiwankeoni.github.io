@@ -818,9 +818,10 @@ p.devicon {
 }
 
 .card {
-  border: 1px solid;
-  border-color: transparent !important;
-  background: radial-gradient(at center, $grey-dk-250, $grey-dk-300) padding-box, linear-gradient(90deg, transparent -12%, $link-underline-color 50%, transparent 112%) border-box
+  border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
+  background: color-mix(in srgb, $grey-dk-250 70%, transparent);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 /* CSS */
@@ -890,7 +891,7 @@ p.devicon {
   overflow-y: visible;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  background: gimmeBalls(10, 100, 15);
+  background: gimmeBalls(10, 100, 8);
 }
 
 .card-container-horizontal > .card{
