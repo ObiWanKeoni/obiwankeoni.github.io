@@ -891,6 +891,7 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+  background: gimmeBalls(10, 100, 8);
 }
 
 .card-container-horizontal > .card{
@@ -939,8 +940,4 @@ p.devicon {
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.main {
-  background: gimmeBalls(150, 100, 80);
 }
