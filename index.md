@@ -24,6 +24,8 @@ layout: hero
 👋 Hello there, my name is **Keoni Garner**
 {: .mb-0}
 
+- - -
+
 ### About
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
@@ -37,24 +39,29 @@ I am a software engineer with experience across a variety of industries and a pr
 
 ### Recent Blog Posts
 
-<ul>
+<div class="card-container-horizontal" markdown=1>
 {% for post in blog_posts %}
- <li class="blog mb-6"> 
-   <img src="{{ post.image_link }}" alt="{{ post.title }}" class="card-image">
-   <div class="card-body">
-	   <span class="fs-3">
-	   {{ post.date | date_to_string }} 
-	   </span>
-	   <h3 class="mt-0 mb-2">
-	   {{ post.title }}
-	   </h3>
-	   <span class="fs-4">
-	   <a class="button" href= "{{ post.url }}">Read Article</a>
-	   </span>
-   </div>
-</li>
+<div class="experience card mt-5 d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
+
+<img class="blog-card-image" src="{{ post.image_link }}" alt="{{ post.title }}" />
+
+<div class="blog-title" markdown=1>
+### {{post.title}}
+{: .mb-2 .mt-0 .float-left}
+
+{{ post.date | date_to_string }} 
+{: .float-right}
+
+{% if child.nav_order == 1 %}
+New
+{: .label .label-green .ml-0 .mt-0 .abs-top-left}
+{% endif %}
+</div>
+
+[Read Article]({{child.url}}){: .button .float-right}
+</div>
 {% endfor %}
-</ul>
+</div>
 
 [All Blog Posts](/blog)
 {: .mt-4 .mx-auto}
@@ -65,7 +72,7 @@ I am a software engineer with experience across a variety of industries and a pr
 {: .mt-2}
 <div class="card-container-horizontal" markdown=1>
 {% for child in sorted_pages %}
-<div class="experience card mt-5 d-flex" style="flex-direction: column;" markdown=1>
+<div class="experience card mt-5 d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
 
 <img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
 
@@ -75,7 +82,7 @@ I am a software engineer with experience across a variety of industries and a pr
 
 {% if child.nav_order == 1 %}
 Active
-{: .label .label-green .ml-0 .mt-0 .flex-grow-0}
+{: .label .label-green .ml-0 .mt-0 .abs-top-left}
 {% endif %}
 </div>
 
