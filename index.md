@@ -2,6 +2,7 @@
 title: About
 has_children: true
 has_toc: false
+layout: hero
 ---
 {%- assign child_pages = site[page.collection]
  | default: site.html_pages
@@ -14,7 +15,7 @@ has_toc: false
 
 <div class="hero" markdown=1>
 
-# I listen.<br>I understand.<br>I <span class="gradient-text">code</span>.<br>In that order.
+# Solutions Built From <span class="gradient-text">Dialogue</span>
 {: .mt-0 .fs-10}
 
 </div>
@@ -63,7 +64,7 @@ I am a software engineer with experience across a variety of industries and a pr
 {: .mt-2}
 <div class="card-container-horizontal" markdown=1>
 {% for child in sorted_pages %}
-<div class="experience card mt-5" markdown=1>
+<div class="experience card mt-5 d-flex" style="flex-direction: column;" markdown=1>
 
 <img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
 
@@ -85,12 +86,14 @@ Active
 {: .fs-3 .mt-0 .mb-2}
 {% endfor %}
 
+<div class="icon-container" markdown=1>
 {% for language in child.languages %}
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 {: .fs-6 .devicon}
 {% endfor %}
+</div>
 
-[Learn More]({{child.url}}){: .button}
+[Learn More]({{child.url}}){: .button .float-right}
 </div>
 {% endfor %}
 </div>
