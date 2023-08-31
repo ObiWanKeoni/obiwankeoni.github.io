@@ -22,8 +22,7 @@ has_toc: false
 ### About
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
-Bakersfield, CA • Remote
-GitHub: <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">@ObiWanKeoni</a>
+Bakersfield, CA • Remote • GitHub: <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">@ObiWanKeoni</a>
 {: .mt-0 .fs-2}
 > ***Ask me about my keyboard***
 
