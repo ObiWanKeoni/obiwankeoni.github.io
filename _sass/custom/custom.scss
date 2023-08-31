@@ -921,6 +921,8 @@ p.devicon {
   .orb {
     width: 100vw;
     height: 100vw;
+    position: absolute;
+    top: -90vw;
     border-radius: 50%;
     box-shadow:
         inset 0 0 50px #fff,
