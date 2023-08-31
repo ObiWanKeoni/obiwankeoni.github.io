@@ -887,7 +887,7 @@ p.devicon {
   gap: 1rem;
   padding: 1rem;
   max-width: 400%;
-  overflow-y: auto;
+  overflow-y: visible;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   background: gimmeBalls(10, 100, 15);
