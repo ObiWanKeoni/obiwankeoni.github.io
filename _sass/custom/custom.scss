@@ -209,7 +209,7 @@ $image-filter: var(--image-filter);
 
 
 html {
-  background-color: $body-background-color;
+  background-color: $grey-dk-300;
 }
 
 
@@ -500,7 +500,7 @@ pre {
     position: absolute;
     top: 1em;
     right: 1em;
-    color: $grey-lt-200;
+    color: color-mix(in srgb, $grey-lt-100 10%, transparent);
     background: inherit !important;
     flex-grow: 0;
     box-shadow: none !important;
