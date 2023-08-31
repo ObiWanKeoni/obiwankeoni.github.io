@@ -920,7 +920,7 @@ p.devicon {
   overflow: hidden;
   &::before {
     content: '';
-    animation:spin 8s linear infinite;
+    //animation:spin 8s linear infinite;
     width: 100vw;
     height: 100vw;
     border-radius: 50%;
@@ -933,6 +933,9 @@ p.devicon {
           0 0 50px $white,
           -10px 0 60px $purple-300,
           10px 0 60px $blue-300;
+
+    position: relative;
+    bottom: -50vw;
   }
 }
 
