@@ -14,9 +14,7 @@ has_toc: false
 
 <div class="hero" markdown=1>
 
-# I listen.<br>I understand.<br>I <span class="gradient-text">code</span>.
-{: .mb-0}
-# In that order.
+# I listen.<br>I understand.<br>I <span class="gradient-text">code</span>.<br>In that order.
 {: .mt-0}
 
 </div>
