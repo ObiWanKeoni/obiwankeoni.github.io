@@ -55,13 +55,9 @@ I am a software engineer with experience across a variety of industries and a pr
 
 {{post.description}}
 
-[Read Article]({{child.url}}){: .button .float-right}
+[Read Article]({{post.url}}){: .button .float-right}
 </div>
 {% endfor %}
-<span id="firstShape" class="shape"></span>
-    <span id="secondShape" class="shape"></span>
-    <span id="thirdShape" class="shape"></span>
-</div>
 
 [All Blog Posts](/blog)
 {: .mt-4 .mx-auto}
