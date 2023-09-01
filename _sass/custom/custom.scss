@@ -893,7 +893,7 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  background: url("/assets/images/waves.png");
+  background: url("/assets/images/color-waves.png");
   background-size: contain;
     // Shapes
   .shape {
@@ -965,14 +965,12 @@ p.devicon {
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  .full-width {
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  }
   .orb {
     width: 100vw;
     height: 100vw;
