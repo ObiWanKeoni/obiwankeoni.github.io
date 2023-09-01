@@ -19,6 +19,16 @@ layout: hero
 # Listen, Understand, Code. <span class="gradient-text">In that order</span>.
 {: .mt-0 .fs-10}
 
+<div class='container'>
+  <div class='outerRing'></div>
+  <div class='ring ring1'>
+    <div class='ring ring2'>
+      <div class='ring ring3'>
+        <div class='ring ring4'></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 👋 Hello there, my name is **Keoni Garner**
