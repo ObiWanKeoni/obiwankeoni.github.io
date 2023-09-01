@@ -972,9 +972,9 @@ p.devicon {
   margin-right: -50vw;
   overflow-x: hidden;
   .orb {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
     margin: auto;
     z-index: 4;
     position: absolute;
@@ -985,7 +985,7 @@ p.devicon {
         inset 20px 0 60px $purple-300,
         inset -20px 0 60px $blue-300,
         inset 20px 0 300px $purple-300,
-        inset -20px 0 300px $blue-300,
+        inset -20px 0 300px $red-300,
           0 0 50px #fff,
           -10px 0 60px $purple-300,
           10px 0 60px $blue-300;
