@@ -974,9 +974,7 @@ p.devicon {
   .orb {
     width: 100px;
     height: 100px;
-    top: 480px;
-    left: 500px;
-    transform: translate(-50%, -50%);
+    bottom: -50px;
     margin: auto;
     z-index: 4;
     position: absolute;
@@ -1023,7 +1021,7 @@ p.devicon {
   display: flex;
   overflow-y: hidden;
   overflow-x: visible;
-  border-bottom: solid 2px rgba(133, 59, 255, 1);
+  border-bottom: solid 1px $purple-300;
 }
 .outerRing {
   position: absolute;
@@ -1055,14 +1053,14 @@ p.devicon {
   border-radius: 1000px;
   background: radial-gradient(
     circle,
-    rgba(3, 0, 20, 0) 30%,
-    rgba(72, 55, 126, .24) 76%,
-    #7072e5 100%
+    rgba(17, 17, 27, 0) 30%,
+    rgba(30, 30, 46, .24) 76%,
+    $purple-300 100%
   );
   width: calc(100% - 200px);
   height: calc(100% - 200px);
   aspect-ratio: 1;
-  border: solid 1px rgba(97, 99, 177, .5);
+  border: solid 1px color-mix(in srgb, $purple-300 50%, transparent);
   display: flex;
   margin: auto;
 }
