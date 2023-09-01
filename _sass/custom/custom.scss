@@ -423,7 +423,7 @@ i {
 }
 
 .gradient-text {
-  background-image: linear-gradient(75deg, $blue-300 0%, $purple-300 39%, $red-300 61%, $yellow-300 100%) !important;
+  background-image: linear-gradient(75deg, $blue-000 0%, $purple-000 39%, $red-000 61%, $purple-300 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -822,6 +822,7 @@ p.devicon {
   background: color-mix(in srgb, $grey-dk-250 70%, transparent);
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
+  position: relative;
 }
 
 /* CSS */
@@ -886,8 +887,8 @@ p.devicon {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: column;
-  gap: 0.75rem;
-  padding: 0.75rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
   max-width: 400%;
   overflow-y: auto;
   overscroll-behavior-x: contain;
@@ -963,11 +964,20 @@ p.devicon {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+  .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  }
   .orb {
     width: 100vw;
     height: 100vw;
     position: absolute;
-    top: -85vw;
+    top: -80vw;
     border-radius: 50%;
     box-shadow:
         inset 0 0 50px #fff,
