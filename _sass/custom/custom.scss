@@ -881,6 +881,34 @@ p.devicon {
   display: none;
 }
 
+@keyframes anim1{
+    0%{
+        transform:translate(-10%,10%);
+    }
+    33%{
+    	transform:translate(10%,15%);
+    }
+    66%{
+    	transform:translate(20%,-10%);
+    }
+    100%{
+    	transform:translate(-10%,10%);
+    }
+}
+@keyframes anim2{
+    0%{
+        transform:translate(10%,10%);
+    }
+    33%{
+    	transform:translate(-5%,-5%);
+    }
+    67%{
+        transform:translate(-15%,15%);
+    }
+    100%{
+    	transform:translate(10%,10%);
+    }
+}
 .card-container-horizontal {
   margin: 0 auto;
   display: grid;
@@ -892,10 +920,29 @@ p.devicon {
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   background: gimmeBalls(10, 100, 8);
+  .circle{
+    width:120px;
+    height:120px;
+    position:absolute;
+    border-radius:50%;
+    z-index:1;
+  }
+  .circle.one{
+    background:linear-gradient(to bottom right, #9a3abe, #547bbd, #54c8c9);
+    top:-25px;
+    left:-40px;
+    animation:anim1 24s linear infinite;
+  }
+  .circle.two {
+    background:linear-gradient(to bottom right, #feb930, #da1467);
+    top:20px;
+    right:-20px;
+    animation:anim2 24s linear infinite;
+  }
 }
 
 .card-container-horizontal > .card{
-  width: 350px;    
+  width: 340px;    
   scroll-snap-align: center;
 }
 
