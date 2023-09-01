@@ -84,11 +84,13 @@ Active
 </div>
 
 {% for history in child.history %}
+<div markdown=1>
 **{{ history.title }}**
 {: .mb-0 .float-left style="width: 50%;"}
 
 {{ history.dates }}
 {: .fs-3 .mt-0 .mb-2 .float-right}
+</div>
 {% endfor %}
 
 <div class="icon-container" markdown=1>
