@@ -972,10 +972,14 @@ p.devicon {
   margin-left: -50vw;
   margin-right: -50vw;
   .orb {
-    width: 100vw;
-    height: 100vw;
+    width: 100px;
+    height: 100px;
+    top: 480px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 4;
     position: absolute;
-    top: -80vw;
     border-radius: 50%;
     box-shadow:
         inset 0 0 50px #fff,
