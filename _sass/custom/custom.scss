@@ -583,6 +583,8 @@ img.hero-image,
 .hero-image > img {
   width: 125%;
   height: 25vh;
+  margin-left: -2rem;
+  margin-right: -2rem;
   display: block;
   object-fit: cover;
   object-position: center center;
