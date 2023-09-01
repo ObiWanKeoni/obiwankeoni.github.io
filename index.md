@@ -96,7 +96,7 @@ Active
 {: .mt-0 .mb-0 .float-left style="width: 50%;"}
 
 {{ history.dates }}
-{: .fs-3 .mt-0 .mb-0 .float-right}
+{: .mt-0 .mb-0 .float-right}
 </div>
 {% endfor %}
 
