@@ -893,6 +893,7 @@ p.devicon {
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   background: url("/assets/images/waves.png");
+  background-size: contain;
     // Shapes
   .shape {
     position: absolute;
