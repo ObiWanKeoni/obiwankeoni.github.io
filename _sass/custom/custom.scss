@@ -970,11 +970,11 @@ p.devicon {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  overflow-x: hidden;
+  overflow: hidden;
   .orb {
-    width: 150px;
-    height: 150px;
-    bottom: -75px;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
     margin: auto;
     z-index: 4;
     position: absolute;
