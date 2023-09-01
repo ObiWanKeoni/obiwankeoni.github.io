@@ -58,6 +58,8 @@ I am a software engineer with experience across a variety of industries and a pr
 [Read Article]({{child.url}}){: .button .float-right}
 </div>
 {% endfor %}
+<p class="circle one"></p>
+<p class="circle two"></p>
 </div>
 
 [All Blog Posts](/blog)
