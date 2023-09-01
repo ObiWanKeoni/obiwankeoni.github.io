@@ -16,7 +16,7 @@ layout: hero
 <div class="hero" markdown=1>
 <div class="orb"></div>
 
-# Listen, Understand, Code. <span class="gradient-text">In that order.</span>
+# Listen, Understand, Code. <span class="gradient-text">In that order</span>.
 {: .mt-0 .fs-10}
 
 </div>
@@ -58,8 +58,9 @@ I am a software engineer with experience across a variety of industries and a pr
 [Read Article]({{child.url}}){: .button .float-right}
 </div>
 {% endfor %}
-<p class="circle one"></p>
-<p class="circle two"></p>
+<span id="firstShape" class="shape"></span>
+    <span id="secondShape" class="shape"></span>
+    <span id="thirdShape" class="shape"></span>
 </div>
 
 [All Blog Posts](/blog)
