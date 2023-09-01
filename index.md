@@ -16,10 +16,9 @@ layout: hero
 <div class="hero" markdown=1>
 
 # 👋 Hello there, my name is **Keoni Garner**
-{: .mb-0}
+{: .mb-0 .fs-10}
 
 ## Listen, Understand, <span class="gradient-text">Build</span>. In that order.
-{: .mt-0 .fs-10}
 
 <div class="orb"></div>
 <div class='container'>
