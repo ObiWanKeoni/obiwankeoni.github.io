@@ -963,7 +963,6 @@ p.devicon {
   align-items: center;
   justify-content: end;
   flex-direction: column;
-  overflow: hidden;
   position: relative;
   width: 100vw;
   position: relative;
@@ -979,6 +978,7 @@ p.devicon {
     z-index: 4;
     position: absolute;
     border-radius: 50%;
+    animation: spin 4s linear infinite;
     box-shadow:
         inset 0 0 50px #fff,
         inset 20px 0 60px $purple-300,
@@ -1054,7 +1054,7 @@ p.devicon {
   background: radial-gradient(
     circle,
     rgba(17, 17, 27, 0) 30%,
-    color-mix(in srgb, $blue-300 24%, transparent) 65%
+    color-mix(in srgb, $blue-300 24%, transparent) 65%,
     color-mix(in srgb, $purple-300 50%, transparent) 76%,
     white 100%
   );
