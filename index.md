@@ -32,8 +32,6 @@ layout: hero
 </div>
 </div>
 
-- - -
-
 ### About
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
