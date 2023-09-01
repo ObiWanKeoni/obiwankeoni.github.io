@@ -15,10 +15,10 @@ layout: hero
 
 <div class="hero" markdown=1>
 
-# 👋 Hello there, my name is **Keoni Garner**
+# 👋 Hello there, my name is <span class="gradient-text">Keoni Garner</span>
 {: .mb-0 .fs-10}
 
-## Listen, Understand, <span class="gradient-text">Build</span>. In that order.
+### Ask me about my keyboard
 
 <div class="orb"></div>
 <div class='container'>
@@ -39,7 +39,6 @@ layout: hero
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
 Bakersfield, CA • Remote • <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">GitHub</a>
 {: .mt-0 .fs-2}
-> ***Ask me about my keyboard***
 
 I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
