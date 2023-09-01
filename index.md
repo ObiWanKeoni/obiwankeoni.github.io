@@ -16,7 +16,7 @@ layout: hero
 <div class="hero" markdown=1>
 <div class="orb"></div>
 
-# Listen, Understand, Code. <span class="gradient-text">In that order</span>.
+# Listen, Understand, <span class="gradient-text">Build</span>. In that order.
 {: .mt-0 .fs-10}
 
 <div class='container'>
