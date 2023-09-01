@@ -67,6 +67,7 @@ I am a software engineer with experience across a variety of industries and a pr
 [Read Article]({{post.url}}){: .button .float-right}
 </div>
 {% endfor %}
+</div>
 
 [All Blog Posts](/blog)
 {: .mt-4 .mx-auto}
