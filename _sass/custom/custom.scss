@@ -1054,8 +1054,9 @@ p.devicon {
   background: radial-gradient(
     circle,
     rgba(17, 17, 27, 0) 30%,
-    rgba(30, 30, 46, .24) 76%,
-    $purple-300 100%
+    color-mix(in srgb, $blue-300 24%, transparent) 65%
+    color-mix(in srgb, $purple-300 50%, transparent) 76%,
+    white 100%
   );
   width: calc(100% - 200px);
   height: calc(100% - 200px);
