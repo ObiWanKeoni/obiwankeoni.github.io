@@ -1010,3 +1010,45 @@ p.devicon {
   width: 100%;
   object-fit: cover;
 }
+
+.container {
+  width: 940px;
+  height: 430px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: visible;
+  border-bottom: solid 2px rgba(133, 59, 255, 1);
+}
+.outerRing {
+  position: absolute;
+  width: 940px;
+  height: 940px;
+  border-radius: 1000px;
+  border: solid 2px rgba(131, 133, 241, 0.4);
+  left: 20px;
+  top: 0;
+  display: flex;
+  &::before {
+    content: "";
+    border: solid 2px rgba(131, 133, 241, 1);
+    filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+  }
+}
+.ring1 {
+  width: 900px !important;
+  height: 900px !important;
+  position: relative;
+  overflow: hidden;
+}
+.ring {
+  border-radius: 1000px;
+  background: radial-gradient(
+    circle,
+    rgba(3, 0, 20, 0) 30%,
