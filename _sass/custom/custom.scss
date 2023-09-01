@@ -1052,13 +1052,13 @@ p.devicon {
   background: radial-gradient(
     circle,
     rgba(3, 0, 20, 0) 30%,
-    rgb(72 55 126 / 24%) 76%,
+    rgba(72, 55, 126, .24) 76%,
     #7072e5 100%
   );
   width: calc(100% - 200px);
   height: calc(100% - 200px);
   aspect-ratio: 1;
-  border: solid 1px rgb(97 99 177 / 50%);
+  border: solid 1px rgba(97, 99, 177, .5);
   display: flex;
   margin: auto;
 }
