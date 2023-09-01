@@ -923,7 +923,7 @@ p.devicon {
     width: 100vw;
     height: 100vw;
     position: absolute;
-    top: -90vw;
+    top: -85vw;
     border-radius: 50%;
     box-shadow:
         inset 0 0 50px #fff,
@@ -932,7 +932,7 @@ p.devicon {
         inset 20px 0 300px $red-300,
         inset -20px 0 300px $blue-300,
           0 0 50px #fff,
-          -10px 0 60px $purple-300,
+          -10px 0 60px $yellow-300,
           10px 0 60px $blue-300;
   }
 }
