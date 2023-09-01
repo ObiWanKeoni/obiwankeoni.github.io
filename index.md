@@ -43,10 +43,11 @@ I am a software engineer with experience across a variety of industries and a pr
 - - -
 
 ### Recent Blog Posts
+{: .mt-2 .mb-5}
 
 <div class="card-container-horizontal" markdown=1>
 {% for post in blog_posts %}
-<div class="experience card mt-5 d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
+<div class="experience card d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
 
 <img class="blog-card-image" src="{{ post.image_link }}" alt="{{ post.title }}" />
 
@@ -71,10 +72,10 @@ I am a software engineer with experience across a variety of industries and a pr
 - - -
 
 ### Experience
-{: .mt-2}
+{: .mt-2 .mb-5}
 <div class="card-container-horizontal" markdown=1>
 {% for child in sorted_pages %}
-<div class="experience card mt-5 d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
+<div class="experience card d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
 
 <img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
 
