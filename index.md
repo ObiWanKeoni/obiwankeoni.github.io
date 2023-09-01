@@ -85,10 +85,10 @@ Active
 
 {% for history in child.history %}
 **{{ history.title }}**
-{: .mb-0}
+{: .mb-0 .float-left style="width: 50%;"}
 
 {{ history.dates }}
-{: .fs-3 .mt-0 .mb-2}
+{: .fs-3 .mt-0 .mb-2 .float-right}
 {% endfor %}
 
 <div class="icon-container" markdown=1>
