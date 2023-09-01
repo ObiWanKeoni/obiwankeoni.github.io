@@ -14,13 +14,12 @@ layout: hero
  | sort: "date" | reverse -%}
 
 <div class="hero" markdown=1>
-<div class="orb"></div>
 
 # Listen, Understand, <span class="gradient-text">Build</span>. In that order.
 {: .mt-0 .fs-10}
 
+<div class="orb"></div>
 <div class='container'>
-  <div class='outerRing'></div>
   <div class='ring ring1'>
     <div class='ring ring2'>
       <div class='ring ring3'>
