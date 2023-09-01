@@ -926,7 +926,6 @@ p.devicon {
     height:120px;
     position:absolute;
     border-radius:50%;
-    z-index:1;
   }
   .circle.one{
     background:linear-gradient(to bottom right, #9a3abe, #547bbd, #54c8c9);
@@ -936,7 +935,7 @@ p.devicon {
   }
   .circle.two {
     background:linear-gradient(to bottom right, #feb930, #da1467);
-    top:20px;
+    bottom:20px;
     right:-20px;
     animation:anim2 24s linear infinite;
   }
