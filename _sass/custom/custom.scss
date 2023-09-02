@@ -450,11 +450,18 @@ pre {
   margin: 0;
   position: relative;
   border-radius: 0.7rem;
-  background-color: $code-background-color;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background: radial-gradient(26% 38% at 24% 54%, $red-300 7%, transparent 100%),
+    radial-gradient(48% 22% at 50% 30%, $blue-300 7%, transparent 100%);
   padding: 0.5em;
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
+
+  > code {
+    background: color-mix(in srgb, $code-background-color 10%, transparent);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    padding: 0.5em;
+    border-radius: inherit;
+  }
 
   > div.window-container {
     @include fs-2;
@@ -541,9 +548,9 @@ pre {
     font-weight: 400;
     border: none;
     border-radius: $border-radius;
-    color: $blue-300;
-    border-color: $blue-300;
-    background-color: color-mix(in srgb, $blue-300 20%, transparent);
+    color: $purple-300;
+    border-color: $purple-300;
+    background-color: color-mix(in srgb, $purple-300 20%, transparent);
   }
 }
 
@@ -591,6 +598,7 @@ img.hero-image,
 div.hero-image {
   margin-left: -2rem;
   margin-right: -2rem;
+  overflow: hidden;
 }
 
 // Tables
