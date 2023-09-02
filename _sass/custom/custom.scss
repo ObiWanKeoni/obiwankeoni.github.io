@@ -826,7 +826,7 @@ p.devicon {
 
 .card {
   border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
-  background: color-mix(in srgb, $grey-dk-250 70%, transparent);
+  background: color-mix(in srgb, $grey-dk-300 70%, transparent);
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   position: relative;
@@ -902,8 +902,8 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  background-image: radial-gradient(26% 38% at 24% 54%, $red-300 7%, transparent 100%),
-    radial-gradient(48% 22% at 50% 30%, $blue-300 7%, transparent 100%),
+  background-image: radial-gradient(26% 38% at 24% 54%, $green-300 7%, transparent 100%),
+   // radial-gradient(48% 22% at 50% 30%, $blue-300 7%, transparent 100%),
     radial-gradient(35% 30% at 70% 60%, $purple-300 7%, transparent 100%);
   // Shapes
   .shape {
