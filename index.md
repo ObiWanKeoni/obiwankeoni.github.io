@@ -15,10 +15,10 @@ layout: hero
 
 <div class="hero" markdown=1>
 
-# 👋 Hello there, my name is <span class="gradient-text">Keoni Garner</span>
+# <span class="gradient-text">Keoni Garner</span>
 {: .mb-0 .fs-10}
 
-### Ask me about my keyboard
+### 👋 Hello there
 
 <div class="orb"></div>
 <div class='container'>
@@ -92,10 +92,10 @@ Active
 {% for history in child.history %}
 <div markdown=1>
 **{{ history.title }}**
-{: .mt-0 .mb-0 .float-left style="width: 50%;"}
+{: .mt-0 .mb-0 .float-left .fs-3 style="width: 50%;"}
 
 {{ history.dates }}
-{: .mt-0 .mb-0 .float-right}
+{: .mt-0 .mb-0 .float-right .fs-3}
 </div>
 {% endfor %}
 
