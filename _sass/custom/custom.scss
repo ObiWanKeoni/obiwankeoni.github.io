@@ -476,7 +476,7 @@ pre {
     padding: 0.25em 1em;
     justify-content: center;
     align-items: center;
-    background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
+    background: color-mix(in srgb, $code-background-color 80%, transparent) !important;
     border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
     border-bottom: 0px;
     backdrop-filter: blur(64px);
@@ -487,7 +487,7 @@ pre {
     > div.circle {
       height: 1em;
       width: 1em;
-      background-color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;;
+      background-color: color-mix(in srgb, $grey-dk-100 70%, transparent) !important;;
       border-radius: 50%;
       margin: 0 0.35em;
       flex-grow: 0;
