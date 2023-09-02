@@ -460,10 +460,10 @@ pre {
     radial-gradient(74% 86% at 67% 38%, #f5c2e7 24%, #073AFF00 100%),
     linear-gradient(125deg, #89b4fa 1%, #b4befe 100%);
   > code.hljs {
-    background: color-mix(in srgb, $code-background-color 70%, transparent) !important;
-    border: 1px solid color-mix(in srgb, $grey-lt-000 50%, transparent);
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
+    background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
+    border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
     padding: 1em;
     border-radius: inherit;
   }
@@ -513,9 +513,9 @@ pre {
     align-items: center;
     position: absolute;
     z-index: 4;
-    top: 1rem;
-    right: 1rem;
-    color: color-mix(in srgb, $grey-lt-100 10%, transparent) !important;
+    top: 2rem;
+    right: 3rem;
+    color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
     background: $code-background-color;
     flex-grow: 0;
     box-shadow: none !important;
