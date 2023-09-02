@@ -473,7 +473,7 @@ pre {
   > div.window-container {
     @include fs-2;
     display: flex;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 1em;
     justify-content: center;
     align-items: center;
     background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
