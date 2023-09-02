@@ -498,6 +498,7 @@ pre {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-right: 1em;
 
       > p {
         font-family: $body-font-family;
@@ -511,8 +512,8 @@ pre {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1.75em;
+    right: 1.75em;
     color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
     background: transparent !important;
     flex-grow: 0;
