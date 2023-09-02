@@ -501,6 +501,7 @@ pre {
         font-family: $body-font-family;
         text-transform: none;
         font-weight: 500;
+        color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
       }
     }
   }
