@@ -485,9 +485,9 @@ pre {
     border-top-right-radius: 0.7rem;
 
     > div.circle {
-      height: .75em;
-      width: .75em;
-      background-color: $grey-lt-200;
+      height: 1em;
+      width: 1em;
+      background-color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;;
       border-radius: 50%;
       margin: 0 0.35em;
       flex-grow: 0;
@@ -501,8 +501,6 @@ pre {
 
       > p {
         font-family: $body-font-family;
-        text-transform: none;
-        font-weight: 500;
         color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
       }
     }
