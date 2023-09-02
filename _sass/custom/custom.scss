@@ -448,16 +448,20 @@ pre {
   margin: 0;
   position: relative;
   border-radius: 0.7rem;
-  width: 110%;
-  margin-left: -2rem;
-  margin-right: -2rem;
+  max-width: 200%;
+  margin-left: -1rem;
+  margin-right: -1rem;
   overflow: hidden;
-  background: radial-gradient(26% 38% at 24% 54%, $red-300 5%, transparent 100%),
-    radial-gradient(48% 22% at 50% 30%, $blue-300 5%, transparent 100%);
-
+  padding: 1rem;
+  background: radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
+    radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
+    radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
+    radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
+    radial-gradient(74% 86% at 67% 38%, #f5c2e7 24%, #073AFF00 100%),
+    linear-gradient(125deg, #89b4fa 1%, #b4befe 100%);
   > code.hljs {
     background: color-mix(in srgb, $code-background-color 70%, transparent) !important;
-    border: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
+    border: 1px solid color-mix(in srgb, $grey-lt-000 50%, transparent);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     padding: 1em;
@@ -508,10 +512,11 @@ pre {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 1em;
-    right: 1em;
-    color: color-mix(in srgb, $grey-lt-100 10%, transparent);
-    background: inherit !important;
+    z-index: 4;
+    top: 1rem;
+    right: 1rem;
+    color: color-mix(in srgb, $grey-lt-100 10%, transparent) !important;
+    background: $code-background-color;
     flex-grow: 0;
     box-shadow: none !important;
     padding: 0 0.25em !important;
