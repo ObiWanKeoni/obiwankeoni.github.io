@@ -63,7 +63,7 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 
 {{post.description}}
 
-[Read Article]({{post.url}}){: .button .float-right}
+[Read Article]({{post.url}}){: .float-right}
 </div>
 {% endfor %}
 </div>
@@ -108,7 +108,7 @@ Active
 {% endfor %}
 </div>
 
-[Learn More]({{child.url}}){: .button .float-right}
+[Learn More]({{child.url}}){: .float-right}
 </div>
 {% endfor %}
 </div>
