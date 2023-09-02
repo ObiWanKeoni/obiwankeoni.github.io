@@ -15,10 +15,14 @@ layout: hero
 
 <div class="hero" markdown=1>
 
+### 👋 Hello there
+
 # <span class="gradient-text">Keoni Garner</span>
 {: .mb-0 .fs-10}
 
-### 👋 Hello there
+#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
+Bakersfield, CA • Remote • <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">GitHub</a>
+{: .mt-0 .fs-2}
 
 <div class="orb"></div>
 <div class='container'>
@@ -34,11 +38,9 @@ layout: hero
 
 ### About
 
-#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
-Bakersfield, CA • Remote • <a style="text-decoration: none; font-weight: bold;" href="https://github.com/ObiWanKeoni">GitHub</a>
-{: .mt-0 .fs-2}
+I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. More importantly, though, I am a father to one wonderful little boy (Dakota 2) and a husband to my beautiful wife (Jamie 26). My hobbies include ergonomics, keyboards, and [creative writing](/writing/) (most commonly Lovecraftian Horror).
 
-I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
+Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
 - - -
 
