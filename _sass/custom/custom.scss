@@ -461,8 +461,8 @@ pre {
   > code.hljs {
     background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
     border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
-    backdrop-filter: blur(64px);
-    -webkit-backdrop-filter: blur(64px);
+    backdrop-filter: blur(48px);
+    -webkit-backdrop-filter: blur(48px);
     padding: 1em;
     border-bottom-left-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
@@ -511,7 +511,7 @@ pre {
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 4;
+    z-index: 1;
     top: 2rem;
     right: 2rem;
     color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
@@ -1005,9 +1005,9 @@ p.devicon {
   border-bottom: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
   padding: 1rem;
   .orb {
-    width: 1500px;
-    height: 1500px;
-    bottom: -750px;
+    width: 1250px;
+    height: 1250px;
+    bottom: -625px;
     margin: auto;
     z-index: 4;
     position: absolute;
