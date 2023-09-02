@@ -991,9 +991,9 @@ p.devicon {
   border-bottom: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
   padding: 1rem;
   .orb {
-    width: 2000px;
-    height: 2000px;
-    bottom: -1000px;
+    width: 1000px;
+    height: 1000px;
+    bottom: -500px;
     margin: auto;
     z-index: 4;
     position: absolute;
@@ -1008,6 +1008,11 @@ p.devicon {
           0 0 50px #fff,
           -10px 0 60px $purple-300,
           10px 0 60px $blue-300;
+    @include mq(md) {
+      width: 2000px;
+      height: 2000px;
+      bottom: -1000px;
+    }
   }
 }
 
