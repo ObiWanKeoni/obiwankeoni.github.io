@@ -910,6 +910,7 @@ p.devicon {
   position: relative;
   margin: 0 auto;
   display: grid;
+  justify-content: space-evenly;
   grid-auto-flow: column;
   gap: 1.25rem;
   padding: 1.25rem;
