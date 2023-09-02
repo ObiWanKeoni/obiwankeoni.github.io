@@ -496,6 +496,8 @@ pre {
     > div.title {
       flex-grow: 1;
       display: flex;
+      justify-content: center;
+      align-items: center;
 
       > h4 {
         font-family: $body-font-family;
