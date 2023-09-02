@@ -468,6 +468,8 @@ pre {
     border-bottom-right-radius: 0.7rem;
     border-top: 0px;
     width: 100% !important;
+    font-size: .8em;
+    line-height: 2em;
   }
 
   > div.window-container {
@@ -476,7 +478,7 @@ pre {
     padding: 0.25em 1em;
     justify-content: center;
     align-items: center;
-    background: color-mix(in srgb, $code-background-color 85%, transparent) !important;
+    background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
     border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
     border-bottom: 0px;
     backdrop-filter: blur(64px);
@@ -501,7 +503,7 @@ pre {
       margin-left: -4em;
 
       > p {
-        font-family: $body-font-family;
+        font-family: $body-font-family !important;
         color: color-mix(in srgb, $grey-lt-100 70%, transparent) !important;
       }
     }
@@ -594,7 +596,7 @@ code.hljs {
 img.hero-image,
 .hero-image > img {
   width: 125%;
-  height: 25vh;
+  height: 35vh;
   display: block;
   object-fit: cover;
   object-position: center center;
@@ -605,6 +607,7 @@ div.hero-image {
   margin-right: -1rem;
   overflow: hidden;
   max-width: 400%;
+  height: 35vh;
 }
 
 // Tables
@@ -1008,9 +1011,9 @@ p.devicon {
   border-bottom: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
   padding: 1rem;
   .orb {
-    width: 1250px;
-    height: 1250px;
-    bottom: -1000px;
+    width: 400vw;
+    height: 400vw;
+    bottom: calc(25vh - 400vw);
     margin: auto;
     z-index: 4;
     position: absolute;
@@ -1025,11 +1028,6 @@ p.devicon {
           0 0 50px #fff,
           -10px 0 60px $purple-300,
           10px 0 60px $blue-300;
-    @include mq(md) {
-      width: 2000px;
-      height: 2000px;
-      bottom: -1000px;
-    }
   }
 }
 
