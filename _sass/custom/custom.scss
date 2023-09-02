@@ -456,7 +456,7 @@ pre {
     radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, transparent 100%),
     radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, transparent 100%),
     radial-gradient(35% 56% at 91% 74%, #FFFFFFF5 9%, transparent 100%),
-    radial-gradient(74% 86% at 67% 38%, $green-300 24%, transparent 100%),
+    radial-gradient(74% 86% at 67% 38%, $red-100 24%, transparent 100%),
     linear-gradient(125deg, $blue-300 1%, $purple-300 100%);
   > code.hljs {
     background: color-mix(in srgb, $code-background-color 85%, transparent) !important;
@@ -920,8 +920,8 @@ p.devicon {
     radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, transparent 100%),
     radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, transparent 100%),
     radial-gradient(35% 56% at 91% 74%, #FFFFFFF5 9%, transparent 100%),
-    radial-gradient(74% 86% at 67% 38%, $green-300 24%, transparent 100%),
-    linear-gradient(125deg, $red-300 1%, $purple-300 100%);
+    radial-gradient(74% 86% at 67% 38%, $blue-300 24%, transparent 100%),
+    linear-gradient(125deg, $red-100 1%, $purple-300 100%);
   // Shapes
   .shape {
     position: absolute;
