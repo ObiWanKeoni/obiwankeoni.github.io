@@ -452,12 +452,12 @@ pre {
   margin-right: -1rem;
   overflow: hidden;
   padding: 1rem;
-  background: radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),
-    radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),
-    radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),
-    radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),
-    radial-gradient(74% 86% at 67% 38%, #f5c2e7 24%, #073AFF00 100%),
-    linear-gradient(125deg, #89b4fa 1%, #b4befe 100%);
+  background: radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, transparent 100%),
+    radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, transparent 100%),
+    radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, transparent 100%),
+    radial-gradient(35% 56% at 91% 74%, #FFFFFFF5 9%, transparent 100%),
+    radial-gradient(74% 86% at 67% 38%, $green-300 24%, transparent 100%),
+    linear-gradient(125deg, $blue-300 1%, $purple-300 100%);
   > code.hljs {
     background: color-mix(in srgb, $code-background-color 85%, transparent) !important;
     border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
@@ -916,9 +916,12 @@ p.devicon {
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  background-image: radial-gradient(26% 38% at 24% 54%, $green-300 7%, transparent 100%),
-   // radial-gradient(48% 22% at 50% 30%, $blue-300 7%, transparent 100%),
-    radial-gradient(35% 30% at 70% 60%, $purple-300 7%, transparent 100%);
+  background-image: radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, transparent 100%),
+    radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, transparent 100%),
+    radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, transparent 100%),
+    radial-gradient(35% 56% at 91% 74%, #FFFFFFF5 9%, transparent 100%),
+    radial-gradient(74% 86% at 67% 38%, $green-300 24%, transparent 100%),
+    linear-gradient(125deg, $red-300 1%, $purple-300 100%);
   // Shapes
   .shape {
     position: absolute;
