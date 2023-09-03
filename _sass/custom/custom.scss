@@ -334,7 +334,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  background: -webkit-linear-gradient($white, $grey-dk-300);
+  background: -webkit-linear-gradient($white, $grey-dk-000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1012,9 +1012,6 @@ p.devicon {
   margin-top: -1rem;
   border-bottom: 1px solid color-mix(in srgb, $grey-lt-000 10%, transparent);
   padding: 1rem;
-  background: -webkit-linear-gradient($white, $grey-dk-300);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   .orb {
     width: 400vw;
     height: 400vw;
