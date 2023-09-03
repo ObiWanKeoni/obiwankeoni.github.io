@@ -21,8 +21,6 @@ layout: hero
 {: .mb-0 .fs-10}
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
-Bakersfield, CA • Remote
-{: .mt-0 .fs-2}
 
 <div class="orb"></div>
 <div class='container'>
