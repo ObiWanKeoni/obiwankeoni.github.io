@@ -21,7 +21,7 @@ layout: hero
 {: .mb-0 .fs-10}
 
 #### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
-Bakersfield, CA • Remote • <a style="text-decoration: none; font-weight: 600;" class="no-arrow" href="https://github.com/ObiWanKeoni">GitHub</a>
+Bakersfield, CA • Remote
 {: .mt-0 .fs-2}
 
 <div class="orb"></div>
