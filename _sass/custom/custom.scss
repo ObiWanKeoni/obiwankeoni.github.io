@@ -847,6 +847,7 @@ p.devicon {
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   position: relative;
+  transition: all 0.7s;
   &:hover{
     border: 1px solid color-mix(in srgb, $grey-lt-000 50%, transparent);
     box-shadow:
