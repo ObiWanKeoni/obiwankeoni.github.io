@@ -2,7 +2,7 @@
 layout: blog
 title: Proximity Search
 description: A How-To on the different methods for solving proximity search.
-image_link: /assets/images/proximity-search.png
+image_link: /assets/images/proximity-search.webp
 parent: Blog
 date: 2023-06-30
 time_to_read: 9 min

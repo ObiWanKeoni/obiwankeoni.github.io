@@ -2,7 +2,7 @@
 layout: blog
 title: Your Keyboard Has Too Many Keys
 description: Brief history of keyboards and a less brief introduction to the world of ergonomic keyboards.
-image_link: /assets/images/your-keyboard-has-too-many-keys.png
+image_link: /assets/images/your-keyboard-has-too-many-keys.webp
 parent: Blog
 date: 2023-07-30
 time_to_read: 9 min
