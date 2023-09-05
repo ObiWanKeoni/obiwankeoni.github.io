@@ -597,6 +597,7 @@ img.hero-image,
 .hero-image > img {
   width: 125%;
   height: 35vh;
+  max-height: 400px;
   display: block;
   object-fit: cover;
   object-position: center center;
@@ -608,6 +609,7 @@ div.hero-image {
   overflow: hidden;
   max-width: 400%;
   height: 35vh;
+  max-height: 400px;
 }
 
 // Tables
