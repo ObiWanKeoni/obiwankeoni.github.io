@@ -37,7 +37,8 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 
 {% for post in blog_posts limit:3 %}
 <div markdown=1>
-[{{post.title}}]({{post.url}}){: .no-arrow .float-left}
+[{{post.title}}]({{post.url}})
+{: .float-left}
 
 {{post.date}}
 {: .float-right}
@@ -52,11 +53,11 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 ### Experience
 {: .mt-2 .mb-5}
 
+{% for child in sorted_pages limit:3 %}
+
 <div class="mb-2" markdown="1">
 ####  [{{child.title}}]({{child.url}})
 {: .float-left}
-
-{% for child in sorted_pages limit:3 %}
 {% if child.nav_order == 1 %}
 Active
 {: .label .label-green .ml-0 .my-0 .float-right}
