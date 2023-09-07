@@ -2,7 +2,6 @@
 title: About
 has_children: true
 has_toc: false
-layout: hero
 ---
 {%- assign child_pages = site[page.collection]
  | default: site.html_pages
@@ -16,27 +15,20 @@ layout: hero
 <div class="hero" markdown=1>
 
 ### 👋 Hello there
+{: .my-0}
 
 # Keoni Garner
 {: .mb-0 .fs-10}
 
-#### Senior Software Engineer @ <a style="text-decoration: none;" href="https://iso.io">iso.io</a>
-
-<div class="orb"></div>
-<div class='container'>
-  <div class='ring ring1'>
-    <div class='ring ring2'>
-      <div class='ring ring3'>
-        <div class='ring ring4'></div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+#### Senior Software Engineer @ [iso.io](https://iso.io){: style="text-decoration: none;"}
 
 ### About
 
-I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked. More importantly, though, I am a father to one wonderful little boy (Dakota 2) and a husband to my beautiful wife (Jamie 26). My hobbies include ergonomics, keyboards, and [creative writing](/writing/) (most commonly Lovecraftian Horror).
+I always thought software engineering was out of reach, that I was simply too dumb to learn it even though it pulled at me subtly. Back in 2016, the curriculum for a Petroleum Engineering degree required a programming course. I chose C++ and **fell in love** with code.
+
+I would have pursued a CS degree if I wouldn't have had to retake a year at University so I finished my Community College degree and jumped headfirst into a coding bootcamp. Now I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked.
+
+More importantly, though, I am a father to one wonderful little boy (Dakota 2) and a mediocre husband to my beautiful wife (Jamie 26). My hobbies include ergonomics, keyboards, and [creative writing](/writing/) (mainly Lovecraftian Horror).
 
 Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
@@ -45,26 +37,9 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 ### Recent Blog Posts
 {: .mt-2 .mb-5}
 
-<div class="card-container-horizontal" markdown=1>
-{% for post in blog_posts %}
-<div class="experience card d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
-
-<img class="blog-card-image" src="{{ post.image_link }}" alt="{{ post.title }}" />
-
-<div class="blog-title" markdown=1>
-### {{post.title}}
-{: .mb-2 .mt-0 .float-left style="width: 50%;"}
-
-{{ post.date | date_to_string }} 
-{: .float-right}
-</div>
-
-{{post.description}}
-
-[Read Article]({{post.url}}){: .float-right}
-</div>
+{% for post in blog_posts limit:3 %}
+[{{post.title}}]({{post.url}})
 {% endfor %}
-</div>
 
 [All Blog Posts](/blog)
 {: .mt-4 .mx-auto}
@@ -73,40 +48,27 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 
 ### Experience
 {: .mt-2 .mb-5}
-<div class="card-container-horizontal" markdown=1>
-{% for child in sorted_pages %}
-<div class="experience card d-flex" style="flex-direction: column;justify-content: space-between;" markdown=1>
 
-<img class="filter" src="{{ child.image_link }}" alt="{{ child.title }}" />
-
-<div class="blog-title" markdown=1>
-### {{child.title}}
-{: .mb-2 .mt-0 .flex-grow-1}
+{% for child in sorted_pages limit:3 %}
+- - -
 
 {% if child.nav_order == 1 %}
 Active
-{: .label .label-green .ml-0 .mt-0 .abs-top-left}
+{: .label .label-green .ml-0 .my-0}
 {% endif %}
-</div>
+
+####  [{{child.title}}]({{child.url}})
+{: .mb-2}
 
 {% for history in child.history %}
-<div markdown=1>
 **{{ history.title }}**
-{: .mt-0 .mb-0 .float-left .fs-3 style="width: 50%;"}
+{: .mb-0}
 
 {{ history.dates }}
-{: .mt-0 .mb-0 .float-right .fs-3}
-</div>
+{: .fs-3 .mt-0 .mb-2}
+{% endfor %}
+{% endfor %}
 {% endfor %}
 
-<div class="icon-container" markdown=1>
-{% for language in child.languages %}
-<i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
-{: .fs-6 .devicon}
-{% endfor %}
-</div>
-
-[Learn More]({{child.url}}){: .float-right}
-</div>
-{% endfor %}
-</div>
+[View Full Résumé](/resume)
+{: .mt-4 .mx-auto}
