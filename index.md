@@ -12,7 +12,6 @@ has_toc: false
  | where: "parent", "Blog"
  | sort: "date" | reverse -%}
 
-
 ### 👋 Hello there
 {: .my-0}
 
@@ -40,7 +39,7 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 [{{post.title}}]({{post.url}})
 {% endfor %}
 
-[All Blog Posts](/blog)
+[All Blog Posts](/blog){: .button}
 {: .mt-4 .mx-auto}
 
 - - -
@@ -49,8 +48,6 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 {: .mt-2 .mb-5}
 
 {% for child in sorted_pages limit:3 %}
-- - -
-
 {% if child.nav_order == 1 %}
 Active
 {: .label .label-green .ml-0 .my-0}
@@ -66,7 +63,10 @@ Active
 {{ history.dates }}
 {: .fs-3 .mt-0 .mb-2}
 {% endfor %}
+
+- - -
+
 {% endfor %}
 
-[View Full Résumé](/resume)
+[View Full Résumé](/resume){: .button}
 {: .mt-4 .mx-auto}
