@@ -68,7 +68,6 @@ Active
 {: .fs-3 .mt-0 .mb-2}
 {% endfor %}
 {% endfor %}
-{% endfor %}
 
 [View Full Résumé](/resume)
 {: .mt-4 .mx-auto}
