@@ -12,7 +12,6 @@ has_toc: false
  | where: "parent", "Blog"
  | sort: "date" | reverse -%}
 
-<div class="hero" markdown=1>
 
 ### 👋 Hello there
 {: .my-0}
