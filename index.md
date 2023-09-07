@@ -36,7 +36,7 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 {: .mt-2 .mb-5}
 
 {% for post in blog_posts limit:3 %}
-[{{post.title}}]({{post.url}})
+[{{post.title}}]({{post.url}}){: .no-arrow}
 {% endfor %}
 
 [All Blog Posts](/blog){: .button}
