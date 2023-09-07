@@ -36,12 +36,7 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 {: .mt-2 .mb-5}
 
 {% for post in blog_posts limit:3 %}
-<div class="d-flex" markdown=1>
-[{{post.title}}]({{post.url}})
-{: .flex-grow-1}
-
-{{post.date}}
-</div>
+({{post.date}}) [{{post.title}}]({{post.url}})
 {% endfor %}
 
 [All Blog Posts](/blog){: .button}
@@ -56,7 +51,6 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 
 <div class="mb-2" markdown="1">
 ####  [{{child.title}}]({{child.url}})
-{: .flex-grow-1}
 {% if child.nav_order == 1 %}
 Active
 {: .label .label-green .ml-0 .my-0}
