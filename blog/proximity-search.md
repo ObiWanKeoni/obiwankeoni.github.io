@@ -385,7 +385,7 @@ WHERE ST_Contains(
 And it should run MUCH faster.
 
 ##### Simplifying Polygons
-Colorado is rectangular right? [Wrong](https://www.denverpost.com/2019/10/16/colorado-state-line-rectangle-how-many-sides/amp/)! There are hundreds of vertices on the Colorado border. The amount of vertices is directly correlated with the performance of a buffer for a given region so sometimes it’s worth it to simplify the polygon before calculating the buffer with a (nominal) trade-off of accuracy.
+Colorado is rectangular right? [Wrong](https://www.denverpost.com/2019/10/16/colorado-state-line-rectangle-how-many-sides/amp/)! There are hundreds of vertices on the Colorado border. The amount of vertices is directly correlated with the latency of calculating a buffer for a given region so sometimes it’s worth it to simplify the polygon before calculating the buffer with a (nominal) trade-off of accuracy.
 
 Visualization:
 
