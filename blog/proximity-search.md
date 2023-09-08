@@ -75,13 +75,15 @@ With these in mind, let’s get into the solution.
 That’s right! Let’s pre-process the geometry files and create a mapping of `qualifier: centroid` to give us our centroid for the calculation. 
 
 {: .note}
-If you later want to seed your database with these files, you can fairly easily do so. For convenience, there will also be a script at the end of this section to do this ✨automatically ✨
+If you later want to seed your database with these files, you can fairly easily do so. 
 
 #### Step 1: Download the file(s)
 
 [Shapefile Directory By Layer](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/)
 
 We will need a file for each “layer” we want to support (e.g. [ZCTA520](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/ZCTA520/) for both 3 and 5 digit zip codes)
+
+Convenience script to do this ✨automatically ✨:
 
 ```bash
 ### Downloading Shapefiles ###
@@ -111,59 +113,30 @@ download_shapefile() {
 us_zipcodes_filename="$output_dir/tl_rd22_us_zcta520.zip"
 download_shapefile "$us_zipcodes_url" "$us_zipcodes_filename"
 ```
+{: title="download_shapefiles.sh"}
 
 #### Step 2: Process the shapefile(s)
-Discarding accuracy for a moment, a simple centroid calculation can look like:
-
-`(AVG(latitudes), AVG(longitudes))`
-
-If we want to achieve greater accuracy with the centroid, we might want to move toward a richer solution. Again, being scrappy here.
-
-So with that, we would write a script that looks something like this:
-
-Get [ijson](https://github.com/ICRAR/ijson) for efficient parsing of this large file
+Utilizing a very well-maintained Python library ([geopandas](https://geopandas.org/en/stable/)), we can very cleanly parse a shapefile directly in to a CSV that will represent a relatively static database table. You can use this to seed a database table so you can quickly look up a centroid and possibly offload all of the work to the database.
 ```shell
-pip install ijson
+pip install geopandas
 ```
 
 ```python
-import shapefile
-import csv
-import os
-import pyproj
+import geopandas as gpd
 
-STATES = {
-    "01": 'AL',
-    # ... [rest of your states]
-}
-
-PROVINCES = {
-    "10": 'NL',
-    # ... [rest of your provinces]
-}
-
-class ExtractCentroids:
-    def __init__(self):
-        self.geography = pyproj.Proj(proj="latlong", datum="WGS84")
-        self.projection = pyproj.Proj(proj="tmerc", lat_0=49, lon_0=-2, k=0.9996, x_0=500000, y_0=0, ellps="GRS80", units="m")
-        self.rows = [['city', 'principal_subdivision', 'postal_code', 'latitude', 'longitude']]
-
-    def transform(self, x, y):
-        return pyproj.transform(self.projection, self.geography, x, y)
-
-    def progress_bar(self, index, total):
-        percent_complete = ((index+1) / total * 100)
-        progress_bar = "=" * int(percent_complete / 2)
-        print(f"\r[{progress_bar.ljust(50)}] {percent_complete:.2f}%", end="")
+def extract_centroids_from_shapefile(input_shapefile, output_csv):
+    # Load the shapefile into a GeoDataFrame
+    gdf = gpd.read_file(input_shapefile)
     
-    def process_file(self, file_path):
-        # ... [rest of your methods]
+    # Calculate centroids
+    gdf['latitude'] = gdf['geometry'].centroid.y
+    gdf['longitude'] = gdf['geometry'].centroid.x
 
-    def to_csv(self, file_name):    
-     with open(file_name, 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(self.rows)
+    # Extract relevant columns and write to CSV
+    gdf[['ZCTA5CE10', 'latitude', 'longitude']].rename(columns={'ZCTA5CE10': 'postal code'}).to_csv(output_csv, index=False)
 
+# Example usage assuming you've used the bash script above
+extract_centroids_from_shapefile("./shapefiles/tl_rd22_us_zcta520/tl_rd22_us_zcta520.shp", "output.csv")
 ```
 {: title="script.py"}
 
@@ -172,21 +145,21 @@ Each layer will have its own mapping, so there may be better ways to do this and
 
 Which should result in a mapping file like:
 
-```json
-{
-  "93301": [35.3843365, -119.0205616],
-  "93302": [35.5522, -118.9188],
-  …
-}
-```
-{: title="zipcode-centroid.json"}
+| postal code | latitude   | longitude    |
+| ----------- | ---------- | ------------ |
+| 93301       | 35.3843365 | -119.0205616 |
+| 93302       | 35.5522    | -118.9188    |
+| ...         |            |              |
 
 {: .info }
 Repeat this for each file/layer/address qualifier that you need to support.
 
-And there you have it! A file you can now use to get the centroid from an address qualifier. 
+And there you have it! A file you can now use to seed your database with. 
 
-#### Step 4: Use the [file] Luke
+{: .info}
+I will not be going into detail on how to seed the file into your database as it will vary widely based on the tech stack you've chosen. There are plenty of resources for this step though on the internet. 
+
+#### Step 3: Use the [data] Luke
 Assuming you have a `customer_addresses` table with `latitude` and `longitude` columns, a query for the radius search (in kilometers) could look like this:
 
 ```sql
@@ -222,7 +195,7 @@ Be sure to replace `{centroid_latitude}`, `{centroid_longitude}`,  and `{radius_
 
 That’s pretty much it. **Radius Search**  in just a few steps. 
 
-#### Step 5: Optimization (Optional)
+#### Step 4: Optimization (Optional)
 Note that the Haversine calculation must be run for each record in the database. If your database is millions of records large, this will become problematic. The easiest way to filter this down is to do basic geometry.
 
 If Haversine can be viewed as a circle around a given point with a supplied radius, we can also use that radius to overlay a "bounding box" around the circle such that the sides of the bounding box are equal to the diameter of the circle. In this way, we can do a very rudimentary query to filter our results first before calculating the Haversine distance:
@@ -236,6 +209,8 @@ AND
 longitude BETWEEN (centroid_longitude + radius) AND
 (centroid_longitude - radius)
 ```
+
+If you have tolerance for inaccuracy, you might feel comfortable with just this bounding box search which is perfectly reasonable too!
 
 #### Estimate
 
@@ -278,7 +253,7 @@ CREATE EXTENSION postgis;
 
 We can actually use the load the same shapefiles into PostGIS to generate tables for each layer that we’d need.
 
-Using `ogr2ogr` like before, we can do:
+Using `ogr2ogr`  we can do:
 
 ```shell
 ogr2ogr -f "PostgreSQL" \
