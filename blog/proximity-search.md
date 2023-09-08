@@ -62,7 +62,7 @@ In true startup-fashion, let’s evaluate how we might add this feature with as 
 
 First thing you should know is that the US government releases the polygons for each of these regions we might need every time they change. It’s completely free and open to use if you know how to use it.
 
-Second is that this solution will assume ONLY radius search since it’s the only required ask.
+Second is that this solution will assume **ONLY RADIUS SEARCH** since it’s the only required ask.
 
 Third is that we can do a very rudimentary distance calculation between two Cartesian points via the [Haversine equation](https://en.m.wikipedia.org/wiki/Haversine_formula#:~:text=These%20names%20follow%20from%20the,sin2(θ2)).
 
@@ -70,38 +70,49 @@ With these in mind, let’s get into the solution.
 
 *drum roll* 🥁
 
-🎉 JSON files! 🎉
-
-{: .note}
-If you later want to seed your database with these files, you can fairly easily do so.
+🎉 flat files! 🎉
 
 That’s right! Let’s pre-process the geometry files and create a mapping of `qualifier: centroid` to give us our centroid for the calculation. 
 
-#### Step 1: Download the file
+{: .note}
+If you later want to seed your database with these files, you can fairly easily do so. For convenience, there will also be a script at the end of this section to do this ✨automatically ✨
+
+#### Step 1: Download the file(s)
 
 [Shapefile Directory By Layer](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/)
 
 We will need a file for each “layer” we want to support (e.g. [ZCTA520](https://www2.census.gov/geo/tiger/TIGER_RD18/LAYER/ZCTA520/) for both 3 and 5 digit zip codes)
 
-#### Step 2: Convert Shapefile to GeoJSON
+```bash
+### Downloading Shapefiles ###
 
-Install the [GDAL](https://gdal.org/download.html) library
+# Specify the URLs of the shapefiles you want to download
 
-```shell
-brew install gdal
+# Zip Code tabulation areas (ZCTA) for US
+us_zipcodes_url="https://www2.census.gov/geo/tiger/TIGER2022/ZCTA520/tl_2022_us_zcta520.zip"
+  
+# Directory to save downloaded shapefiles
+output_dir="./shapefiles"
+
+# Create output directory if it doesn't exist
+mkdir -p "$output_dir"
+
+# Function to download a shapefile from a URL, extract the zip file, then delete the zip file
+download_shapefile() {
+  local url="$1"
+  local output_filename="$2"
+
+  curl --continue-at - --progress-bar -o "$output_filename" "$url"
+
+  unzip -o "$output_filename" -d "${output_filename%.zip}"
+}
+
+# Download US ZIP codes shapefile
+us_zipcodes_filename="$output_dir/tl_rd22_us_zcta520.zip"
+download_shapefile "$us_zipcodes_url" "$us_zipcodes_filename"
 ```
 
-Once that’s complete, you should have the ogr2ogr command and you should be able to do a straightforward conversion to GeoJSON with the following command:
-
-```shell
-ogr2ogr -f GeoJSON \
-  output.json \
-  input.shp
-```
-
-This output file will be much larger than you’ll likely want to store. For this reason, we will convert the geometries into centroids for a given layer in the next step.
-
-#### Step 3: Pre-process the file
+#### Step 2: Process the shapefile(s)
 Discarding accuracy for a moment, a simple centroid calculation can look like:
 
 `(AVG(latitudes), AVG(longitudes))`
@@ -116,23 +127,43 @@ pip install ijson
 ```
 
 ```python
-import ijson
+import shapefile
+import csv
+import os
+import pyproj
 
-# alternatively, if you're worried about oddly shaped polygons, you can use
-# the polylabel algorithm to ensure the point lands in the "visual center"
-def centroid(points: list):
-    x, y = zip(*points)
-    l = len(x)
-    return sum(x) / l, sum(y) / l
+STATES = {
+    "01": 'AL',
+    # ... [rest of your states]
+}
 
-mapping = {}
+PROVINCES = {
+    "10": 'NL',
+    # ... [rest of your provinces]
+}
 
-with open("./output.json") as f:
-  for record in ijson.items(f, "features"):
-    mapping[record["properties"]["ZCTA520"]] = centroid(record["geometry"]["coordinates"])
+class ExtractCentroids:
+    def __init__(self):
+        self.geography = pyproj.Proj(proj="latlong", datum="WGS84")
+        self.projection = pyproj.Proj(proj="tmerc", lat_0=49, lon_0=-2, k=0.9996, x_0=500000, y_0=0, ellps="GRS80", units="m")
+        self.rows = [['city', 'principal_subdivision', 'postal_code', 'latitude', 'longitude']]
 
-with open("./zipcode-centroid.json") as f:
-  json.dumps(f, mapping)
+    def transform(self, x, y):
+        return pyproj.transform(self.projection, self.geography, x, y)
+
+    def progress_bar(self, index, total):
+        percent_complete = ((index+1) / total * 100)
+        progress_bar = "=" * int(percent_complete / 2)
+        print(f"\r[{progress_bar.ljust(50)}] {percent_complete:.2f}%", end="")
+    
+    def process_file(self, file_path):
+        # ... [rest of your methods]
+
+    def to_csv(self, file_name):    
+     with open(file_name, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(self.rows)
+
 ```
 {: title="script.py"}
 
