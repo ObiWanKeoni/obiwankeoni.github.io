@@ -38,7 +38,7 @@ In this post, I will give you everything you need to speak intelligently about a
 Christopher Latham Sholes is a rarely-remembered member (say that 3 times fast...) of the American Industrialists, yet it is more likely that you interact with his inventions every day than, say, Henry Ford. Sholes, while disputed as the inventor of the typewriter, is certainly the inventor of the dominant layout for it and each of its predecessors... QWERTY. The [Remington No. 2](https://americanhistory.si.edu/collections/search/object/nmah_687313) typewriter was invented in 1878 saw incredible commercial success as it was the first model to include a <kbd>⇧ shift</kbd> key which allowed tying both capital and lowercase letters. This success all but solidified QWERTY as the masses got more acclimated and, thus, more resistant to change. The vast majority of typewriter or keyboard products for the following 150 years would use QWERTY.
 
 {: .note}
-**Aside** QWERTY is not really a terrible layout - in fact it functions rather well for modern browsing which typically includes (for right handed folks) a mouse in the right hand. QWERTY is left-hand dominant in that many English words can be typed with only the left hand. This makes for great one handed typing while using the mouse to browse. It is, however, only one layout so I always suggest experimentation. Don't just [cut off the ends of the ham](https://executiveforum.com/cutting-off-the-ends-of-the-ham/).
+**Aside**: QWERTY is not really a terrible layout - in fact it functions rather well for modern browsing which typically includes (for right handed folks) a mouse in the right hand. QWERTY is left-hand dominant in that many English words can be typed with only the left hand. This makes for great one handed typing while using the mouse to browse. It is, however, only one layout so I always suggest experimentation. Don't just [cut off the ends of the ham](https://executiveforum.com/cutting-off-the-ends-of-the-ham/).
 
 Key layouts actually already see a lot of discourse among different communities which has led to the major OS support for remapping a keyboard to an alternative layout (Colemak, Dvorak, etc.). What's talked about less though is the **position** and **orientation** of the keys themselves. Have you ever wondered why the keys are oriented in diagonal columns? Well it might surprise you to know that it was merely a limitation of the typewriter design at the time. The levers for each key needed to be equally aligned in the half circle so they could cleanly fit under the page. In order to accommodate this, Sholes and Glidden staggered the rows of the typewriter. As the QWERTY dependency grew by year, the row-staggered orientation came along with it. 
 
@@ -126,46 +126,42 @@ Now that we've touched a bit on ways to reduce wrist-based and shoulder-based RS
 #### Keyboard Orientation
 Like we did in the last section, let's establish the terminology:
 
-**Tenting**: For a split board, this is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board.
+##### Tenting/Sculpting
+For a split board, tenting is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board. For a monoblock/unibody board, sculpting is curving the keyboard convexly toward the user - reducing torsion in the arms. If you have cubital tunnel syndrome (like me) or general RSI in your elbows, this can reduce ulnar torsion and hopefully provide some relief. It's worth trying out if you already had a split board but it's not a panacea and should not be the only reason to get a split board. 
 
-**Sculpting**: This is similar to tenting but for a unibody/monoblock board where the board is curved convexly toward the user - reducing torsion in the arms.
+##### Keywells
+Isolated to split keyboards, a keywell is a concavely shaped keyboard half where the keys follow along the curvature. Aside from being a very interesting conversation starter, keywells present some serious benefits by reducing motion in the fingers. The concave curvature reduces the distance between the keys and allows for non-standard finger movement to press the keys. If you happen to have pain in your hands or are at risk for that, this could be a nice-to-have feature on your list.
 
-**Keywells**: Isolated to split keyboards, a keywell is a concavely shaped keyboard half where the keys follow along the curvature.
+##### Flat
+Flat keyboards are MUCH easier to come by, align closer with standard typing practices, and allow for easier chording (stay tuned for the programmability section if this is new to you). If you don't have specific pains that the key position adjustments could relieve, there's no reason not to go flat!
 
-**Flat**: Do I have to define this one?
+#### Positioning
+![](https://deskthority.net/wiki/images/5/5b/Staggers_-_1.jpg){: .blog-img}
 
-> Okay... why would I tent my keyboard or get a sculpted keyboard?
+##### Row (Normal) Staggered
+This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Extending your fingers is not a lateral motion, so this positioning provides very little ergonomic benefit. As mentioned in the [first section of this article](#history-lesson), this layout was merely a carryover from typewriter limitations so it's in no way optimal. That said, this layout is ubiquitous and learned muscle memory may make this a difficult switch.   
 
-If you have cubital tunnel syndrome (like me) or general RSI in your elbows, this can reduce ulnar torsion and hopefully provide some relief. It's worth trying out if you already had a split board but it's not a panacea and should not be the only reason to get a split board. 
+##### Column Staggered
+Seeking adaptivity to the average human finger length, this positioning adjusts the columns such that relaxed flexation at the finger joints should place the finger on a key in the home row. Furthermore, the columns themselves are uniform so most common keys should be only a small vertical extension away, limiting lateral movement which can be the cause of RSI in some folks.
 
-> Keywells?? Why on earth?
+{: note}
+There's also a concept of "splay" which orients the columns in accordance with the abduction of the fingers. This is meant to further conform the keyboard to the human hand by allowing a relaxed finger spread while extending. Some people swear by this but it does come with drawbacks related to chording. 
 
-Aside from being a very interesting conversation starter, keywells present some serious benefits by reducing motion in the fingers. The concave curvature reduces the distance between the keys and allows for non-standard finger movement to press the keys. If you happen to have pain in your hands or are at risk for that, this could be a nice-to-have feature on your list.
-
-> Okay so flat is what? Useless?
-
-Not at all! Flat keyboards are MUCH easier to come by, align closer with standard typing practices, and allow for easier chording (stay tuned for the programmability section if this is new to you). If you don't have specific pains that the key position adjustments could relieve, there's no reason not to go flat!
-
-#### Key Positioning
-I've been waiting for this category! Let's start again with some definitions:
-
-**Row Staggered**: This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Remember that "it was merely a limitation of the typewriter design at the time".
-
-**Column Staggered**: Seeking adaptivity to the average human finger length, this positioning adjusts the columns such that each finger's curvature when typing should be equivalent to one another.
-
-**Ortholinear**: Bucking both systems and yet more uniform than either, ortholinear positioning lays keys out in a grid of uniform distance between keys.
-
->
+##### Ortholinear
+Bucking both systems and yet more uniform than either, ortholinear positioning lays keys out in a grid of uniform distance between keys. This poses some of the ergonomic benefits of column staggering (namely limiting lateral movement), but unless your fingers happen to all be the same length, this layout makes little sense ergonomically since you will almost certainly be squishing your hand together to maintain a proper typing position. That said, chording is much easier to manage here since it is easier to stick your finger between two keys to press them both at once.
 
 ---
 
 ### Mobility
+If you peek into any guide on ergonomics, it should mention that the most effective tool for reducing risk of injury is to change positions semi-frequently. With this in mind if you're experiencing problems with being sedentary, a better method of combating this is having a mobile setup that you can move with you to different places to allow for a more comfortable typing session. The main component of this is reducing the amount of things you have to move in order to leave your desk.
+
+#### Wired vs Wireless
+Wired keyboards are much more difficult to move than a wireless keyboard simply because of the wire. If you have a split keyboard, that issue is compounded since there is typically a wire connecting the two halves AND you have a whole 'nother keyboard half to move as well. This makes wired keyboards less desirable in terms of ergonomics. That said, wired keyboards have less maintenance since wired connections are faster and more reliable than Bluetooth and there is no required battery to power the keyboard. Wireless split boards are difficult to move, sure, but with a little [ingenuity](https://links.net/re/equip/ergoapron/), it can be even easier to move than a desktop keyboard.
 
 ---
 
 ### Trigger Mechanism
-
-
+The mechanism by which the key is pressed does affect the ergonomics of a keyboard. Reducing errors and limiting the work that your fingers have to do is crucial to finding a comfortable typing solution.
 
 #### Membrane Keyboards
 These are usually the first think you think of when you hear "ergonomic keyboard". They are often sculpted keyboards that are usually very cheap. I advise staying away from these as they provide very little benefit over a flat keyboard. The goal for these is that your hands will be slightly less prone which can help ulnar-torsion-related RSI, but if the keyboard is really cheap, you might end up with keys getting stuck or the wear and tear may be horrendous so you'd be reversing your benefits by mashing the keys to get a proper stroke. If you must have one of these keyboards, I will only recommend the Microsoft Sculpt Keyboard which is already pretty steep (at around $100). The cost of this could be better put toward a different type of keyboard that you can remap to your liking.
@@ -178,71 +174,49 @@ These are often very loud and present only nominal benefits to (mecha-)membrane 
 For entry-level value, you really can't beat Nuphy or Keychron here. 
 
 #### Obscure
-
-
+Some switch types are unique to certain products or can only be used with a highly specific setup. I won't go into too much detail here and instead just post a list of non-affiliate links to resources if you want to read about them. Since these are so unique, if you want these trigger mechanisms, you will need to use these specific products (or get REALLY fancy with DIY) in order to use these. 
 
 ##### Topre
 
+[Topre Switches](https://hhkeyboard.us/blog/topre-switches)
 
+##### Scissor/Butterfly
 
-##### Scissor
+[Scissor vs Butterfly switches](https://www.macrumors.com/guide/butterfly-keyboard-vs-scissor-keyboard/)
 
+##### Datahand and Datahand-like
 
-
-##### Datahand
-
-
+[Original Datahand](https://en.wikipedia.org/wiki/DataHand)
+[Lalboard](https://github.com/JesusFreke/lalboard)
+[Svalboard](https://svalboard.com/)
 
 ##### Joysticks
+
+[Charachorder](https://www.charachorder.com/)
+[Sherbet](https://www.billiam.org/2019/05/29/sherbet-an-ergonomic-keypad)
 
 ---
 
 ### Programmability
+> Programming your keyboard can affect ergonomics?
+
+Absolutely! Let's take one very popular example of [home row mods](https://precondition.github.io/home-row-mods). These are home row keys when you tap them, and modifiers when held. This means if you need to use difficult key combinations like <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>f</kbd> for a specific application, you no longer need to contort your hand to hit these modifiers. You can keep one hand on the home row pressing the modifiers and then use the other hand to tap <kbd>f</kbd>. This can have **serious** benefits if you focus on programming your keyboard to limit motion. There are a plethora of layouts for <= 36 keys (the most popular being [Miryoku](https://github.com/manna-harbour/miryoku)) that utilize home row mods and layers to provide full keyboard functionality with limited motion. 
+
+{: note}
+If you do not have or want a programmable keyboard, you can also invest in macro pads to place some common macros in. 
 
 ---
 
 ### Number of Keys
 
+Finally we get to the meaning of this blog post. I made a conjecture that your keyboard has too many keys and that's because I firmly believe that the standard 100%, 75%, 60%, and even 40% keyboards are overloaded with keys that can easily be programmed into layers. This is bringing the keys to the hand instead of the opposite. 
+
+> So how many keys should I have?
+
+Are you ready for a non-answer?... **Less**. I say this because even if you reduced your layout down to 34 keys like the [Sweep](https://github.com/davidphilipbarr/Sweep), you should always be looking for ways to reduce your key overhead while maintaining a high typing speed/accuracy. That's the balance we hobbyists are looking for in an "endgame" keyboard.
+
 ---
 
+### Conclusion
 
-<table>
-    <thead>
-        <tr>
-            <th rowspan="2">Keyboard</th>
-            <th colspan="4">Mechanism</th>
-            <th colspan="3">Form Factor</th>
-            <th rowspan="2">Split</th>
-            <th rowspan="2">Non-Split</th>
-            <th rowspan="2">Wired</th>
-            <th rowspan="2">Wireless</th>
-            <th rowspan="2">Hot-Swappable</th>
-            <th rowspan="2">Programmable</th>
-        </tr>
-        <tr>
-            <th>Membrane</th>
-            <th>Mecha Membrane</th>
-            <th>Mechanical</th>
-            <th>Obscure</th>
-            <th>Row Staggered</th>
-            <th>Column Staggered</th>
-            <th>Ortholinear</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for keyboard in page.keyboards %}
-        <tr>
-            <td><a href="{{ keyboard.link }}">{{ keyboard.name }}</a></td>
-            <td>{{ keyboard.membrane }}</td>
-            <td>{{ keyboard.mecha_membrane }}</td>
-            <td>{{ keyboard.mechanical }}</td>
-            <td>{{ keyboard.obscure }}</td>
-            <td>{{ keyboard.row_staggered }}</td>
-            <td>{{ keyboard.column_staggered }}</td>
-            <td>{{ keyboard.ortholinear }}</td>
-            <td>{{ keyboard.hot_swappable }}</td>
-            <td>{{ keyboard.programmable }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+With this comprehensive guide, you’re now equipped to venture into the world of ergonomic keyboards and choose what's best for you!
