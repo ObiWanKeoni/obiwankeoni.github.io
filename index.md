@@ -18,7 +18,7 @@ has_toc: false
 # Keoni Garner
 {: .mb-0 .mt-1 .fs-10}
 
-#### Senior Software Engineer @ [iso.io](https://iso.io){: .my-3 style="text-decoration: none;"}
+#### Senior Software Engineer @ [iso.io](https://iso.io){: .mt-2 .mb-3 style="text-decoration: none;"}
 
 ### About
 
