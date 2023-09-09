@@ -53,9 +53,18 @@ Honestly, you'll probably get a different definition from ergonomists, corporate
 There are many axes through which keyboards can increase their ergonomic effectiveness, but the main ones we'll touch on in this post are:
 
  1. Form Factor
-	 1. Split | Unibody | Monoblock
-	 2. Tented/Sculpted | Keywells | Flat
-	 3. Row Staggered | Column Staggered | Ortholinear
+	 1. Structure
+		 1. Split
+		 2. Unibody
+		 3. Monoblock
+	 2. Keyboard Orientation
+		 1. Tented/Sculpted
+		 2. Keywells
+		 3. Flat
+	 3. Key Positioning
+		 1. Row Staggered
+		 2. Column Staggered
+		 3. Ortholinear
  2. Mobility
  3. Trigger Mechanism
  4. Programmability
@@ -64,9 +73,9 @@ There are many axes through which keyboards can increase their ergonomic effecti
 Each of these will have some tradeoffs to discuss. As a precursor to the following information, note that a "normal" keyboard can be defined as such (according to the axes above):
 
 1. Form Factor:
-	1. Unibody
-	2. Flat
-	3. Row Staggered
+	1. Structure: Unibody
+	2. Keyboard Orientation: Flat
+	3. Key Positioning: Row Staggered
 2. Mobility: Semi-Mobile
 3. Trigger Mechanism: Membrane
 4. Programmability: Non-programmable
@@ -82,7 +91,9 @@ The structure of a keyboard arguably has the strongest impact on ergonomic effec
 Let's start by breaking down what these terms mean:
 
 **Split**: This is a keyboard that is separated into 2 halves - one for each hand.
+
 **Unibody**: Not to be confused with "Unibody Split", this is a standard keyboard where the whole thing is one piece with little-to-no separation between keys.
+
 **Monoblock**: A mixture of the two above terms, this is a single body keyboard with 2 halves dedicated to each hand and either a reasonable tilt or a considerable separation between the halves.
 
 > Why might you want to split your keyboard?
@@ -114,8 +125,11 @@ Now  that we've touched a bit on ways to reduce wrist-based and shoulder-based R
 Like we did in the last section, let's establish the terminology:
 
 **Tenting**: For a split board, this is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board.
+
 **Sculpting**: This is similar to tenting but for a unibody/monoblock board where the board is curved convexly toward the user - reducing torsion in the arms.
+
 **Keywells**: Isolated to split keyboards, a keywell is a concavely shaped keyboard half where the keys follow along the curvature.
+
 **Flat**: Do I have to define this one?
 
 > Okay... why would I tent my keyboard or get a sculpted keyboard?
@@ -134,7 +148,9 @@ Not at all! Flat keyboards are MUCH easier to come by, align closer with standar
 I've been waiting for this category! Let's start again with some definitions:
 
 **Row Staggered**: This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Remember that "it was merely a limitation of the typewriter design at the time".
+
 **Column Staggered**: Seeking adaptivity to the average human finger length, this positioning adjusts the columns such that each finger's curvature when typing should be equivalent to one another.
+
 **Ortholinear**: Bucking both systems and yet more uniform than either, ortholinear positioning lays keys out in a grid of uniform distance between keys.
 
 >
