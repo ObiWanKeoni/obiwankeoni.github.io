@@ -335,6 +335,7 @@ h5,
 h6 {
   font-weight: 600;
   color: $white;
+  @include mb-5;
 }
 
 // Labels (not the form kind)
