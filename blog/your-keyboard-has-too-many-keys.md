@@ -123,7 +123,7 @@ This can be seen as a "Jack of All Trades but Master of None" situation where yo
 
 Now that we've touched a bit on ways to reduce wrist-based and shoulder-based RSI, let's look into alleviating elbow/hand pain.
 
-#### Keyboard Oridntation
+#### Keyboard Orientation
 Like we did in the last section, let's establish the terminology:
 
 **Tenting**: For a split board, this is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board.
