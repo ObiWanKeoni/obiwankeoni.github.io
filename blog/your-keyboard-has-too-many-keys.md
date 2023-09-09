@@ -7,6 +7,18 @@ parent: Blog
 date: 2023-07-30
 time_to_read: 9 min
 disclaimer: The title and content of this post are deeply subjective. Ultimately, do what works for you.
+keyboards:
+ - name: Keychron K8 Pro
+   link: "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard"
+   membrane: false
+   mecha_membrane: false
+   mechanical: true
+   obscure: false
+   row_staggered: true
+   column_staggered: false
+   ortholinear: false
+   hot_swappable: true
+   programmable: true
 ---
 
 <details markdown="block">
@@ -57,3 +69,36 @@ For entry-level value, you really can't beat Nuphy or Keychron here.
 ### Split Keyboards (Flat)
 > What's the deal with split keyboards anyway?
 
+
+<table markdown="1" border="1">
+    <thead>
+        <tr>
+            <th rowspan="2">Keyboard</th>
+            <th colspan="4">Mechanism</th>
+            <th colspan="3">Form Factor</th>
+            <th rowspan="2">Split</th>
+            <th rowspan="2">Non-Split</th>
+            <th rowspan="2">Wired</th>
+            <th rowspan="2">Wireless</th>
+            <th rowspan="2">Hot-Swappable</th>
+            <th rowspan="2">Programmable</th>
+        </tr>
+        <tr>
+            <th>Membrane</th>
+            <th>Mecha Membrane</th>
+            <th>Mechanical</th>
+            <th>Obscure</th>
+            <th>Row Staggered</th>
+            <th>Column Staggered</th>
+            <th>Ortholinear</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for keyboard in page.keyboards %}
+        <tr>
+            <td>[{{ keyboard.name }}]({{ keyboard.link }})</td>
+            <td>{% if keyboard.membrane %}✓{% endif %}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
