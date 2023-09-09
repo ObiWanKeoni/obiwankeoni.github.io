@@ -48,9 +48,110 @@ That's the history lesson. Not so bad right? Let's get into the juicy bits now -
 
 > What even are *ergonomics*?
 
-Honestly, you'll probably get a different definition from ergonomists, corporate executives, and hobbyists like myself. What I can give you though is what I would define it as: **Adjusting your work environment to reduce risk of injury and discomfort.** What might surprise you is that what will be ergonomic for me is not what will be ergonomic for you, so take everything with a grain of salt - try it out if you're able and see what works for you.
+Honestly, you'll probably get a different definition from ergonomists, corporate executives, and hobbyists like myself. What I can give you though is what I would define it as: **Adjusting your work environment to reduce risk of injury and discomfort.** What might surprise you is that what will be ergonomic for me is not what will be ergonomic for you, so take everything with a grain of salt - try it out if you're able and see what works for you. 
 
-> Time to dive head first down the rabbit hole...
+There are many axes through which keyboards can increase their ergonomic effectiveness, but the main ones we'll touch on in this post are:
+
+ 1. Form Factor
+	 1. Split | Unibody | Monoblock
+	 2. Tented/Sculpted | Keywells | Flat
+	 3. Row Staggered | Column Staggered | Ortholinear
+ 2. Mobility
+ 3. Trigger Mechanism
+ 4. Programmability
+ 5. Number of Keys
+
+Each of these will have some tradeoffs to discuss. As a precursor to the following information, note that a "normal" keyboard can be defined as such (according to the axes above):
+
+1. Form Factor:
+	1. Unibody
+	2. Flat
+	3. Row Staggered
+2. Mobility: Semi-Mobile
+3. Trigger Mechanism: Membrane
+4. Programmability: Non-programmable
+5. Number of Keys: 104 keys
+
+{: .note}
+Any keyboard *can* be ergonomic depending on its use case. Keep this in mind.
+
+### Form Factor
+The structure of a keyboard arguably has the strongest impact on ergonomic effectiveness. After all, the other factors are directly affected by the structure that you've chosen. Unfortunately, there is no universally customizable keyboard where these can all be affected smoothly so we must make sacrifices first and foremost at this level. That said, there are clear benefits for some of these subcategories that should make your choice simpler based on problems for which you are most at risk.
+
+#### Split | Unibody | Monoblock
+Let's start by breaking down what these terms mean:
+
+**Split**: This is a keyboard that is separated into 2 halves - one for each hand.
+**Unibody**: Not to be confused with "Unibody Split", this is a standard keyboard where the whole thing is one piece with little-to-no separation between keys.
+**Monoblock**: A mixture of the two above terms, this is a single body keyboard with 2 halves dedicated to each hand and either a reasonable tilt or a considerable separation between the halves.
+
+> Why might you want to split your keyboard?
+
+Great question! Putting it simply, there are 2 reasons:
+
+1. Better align your wrists when typing
+2. Open up your shoulders when typing
+
+You can imagine that since the 2 halves are freely movable, you can move them to a point where your shoulders are more relaxed and in-line with your body. This, of course, comes with the complexity of adding complexity to your workstation.
+
+If you went with a wired split board, you'd have an additional cable to worry about in addition to a generally difficult setup to move around with since now you have twice as many "keyboards" to move.
+
+> Why might you NOT want a split keyboard?
+
+Aside from the cons mentioned above, there may be practical reasons for keeping with the unibody standard including, but not limited to:
+
+1. Periodic one-handed typing
+2. Wider technological support
+3. Lack of shoulder/wrist pain
+
+> And what about the monoblock thing?
+
+This can be seen as a "Jack of All Trades but Master of None" situation where you can get some of the ergonomic benefits of a split keyboard (wrist alignment) and the mobility of a single board. This possesses many of the same issues as a single board with some added ergonomics... if you're at risk for RSI in your hands or wrists from poor alignment, this could be the solution for you.
+
+Now  that we've touched a bit on ways to reduce wrist-based and shoulder-based RSI, let's look into alleviating elbow/hand pain.
+
+#### Tented/Sculpted | Keywells | Flat
+Like we did in the last section, let's establish the terminology:
+
+**Tenting**: For a split board, this is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board.
+**Sculpting**: This is similar to tenting but for a unibody/monoblock board where the board is curved convexly toward the user - reducing torsion in the arms.
+**Keywells**: Isolated to split keyboards, a keywell is a concavely shaped keyboard half where the keys follow along the curvature.
+**Flat**: Do I have to define this one?
+
+> Okay... why would I tent my keyboard or get a sculpted keyboard?
+
+If you have cubital tunnel syndrome (like me) or general RSI in your elbows, this can reduce ulnar torsion and hopefully provide some relief. It's worth trying out if you already had a split board but it's not a panacea and should not be the only reason to get a split board. 
+
+> Keywells?? Why on earth?
+
+Aside from being a very interesting conversation starter, keywells present some serious benefits by reducing motion in the fingers. The concave curvature reduces the distance between the keys and allows for non-standard finger movement to press the keys. If you happen to have pain in your hands or are at risk for that, this could be a nice-to-have feature on your list.
+
+> Okay so flat is what? Useless?
+
+Not at all! Flat keyboards are MUCH easier to come by, align closer with standard typing practices, and allow for easier chording (stay tuned for the programmability section if this is new to you). If you don't have specific pains that the key position adjustments could relieve, there's no reason not to go flat!
+
+#### Row Staggered | Column Staggered | Ortholinear
+I've been waiting for this category! Let's start again with some definitions:
+
+**Row Staggered**: This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Remember that "it was merely a limitation of the typewriter design at the time".
+**Column Staggered**: Seeking adaptivity to the average human finger length, this positioning adjusts the columns such that each finger's curvature when typing should be equivalent to one another.
+**Ortholinear**: Bucking both systems and yet more uniform than either, ortholinear positioning lays keys out in a grid of uniform distance between keys.
+
+>
+
+### Mobility
+### Trigger Mechanism
+#### Membrane
+#### Mecha Membrane
+#### Mechanical
+#### Obscure
+##### Topre
+##### Scissor
+##### Datahand
+##### Joysticks
+### Programmability
+### Number of Keys
+
 
 ### Membrane Keyboards
 These are usually the first think you think of when you hear "ergonomic keyboard". They are often sculpted keyboards that are usually very cheap. I advise staying away from these as they provide very little benefit over a flat keyboard. The goal for these is that your hands will be slightly less prone which can help ulnar-torsion-related RSI, but if the keyboard is really cheap, you might end up with keys getting stuck or the wear and tear may be horrendous so you'd be reversing your benefits by mashing the keys to get a proper stroke. If you must have one of these keyboards, I will only recommend the Microsoft Sculpt Keyboard which is already pretty steep (at around $100). The cost of this could be better put toward a different type of keyboard that you can remap to your liking.
