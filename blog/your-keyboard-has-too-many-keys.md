@@ -44,179 +44,211 @@ Key layouts actually already see a lot of discourse among different communities 
 
 That's the history lesson. Not so bad right? Let's get into the juicy bits now - the world of ergonomic keyboards.
 
-## Ergonomic Keyboards
+## The World of Ergonomic Keyboards
 
-> What even are *ergonomics*?
+> *Ergonomics*: A buzzword, or the real deal?
 
-Honestly, you'll probably get a different definition from ergonomists, corporate executives, and hobbyists like myself. What I can give you though is what I would define it as: **Adjusting your work environment to reduce risk of injury and discomfort.** What might surprise you is that what will be ergonomic for me is not what will be ergonomic for you, so take everything with a grain of salt - try it out if you're able and see what works for you. 
+From professional ergonomists to everyday enthusiasts like yours truly, everyone seems to have a unique take on what "ergonomics" truly means. My two cents? It's all about **modifying your workspace to minimize discomfort and prevent injuries**. A fun tidbit? What's ergonomic for me might be as strange as a *mechanical keyboard* at a typewriter convention for you! The key (pun intended) is to experiment and find out what feels right for you.
 
-There are many axes through which keyboards can increase their ergonomic effectiveness, but the main ones we'll touch on in this post are:
+Now, when it comes to *programmable keyboards*, especially the *split keyboards*, there are several features that can elevate the ergonomic experience. Here are the main features we'll be tapping into today:
 
- 1. Form Factor
+ 1. **Form Factor**
 	 1. Structure
-		 1. Split
-		 2. Unibody
-		 3. Monoblock
+		 1. Split (because who doesn’t love a good divide?)
+		 2. Unibody (one for all, all in one)
+		 3. Monoblock (keeping it old school)
 	 2. Keyboard Orientation
-		 1. Tented/Sculpted
-		 2. Keywells
-		 3. Flat
+		 1. Tented/Sculpted (for when flat is too... flat)
+		 2. Keywells (it's all about the depth)
+		 3. Flat (simplicity at its finest)
 	 3. Key Positioning
-		 1. Row Staggered
-		 2. Column Staggered
-		 3. Ortholinear
- 2. Mobility
- 3. Trigger Mechanism
- 4. Programmability
- 5. Number of Keys
+		 1. Row Staggered (classic alignment)
+		 2. Column Staggered (mixing it up)
+		 3. Ortholinear (straight as an arrow)
+ 2. **Mobility** (because we aren’t always desk-bound)
+ 3. **Trigger Mechanism** (mechanical keyboards, anyone?)
+ 4. **Programmability** (tailor it to your whims and fancies)
+ 5. **Number of Keys** (more isn’t always merrier)
 
-Each of these will have some tradeoffs to discuss. As a precursor to the following information, note that a "normal" keyboard can be defined as such (according to the axes above):
+For reference, if we were to describe a 'standard' keyboard based on the features mentioned above, it'd look a little something like this:
 
 1. Form Factor:
-	1. Structure: Unibody
-	2. Keyboard Orientation: Flat
-	3. Key Positioning: Row Staggered
-2. Mobility: Semi-Mobile
-3. Trigger Mechanism: Membrane
-4. Programmability: Non-programmable
-5. Number of Keys: 104 keys
+	1. Structure: Unibody (all together now)
+	2. Keyboard Orientation: Flat (no frills)
+	3. Key Positioning: Row Staggered (good ol' alignment)
+2. Mobility: Semi-Mobile (somewhere between here and there)
+3. Trigger Mechanism: Membrane (smooth and silent)
+4. Programmability: Non-programmable (what you see is what you get)
+5. Number of Keys: 104 keys (the magic number)
 
 {: .note}
-Any keyboard *can* be ergonomic depending on its use case. Keep this in mind.
+Just remember, any keyboard can wave the ergonomic flag given the right circumstances. Always key-p an open mind! 😉
 
 ---
 
-### Form Factor
-The structure of a keyboard arguably has the strongest impact on ergonomic effectiveness. After all, the other factors are directly affected by the structure that you've chosen. Unfortunately, there is no universally customizable keyboard where these can all be affected smoothly so we must make sacrifices first and foremost at this level. That said, there are clear benefits for some of these subcategories that should make your choice simpler based on problems for which you are most at risk.
+### The Ergonomic Magic Behind Form Factors
+When it comes to keyboards, particularly *mechanical keyboards* and their ergonomic brethren, the structure plays a pivotal role in user comfort. Let's face it – the keyboard's structure influences every other feature. While the dream is to have a keyboard that lets you tweak everything to your heart's content, reality often nudges us to make some trade-offs. Fear not! There are specific perks associated with each structure type that'll surely cater to your individual ergonomic needs.
 
-#### Structure
-Let's start by breaking down what these terms mean:
+#### Dive Into Structure
+Before we delve deep, let's decode the structural jargon:
 
-**Split**: This is a keyboard that is separated into 2 halves - one for each hand.
+**Split**: Ever thought of giving each hand its own keyboard domain? That's the idea behind split keyboards, divided into two distinct halves.
 
-**Unibody**: Not to be confused with "Unibody Split", this is a standard keyboard where the whole thing is one piece with little-to-no separation between keys.
+**Unibody**: This is the keyboard most of us are familiar with. It's a singular piece, with keys placed close together in a seamless layout.
 
-**Monoblock**: A mixture of the two above terms, this is a single body keyboard with 2 halves dedicated to each hand and either a reasonable tilt or a considerable separation between the halves.
+**Monoblock**: A delightful blend of the split and unibody. It’s a single structure, but there’s a clear demarcation for each hand, often accompanied by a slight tilt or noticeable separation.
 
-> Why might you want to split your keyboard?
+> **To Split or Not to Split?**
 
-Great question! Putting it simply, there are 2 reasons:
+Pondering over this? Here's why you might consider splitting up:
 
-1. Better align your wrists when typing
-2. Open up your shoulders when typing
+1. Treat your wrists to a natural alignment during typing sessions.
+2. Let your shoulders relax and fall in line with your body.
 
-You can imagine that since the 2 halves are freely movable, you can move them to a point where your shoulders are more relaxed and in-line with your body. This, of course, comes with the complexity of adding complexity to your workstation.
+With the freedom to position each half, you can reduce stress on your wrists and shoulders. But remember, great ergonomics often come with a side dish of complexity. A wired split keyboard, for instance, means managing an extra cable and juggling two separate pieces if you're on the move.
 
-If you went with a wired split board, you'd have an additional cable to worry about in addition to a generally difficult setup to move around with since now you have twice as many "keyboards" to move.
+> **Why Stick with the Unibody Familiarity?**
 
-> Why might you NOT want a split keyboard?
+Despite the ergonomic allure of split keyboards, there are legit reasons to stay loyal to the unibody:
 
-Aside from the cons mentioned above, there may be practical reasons for keeping with the unibody standard including, but not limited to:
+1. Occasionally typing with one hand? Unibody's got your back.
+2. Enjoying the broader tech compatibility of mainstream keyboards.
+3. Not haunted by wrist or shoulder aches? Then why fix what ain't broke?
 
-1. Periodic one-handed typing
-2. Wider technological support
-3. Lack of shoulder/wrist pain
+> **Monoblock - The Middle Ground?**
 
-> And what about the monoblock thing?
+Monoblock is like that versatile friend who's good at everything but doesn't quite steal the show. It combines the ergonomic nods of a split design (hello, happy wrists!) with the mobility ease of a unibody. If you’re wary of wrist strains but still yearn for a single piece, monoblock might just be your ergonomic superhero.
 
-This can be seen as a "Jack of All Trades but Master of None" situation where you can get some of the ergonomic benefits of a split keyboard (wrist alignment) and the mobility of a single board. This possesses many of the same issues as a single board with some added ergonomics... if you're at risk for RSI in your hands or wrists from poor alignment, this could be the solution for you.
+With wrist and shoulder comfort sorted, let's venture next into the realm of elbow and hand solace.
 
-Now that we've touched a bit on ways to reduce wrist-based and shoulder-based RSI, let's look into alleviating elbow/hand pain.
+#### Decoding Keyboard Orientation
+Keyboard orientation isn't just about aesthetics. It's a blend of science, user comfort, and sometimes, a dash of individual quirks. Here, we delve into the trio that rule the roost: Tenting/Sculpting, Keywells, and the classic Flat.
 
-#### Keyboard Orientation
-Like we did in the last section, let's establish the terminology:
+##### Tenting/Sculpting: Where Ergonomics Meet Design
+Tenting for split keyboards is like giving your board wings, letting each half angle laterally. This arrangement eases arm twists compared to its flat counterpart. On the other side, we have sculpting for unibody and monoblock designs, where the board gently arcs towards the user, minimizing arm torsion. If, like me, you have that pesky cubital tunnel syndrome or general elbow RSI, this design can be your savior by lessening ulnar twists. But a word of caution: while tenting can offer relief, don't hinge your entire decision to go split on this feature alone.
 
-##### Tenting/Sculpting
-For a split board, tenting is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board. For a monoblock/unibody board, sculpting is curving the keyboard convexly toward the user - reducing torsion in the arms. If you have cubital tunnel syndrome (like me) or general RSI in your elbows, this can reduce ulnar torsion and hopefully provide some relief. It's worth trying out if you already had a split board but it's not a panacea and should not be the only reason to get a split board. 
+##### Keywells: Not Just a Design Quirk
+Exclusively a feature of *split keyboards*, the keywell offers a cool dip where each key settles along a concave curve. Beyond being an eye-catching design element (and a great icebreaker!), keywells are champions of ergonomics. They reduce finger travel, and the unique curve allows for unconventional finger movements to hit the keys. Battling hand pain or wary of it? Keywells might just be the ergonomic companion your hands yearn for.
 
-##### Keywells
-Isolated to split keyboards, a keywell is a concavely shaped keyboard half where the keys follow along the curvature. Aside from being a very interesting conversation starter, keywells present some serious benefits by reducing motion in the fingers. The concave curvature reduces the distance between the keys and allows for non-standard finger movement to press the keys. If you happen to have pain in your hands or are at risk for that, this could be a nice-to-have feature on your list.
+##### Flat: The Evergreen Classic
+Flat keyboards are like the dependable buddy you've always known - ubiquitous, aligning with mainstream typing practices, and utterly reliable. They're especially nifty for chording (and if you're raising an eyebrow at 'chording', hang on till we dive into the *programmability* realm!). Absent specific discomforts that could be eased by tenting or keywells, a flat keyboard remains a timeless choice.
 
-##### Flat
-Flat keyboards are MUCH easier to come by, align closer with standard typing practices, and allow for easier chording (stay tuned for the programmability section if this is new to you). If you don't have specific pains that the key position adjustments could relieve, there's no reason not to go flat!
+Intrigued? Let's continue our ergonomic journey!
 
-#### Positioning
-![](https://deskthority.net/wiki/images/5/5b/Staggers_-_1.jpg){: .blog-img}
+#### The Art of Key Positioning
+Positioning is more than just about where the keys are located—it's about marrying ergonomics with functionality. And with this beautiful image to guide us, let's dive deep into the world of key arrangements!
 
-##### Row (Normal) Staggered
-This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Extending your fingers is not a lateral motion, so this positioning provides very little ergonomic benefit. As mentioned in the [first section of this article](#history-lesson), this layout was merely a carryover from typewriter limitations so it's in no way optimal. That said, this layout is ubiquitous and learned muscle memory may make this a difficult switch.   
+##### Row Staggered: The Traditionalist
+Row staggered layout is reminiscent of the classic typewriter, where keys cascade in diagonal rows. While extending fingers in a straight line might seem intuitive, this design, surprisingly, doesn't offer much in ergonomic benefits. As we touched upon in our [introductory section](#history-lesson), this layout is an heirloom from the typewriter days, borne out of necessity rather than optimization. Nevertheless, its omnipresence and our embedded muscle memory can make venturing away from this layout a daunting task.
 
-##### Column Staggered
-Seeking adaptivity to the average human finger length, this positioning adjusts the columns such that relaxed flexation at the finger joints should place the finger on a key in the home row. Furthermore, the columns themselves are uniform so most common keys should be only a small vertical extension away, limiting lateral movement which can be the cause of RSI in some folks.
+##### Column Staggered: A Natural Fit
+Tailored to the average human finger's natural variance in length, the column staggered design adjusts columns to mirror a relaxed hand position. The objective? Ensuring each finger rests comfortably on the home row. The uniform columns mean the most frequently-used keys lie within a fingertip's reach, minimizing the strain-inducing lateral motions. 
 
 {: note}
-There's also a concept of "splay" which orients the columns in accordance with the abduction of the fingers. This is meant to further conform the keyboard to the human hand by allowing a relaxed finger spread while extending. Some people swear by this but it does come with drawbacks related to chording. 
+Speaking of fine-tuning to the human hand, there's "splay"—a design tweak that aligns the columns to the natural splay of our fingers. By replicating the relaxed spacing of the fingers, it champions a more natural typing stance. While it has its set of aficionados, it's worth noting that splay can pose challenges, especially when it comes to chording.
 
-##### Ortholinear
-Bucking both systems and yet more uniform than either, ortholinear positioning lays keys out in a grid of uniform distance between keys. This poses some of the ergonomic benefits of column staggering (namely limiting lateral movement), but unless your fingers happen to all be the same length, this layout makes little sense ergonomically since you will almost certainly be squishing your hand together to maintain a proper typing position. That said, chording is much easier to manage here since it is easier to stick your finger between two keys to press them both at once.
+##### Ortholinear: The Uniform Rebel
+Going against the grain, the ortholinear layout arranges keys in a neat grid. Each key sits equidistant from its neighbors, providing the ergonomic perks of column staggering, like minimizing lateral motion. But here's the catch: unless your fingers are all uniformly sized (a rarity, indeed!), this might not be the most ergonomic choice. You might find yourself cramping your hand to achieve the correct typing stance. However, for those who dance on their keyboards with chords, the ortholinear layout is a dream come true, making multi-key presses a breeze.
 
----
-
-### Mobility
-If you peek into any guide on ergonomics, it should mention that the most effective tool for reducing risk of injury is to change positions semi-frequently. With this in mind if you're experiencing problems with being sedentary, a better method of combating this is having a mobile setup that you can move with you to different places to allow for a more comfortable typing session. The main component of this is reducing the amount of things you have to move in order to leave your desk.
-
-#### Wired vs Wireless
-Wired keyboards are much more difficult to move than a wireless keyboard simply because of the wire. If you have a split keyboard, that issue is compounded since there is typically a wire connecting the two halves AND you have a whole 'nother keyboard half to move as well. This makes wired keyboards less desirable in terms of ergonomics. That said, wired keyboards have less maintenance since wired connections are faster and more reliable than Bluetooth and there is no required battery to power the keyboard. Wireless split boards are difficult to move, sure, but with a little [ingenuity](https://links.net/re/equip/ergoapron/), it can be even easier to move than a desktop keyboard.
+In the realm of *mechanical keyboards*, positioning plays a crucial role in ergonomics. Choose wisely, and you'll find your fingers gliding effortlessly across the board!
 
 ---
 
-### Trigger Mechanism
-The mechanism by which the key is pressed does affect the ergonomics of a keyboard. Reducing errors and limiting the work that your fingers have to do is crucial to finding a comfortable typing solution.
+### The Mobility Equation
+
+When we talk about ergonomics, we often overlook a crucial aspect: mobility. The ability to shift, adjust, and move your setup is a powerful weapon against the lurking risks of RSI. Here's why it matters and what you need to consider.
+
+#### Why Mobility Matters
+
+Ergonomic experts sing praises about the benefits of regular position changes. Think about it: humans aren't designed to remain static for long hours. By promoting a mobile setup, you're not only breaking the monotony but also encouraging micro-movements, which can prevent muscle stiffness and maintain a healthy posture. If you're someone battling the woes of a sedentary lifestyle, a mobile setup can be a lifesaver. It simplifies the act of leaving the desk, leading to more breaks and stretching sessions.
+
+#### Wired vs Wireless: The Great Debate
+
+Wired keyboards, with their tangle-prone cords, can often be cumbersome, especially if you're aiming for a mobile setup. The equation gets trickier with split keyboards, which not only have a cord tethering the two halves but also the added task of moving both sections.
+
+From an ergonomic standpoint, wireless keyboards take the cake. The freedom from cords means easier movement and adaptability. You can shift your posture, lean back, or even stand, all without being restricted by wires.
+
+But, there's always a trade-off. Wired connections bring reliability and speed to the table. There's no fretting over battery life or sporadic Bluetooth disconnections. And for gamers or professional typists, that instantaneous response time can be paramount.
+
+However, if mobility is your priority, wireless is the way to go. Even with split keyboards, innovations are making portability less of a challenge. With some [creative solutions](https://links.net/re/equip/ergoapron/), you might just find a wireless split keyboard more mobile than its unibody counterpart!
+
+In the realm of _ergonomic keyboards_, mobility isn't just a perk—it's an essential feature. Whether you opt for the reliability of wired or the freedom of wireless, ensure your choice aligns with your ergonomic goals.
+
+---
+
+### Delving Deeper: The Importance of the Trigger Mechanism
+The way you press a key, and the response it provides, is more than just a tactile experience; it affects the overall ergonomics of the keyboard, influencing the level of strain on your fingers and the amount of effort required to type. Let's break down the intricacies:
 
 #### Membrane Keyboards
-These are usually the first think you think of when you hear "ergonomic keyboard". They are often sculpted keyboards that are usually very cheap. I advise staying away from these as they provide very little benefit over a flat keyboard. The goal for these is that your hands will be slightly less prone which can help ulnar-torsion-related RSI, but if the keyboard is really cheap, you might end up with keys getting stuck or the wear and tear may be horrendous so you'd be reversing your benefits by mashing the keys to get a proper stroke. If you must have one of these keyboards, I will only recommend the Microsoft Sculpt Keyboard which is already pretty steep (at around $100). The cost of this could be better put toward a different type of keyboard that you can remap to your liking.
+Common and affordable, membrane keyboards can be the entry point for many into the world of ergonomics. However, it's vital to invest in quality. A cheap membrane keyboard can pose more harm than good by necessitating forceful key presses and not providing adequate feedback. The Microsoft Sculpt Keyboard stands out in this category due to its reliable performance and relative ergonomic benefits. 
 
 #### Mecha-Membrane Keyboards
-Razer is the king of these. These combine the low cost nature of membrane keyboards with a mechanical-like feel. Purists might tell you that it feels nothing like a mechanical keyboard and that wouldn't be totally incorrect - the membrane mechanism is simply too different from the mechanical switch that the feel cannot be identically replicated. It's honestly pretty close though if you have a tight budget. I have yet to see a tented, sculpted, or split version of this but any keyboard that will get you to type less is a good one.
+For those looking for a bridge between membrane and mechanical keyboards, the mecha-membrane is a suitable option. While it may not deliver the pure mechanical experience, it gets close and is budget-friendly. But, as of the last update, ergonomic adaptations in this category seem limited.
 
-#### Mechanical
-These are often very loud and present only nominal benefits to (mecha-)membrane keyboards. One benefit is the key mechanism - the additional key travel length means you don't need to bottom-out (push the key all the way down to the bottom of the board) in order to get a stroke. You can theoretically float your hands above the keyboard and reduce impact on your fingers. This is, however, extremely hard to do consistently so it's not advised that you rely on this for your ergonomics. The other benefit is that you typically have the ability to re-map the layout. If the keyboard supports QMK/Via(l) or ZMK firmware, then you can move keys around and add key combos, chording, macros, you name it! Customization is its own form of ergonomics because you can move keys to the places that make the most sense for you, your hands, and your typing style.
-For entry-level value, you really can't beat Nuphy or Keychron here. 
+#### Mechanical Keyboards
+A darling for typists and gamers, mechanical keyboards offer the benefit of distinct tactile feedback, allowing for a more controlled typing experience. While they can be noisy, their customizable nature is where they shine, especially in ergonomics. Being able to modify key functions and layouts can adjust the keyboard to fit one's specific needs, reducing unnecessary hand movements. Brands like Nuphy and Keychron have become popular for providing good value.
 
-#### Obscure
-Some switch types are unique to certain products or can only be used with a highly specific setup. I won't go into too much detail here and instead just post a list of non-affiliate links to resources if you want to read about them. Since these are so unique, if you want these trigger mechanisms, you will need to use these specific products (or get REALLY fancy with DIY) in order to use these. 
+#### Diving into the Obscure
+For those who seek specialization or have unique requirements, there are some lesser-known yet effective mechanisms:
 
-##### Topre
+- **Topre Switches**: These are renowned for offering a blend of tactile and smooth experiences, bridging the gap between rubber dome and mechanical switches.
+  
+- **Scissor/Butterfly Switches**: These switches are familiar to Apple users. While the butterfly mechanism had its issues, the underlying principle was to provide a stable keypress with minimal movement. The scissor switch, meanwhile, is reliable and offers a pleasant typing experience.
+  
+- **Datahand and Datahand-like**: The original Datahand revolutionized ergonomic typing. With keys positioned around each finger, it minimizes hand movement. Later innovations like Lalboard and Svalboard have drawn inspiration from this concept.
+  
+- **Joysticks**: Devices like Charachorder and Sherbet introduce a radically different approach to typing, leveraging joystick-like mechanisms to reduce the number of keys and hand movement.
 
-[Topre Switches](https://hhkeyboard.us/blog/topre-switches)
-
-##### Scissor/Butterfly
-
-[Scissor vs Butterfly switches](https://www.macrumors.com/guide/butterfly-keyboard-vs-scissor-keyboard/)
-
-##### Datahand and Datahand-like
-
-[Original Datahand](https://en.wikipedia.org/wiki/DataHand)
-[Lalboard](https://github.com/JesusFreke/lalboard)
-[Svalboard](https://svalboard.com/)
-
-##### Joysticks
-
-[Charachorder](https://www.charachorder.com/)
-[Sherbet](https://www.billiam.org/2019/05/29/sherbet-an-ergonomic-keypad)
+In conclusion, the trigger mechanism is not just about the tactile feel but also about how it affects the typing dynamics. Finding the right balance between comfort, functionality, and ergonomics requires an understanding of these mechanisms and their implications. Whether you're a purist or an innovator, there's a keyboard out there tailored for your ergonomic needs.
 
 ---
 
-### Programmability
-> Programming your keyboard can affect ergonomics?
+### The Power of Customization: Why Programming Matters in Ergonomics
 
-Absolutely! Let's take one very popular example of [home row mods](https://precondition.github.io/home-row-mods). These are home row keys when you tap them, and modifiers when held. This means if you need to use difficult key combinations like <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>f</kbd> for a specific application, you no longer need to contort your hand to hit these modifiers. You can keep one hand on the home row pressing the modifiers and then use the other hand to tap <kbd>f</kbd>. This can have **serious** benefits if you focus on programming your keyboard to limit motion. There are a plethora of layouts for <= 36 keys (the most popular being [Miryoku](https://github.com/manna-harbour/miryoku)) that utilize home row mods and layers to provide full keyboard functionality with limited motion. 
+When you hear "keyboard programmability," your thoughts might gravitate towards customization and personalization. But at its core, it's an ergonomic tool. By redefining key functions and placements, you're ensuring that the keyboard works for you, rather than you working (and often straining) to fit the keyboard's design. Here's why programmability makes a significant ergonomic difference:
 
-{: note}
-If you do not have or want a programmable keyboard, you can also invest in macro pads to place some common macros in. 
+#### Minimized Hand Movement
+By programming certain keys to perform multiple tasks, you can drastically reduce the need to stretch fingers or move hands. The idea of home row mods exemplifies this. With the dual-functionality of keys (acting as both letters and modifiers), it simplifies complicated key combinations and encourages your hands to remain in the natural, relaxed position of the home row. 
+
+#### Layers Are a Game Changer
+Many programmable keyboards support layers. This means that with a single key press, your entire keyboard layout can switch to a different configuration. Imagine switching from a standard typing layer to a specialized layer for a specific software, gaming, or multimedia control, all at the press of a button. Layers enable you to bring distant keys closer and can be tailor-made to specific tasks, further enhancing ergonomic efficiency.
+
+#### Paving the Way for Efficient Typing
+Reduced key layouts, like Miryoku, offer all the functionalities of a full-sized keyboard but in a compact space. The magic lies in intelligent programming. By assigning multiple roles to a single key (based on taps, holds, or combinations), you can maintain the breadth of keyboard functionality without the width.
+
+#### Macros and Macro Pads: Boosting Efficiency
+For tasks you frequently perform, why go through a series of key presses when one key can do the job? Macros allow you to assign a sequence of actions to a single key. Moreover, macro pads, which are auxiliary keypads with programmable keys, provide an extra layer of customization. Whether it's launching an application, executing a command, or typing a commonly used phrase, macro pads are ergonomic enhancers that place more control at your fingertips without the added strain.
+
+#### The Learning Curve and Rewards
+It's essential to acknowledge that diving into the world of programmable keyboards can initially feel overwhelming. But with time, as you mold the keyboard to fit your needs, the ergonomic benefits are unparalleled. You not only type more comfortably but also faster and more efficiently.
+
+In essence, a programmable keyboard transforms from a mere input device to an ergonomic tool shaped by and for you. It's about marrying comfort with efficiency and reaping the long-term benefits of reduced strain and enhanced productivity.
 
 ---
 
-### Number of Keys
+### The Balance of Minimalism and Functionality
 
-Finally we get to the meaning of this blog post. I made a conjecture that your keyboard has too many keys and that's because I firmly believe that the standard 100%, 75%, 60%, and even 40% keyboards are overloaded with keys that can easily be programmed into layers. This is bringing the keys to the hand instead of the opposite. 
+Modern keyboards come packed with keys, but do we really use all of them? The standard 104-key (or 100% layout) has been a convention for decades, and while it provides every function and feature you could think of, it also creates a wide expanse of real estate that our fingers need to traverse.
 
-> So how many keys should I have?
+The rise in popularity of 75%, 60%, and 40% keyboards in the mechanical keyboard community underscores the desire to streamline the typing experience. But is there such a thing as going too far? Let's delve into the idea of minimalism versus functionality in keyboards.
 
-Are you ready for a non-answer?... **Less**. I say this because even if you reduced your layout down to 34 keys like the [Sweep](https://github.com/davidphilipbarr/Sweep), you should always be looking for ways to reduce your key overhead while maintaining a high typing speed/accuracy. That's the balance we hobbyists are looking for in an "endgame" keyboard.
+#### Benefits of Reducing Keys:
+1. **Less Finger Travel**: Fewer keys mean your fingers remain closer to the home row. This can lead to faster typing speeds and reduced fatigue.
+2. **Ergonomic Advantages**: Compact layouts tend to reduce the amount of hand movement and wrist strain.
+3. **Portable**: Smaller keyboards are easy to carry around, making them great for on-the-go setups.
+
+#### Embracing Layers:
+The beauty of modern programmable keyboards is the ability to use layers. Instead of having a dedicated key for every function, layers allow multiple functions on a single key. For example, holding a specific "layer key" can transform your regular alphanumeric keys into a numpad, function keys, or even multimedia controls.
+
+#### The Endgame:
+The term "endgame" in the keyboard community represents the pursuit of a perfect keyboard. It's a balance between aesthetics, functionality, and comfort. Reducing keys plays a significant role in this quest. By challenging the norms and reimagining the keyboard layout, enthusiasts are pushing the boundaries of what's possible.
+
+However, it's essential to recognize that minimalism is a journey, not a destination. What's comfortable and efficient for one person might not work for another. The 34-key layout of the "Sweep" is an excellent example of extreme minimalism, but it might not be everyone's cup of tea.
+
+#### Final Thoughts:
+While the trend is moving towards fewer keys, it's crucial to prioritize functionality and comfort. It's not about how few keys you can get away with, but rather how you can streamline your typing experience without compromising efficiency. Remember, the ultimate goal is to have a keyboard that feels intuitive, reduces strain, and elevates your typing experience. Whether that's with 104 keys or 34 is up to individual preference and adaptability.
 
 ---
 
-### Conclusion
-
-With this comprehensive guide, you’re now equipped to venture into the world of ergonomic keyboards and choose what's best for you!
+## Conclusion
+The ideal ergonomic keyboard varies based on individual needs. The balance is between reducing unnecessary keys and maintaining functionality, all in the pursuit of comfort and efficiency.
