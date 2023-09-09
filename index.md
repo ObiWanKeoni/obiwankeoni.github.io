@@ -16,9 +16,9 @@ has_toc: false
 {: .my-0}
 
 # Keoni Garner
-{: .mb-0 .fs-10}
+{: .mb-0 .mt-1 .fs-10}
 
-#### Senior Software Engineer @ [iso.io](https://iso.io){: style="text-decoration: none;"}
+#### Senior Software Engineer @ [iso.io](https://iso.io){: .my-3 style="text-decoration: none;"}
 
 ### About
 
@@ -58,12 +58,11 @@ Active
 </div>
 
 {% for history in child.history %}
-**{{ history.title }}**
-{: .mb-0}
-
-{{ history.dates }}
-{: .fs-3 .mt-0 .mb-2}
+{{ history.dates }} // **{{ history.title }}**
+{: .mb-2}
 {% endfor %}
+
+{{ child.content }}
 
 - - -
 
