@@ -139,7 +139,7 @@ Intrigued? Let's continue our ergonomic journey!
 Positioning is more than just about where the keys are located—it's about marrying ergonomics with functionality. And with this beautiful image to guide us, let's dive deep into the world of key arrangements!
 
 ##### Row Staggered: The Traditionalist
-Row staggered layout is reminiscent of the classic typewriter, where keys cascade in diagonal rows. While extending fingers in a straight line might seem intuitive, this design, surprisingly, doesn't offer much in ergonomic benefits. As we touched upon in our [introductory section](#history-lesson), this layout is an heirloom from the typewriter days, borne out of necessity rather than optimization. Nevertheless, its omnipresence and our embedded muscle memory can make venturing away from this layout a daunting task.
+Row staggered layout is reminiscent of the classic typewriter, where keys cascade in diagonal rows. While following tradition might seem intuitive, this design, surprisingly, doesn't offer much in ergonomic benefits. As we touched upon in our [introductory section](#history-lesson), this layout is an heirloom from the typewriter days, borne out of necessity rather than optimization. Nevertheless, its omnipresence and our embedded muscle memory can make venturing away from this layout a daunting task.
 
 ##### Column Staggered: A Natural Fit
 Tailored to the average human finger's natural variance in length, the column staggered design adjusts columns to mirror a relaxed hand position. The objective? Ensuring each finger rests comfortably on the home row. The uniform columns mean the most frequently-used keys lie within a fingertip's reach, minimizing the strain-inducing lateral motions. 
