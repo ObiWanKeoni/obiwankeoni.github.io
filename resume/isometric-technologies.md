@@ -7,7 +7,7 @@ image_link: "https://blackhornvc.com/wp-content/uploads/Isometric-Technologies-I
 parent: Experience
 grand_parent: About
 history:
-  - title: Senior Software Engineer
+  - title: Sr. Software Engineer
     dates: "Jan 2023 - Present"
 languages:
   - React
