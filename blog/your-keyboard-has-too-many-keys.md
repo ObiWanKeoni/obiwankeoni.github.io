@@ -96,7 +96,7 @@ For entry-level value, you really can't beat Nuphy or Keychron here.
     <tbody>
         {% for keyboard in page.keyboards %}
         <tr>
-            <td markdown="1">[{{ keyboard.name }}]({{ keyboard.link }})</td>
+            <td><a href="{{ keyboard.link }}">{{ keyboard.name }}</a></td>
             <td>{{ keyboard.membrane }}</td>
             <td>{{ keyboard.mecha_membrane }}</td>
             <td>{{ keyboard.mechanical }}</td>
