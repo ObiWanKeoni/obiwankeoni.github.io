@@ -10,15 +10,15 @@ disclaimer: The title and content of this post are deeply subjective. Ultimately
 keyboards:
  - name: Keychron K8 Pro
    link: "https://www.keychron.com/products/keychron-k8-pro-qmk-via-wireless-mechanical-keyboard"
-   membrane: false
-   mecha_membrane: false
-   mechanical: true
-   obscure: false
-   row_staggered: true
-   column_staggered: false
-   ortholinear: false
-   hot_swappable: true
-   programmable: true
+   membrane: ""
+   mecha_membrane: ""
+   mechanical: "✓"
+   obscure: ""
+   row_staggered: "✓"
+   column_staggered: ""
+   ortholinear: ""
+   hot_swappable: "✓"
+   programmable: "✓"
 ---
 
 <details markdown="block">
@@ -70,7 +70,7 @@ For entry-level value, you really can't beat Nuphy or Keychron here.
 > What's the deal with split keyboards anyway?
 
 
-<table markdown="1" border="1">
+<table>
     <thead>
         <tr>
             <th rowspan="2">Keyboard</th>
@@ -96,8 +96,16 @@ For entry-level value, you really can't beat Nuphy or Keychron here.
     <tbody>
         {% for keyboard in page.keyboards %}
         <tr>
-            <td>[{{ keyboard.name }}]({{ keyboard.link }})</td>
-            <td>{% if keyboard.membrane %}✓{% endif %}</td>
+            <td markdown="1">[{{ keyboard.name }}]({{ keyboard.link }})</td>
+            <td>{{ keyboard.membrane }}</td>
+            <td>{{ keyboard.mecha_membrane }}</td>
+            <td>{{ keyboard.mechanical }}</td>
+            <td>{{ keyboard.obscure }}</td>
+            <td>{{ keyboard.row_staggered }}</td>
+            <td>{{ keyboard.column_staggered }}</td>
+            <td>{{ keyboard.ortholinear }}</td>
+            <td>{{ keyboard.hot_swappable }}</td>
+            <td>{{ keyboard.programmable }}</td>
         </tr>
         {% endfor %}
     </tbody>
