@@ -91,7 +91,7 @@ The structure of a keyboard arguably has the strongest impact on ergonomic effec
 
 ---
 
-#### Split | Unibody | Monoblock
+#### Structure
 Let's start by breaking down what these terms mean:
 
 **Split**: This is a keyboard that is separated into 2 halves - one for each hand.
@@ -123,11 +123,11 @@ Aside from the cons mentioned above, there may be practical reasons for keeping 
 
 This can be seen as a "Jack of All Trades but Master of None" situation where you can get some of the ergonomic benefits of a split keyboard (wrist alignment) and the mobility of a single board. This possesses many of the same issues as a single board with some added ergonomics... if you're at risk for RSI in your hands or wrists from poor alignment, this could be the solution for you.
 
-Now  that we've touched a bit on ways to reduce wrist-based and shoulder-based RSI, let's look into alleviating elbow/hand pain.
+Now that we've touched a bit on ways to reduce wrist-based and shoulder-based RSI, let's look into alleviating elbow/hand pain.
 
 ---
 
-#### Tented/Sculpted | Keywells | Flat
+#### Keyboard Oridntation
 Like we did in the last section, let's establish the terminology:
 
 **Tenting**: For a split board, this is angling the halves laterally such that using the keyboard results in less twisting of the arms than a flat board.
@@ -152,7 +152,7 @@ Not at all! Flat keyboards are MUCH easier to come by, align closer with standar
 
 ---
 
-#### Row Staggered | Column Staggered | Ortholinear
+#### Key Positioning
 I've been waiting for this category! Let's start again with some definitions:
 
 **Row Staggered**: This is standard keyboard positioning where keys are oriented diagonally like that of an old typewriter. Remember that "it was merely a limitation of the typewriter design at the time".
