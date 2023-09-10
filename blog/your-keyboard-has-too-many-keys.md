@@ -213,6 +213,11 @@ By programming certain keys to perform multiple tasks, you can drastically reduc
 #### Layers Are a Game Changer
 Many programmable keyboards support layers. This means that with a single key press, your entire keyboard layout can switch to a different configuration. Imagine switching from a standard typing layer to a specialized layer for a specific software, gaming, or multimedia control, all at the press of a button. Layers enable you to bring distant keys closer and can be tailor-made to specific tasks, further enhancing ergonomic efficiency.
 
+#### For the Re[chord]
+*Forgive the awful pun*
+
+Chording, in the context of keyboards, refers to the practice of pressing multiple keys simultaneously to produce a single character or perform a specific action. Much like playing a chord on a musical instrument, chording on a keyboard allows users to utilize combinations of keys to expand their keyboard's functionality without physically increasing the number of keys. Chording can significantly enhance ergonomics by reducing the need to reach for distant keys or execute complex key combinations. For example, instead of pressing a far-away function key, you could use a chorded shortcut from the home row. This minimizes hand movement and the associated strain. Many programmable keyboards or firmware solutions like QMK provide built-in support for chording, enabling users to design custom chorded shortcuts tailored to their needs and workflow. Some keyboard layouts rely heavily on chords to function at all (see [Artsey](https://artsey.io/)). You might be able to imagine how being able to easily slide a finger between two keys to press them at once can replace or supplement keys that you might long for from a larger keyboard. For those keen on efficiency and minimizing motion, chording offers a powerful tool to optimize and personalize their typing experience.
+
 #### Paving the Way for Efficient Typing
 Reduced key layouts, like Miryoku, offer all the functionalities of a full-sized keyboard but in a compact space. The magic lies in intelligent programming. By assigning multiple roles to a single key (based on taps, holds, or combinations), you can maintain the breadth of keyboard functionality without the width.
 
