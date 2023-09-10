@@ -5,7 +5,7 @@ description: Brief history of keyboards and a less brief introduction to the wor
 image_link: /assets/images/your-keyboard-has-too-many-keys.webp
 parent: Blog
 date: 2023-07-30
-time_to_read: 9 min
+time_to_read: 18 min
 disclaimer: The title and content of this post are deeply subjective. Ultimately, do what works for you.
 keyboards:
  - name: Keychron K8 Pro
