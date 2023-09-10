@@ -7,34 +7,34 @@ parent: Blog
 date: 2023-09-09
 time_to_read: 0 min
 disclaimer: My setup is just that, mine. It is highly opinionated and I like it that way.
-tools:
-	- term: Window Manager (WM)
-	  definition: Yabai
-	  link: "https://github.com/koekeishiya/yabai"
-	- term: (Current) Editor
-	  definition: RubyMine (JetBrains)
-	  link: "https://www.jetbrains.com/ruby/"
-	- term: Terminal Emulator
-	  definition: iTerm2
-	  link: "https://iterm2.com/"
-	- term: Writing App
-	  definition: Obsidian
-	  link: "https://obsidian.md/"
-	- term: Browser
-	  definition: Arc
-	  link: "https://arc.net/"
-	- term: Music Player
-	  definition: Spotify (Spicetify)
-	  link: "https://spotify.com"
-	- term: Colorscheme
-	  definition: Catppuccin
-	  link: "https://github.com/catppuccin/catppuccin"
-	- term: Keyboard
-	  definition: W-Ergolite
-	  link: "https://keyclicks.ca/products/w-ergolite-2-4g-wireless-split-keyboard-2"
-	- term: Pointing Device
-	  definition: Veikk Creator A15
-	  link: "https://veikk.com/route/product/product?path=109_112&product_id=271"
+tools:  
+ - term: Window Manager (WM)  
+   definition: Yabai  
+   link: "https://github.com/koekeishiya/yabai"  
+ - term: (Current) Editor  
+   definition: RubyMine (JetBrains)  
+   link: "https://www.jetbrains.com/ruby/"  
+ - term: Terminal Emulator  
+   definition: iTerm2  
+   link: "https://iterm2.com/"  
+ - term: Writing App  
+   definition: Obsidian  
+   link: "https://obsidian.md/"  
+ - term: Browser  
+   definition: Arc  
+   link: "https://arc.net/"  
+ - term: Music Player  
+   definition: Spotify (Spicetify)  
+   link: "https://spotify.com"  
+ - term: Colorscheme  
+   definition: Catppuccin  
+   link: "https://github.com/catppuccin/catppuccin"  
+ - term: Keyboard  
+   definition: W-Ergolite  
+   link: "https://keyclicks.ca/products/w-ergolite-2-4g-wireless-split-keyboard-2"  
+ - term: Pointing Device  
+   definition: Veikk Creator A15  
+   link: "https://veikk.com/route/product/product?path=109_112&product_id=271"
 ---
 
 I am software engineer passionate about [ergonomic keyboards](/blog/your-keyboard-has-too-many-keys.html) and maximum efficiency for development. That being said, my development setup is evergreen as I consistently find ways to improve upon work that I've done in the past. What you may have seen here before may not be the setup in the near future.
