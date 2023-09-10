@@ -115,7 +115,10 @@ This site was ~95% written from my mobile device. If this is of interest to folk
 
 On top of that, I use [obsidian-git](https://github.com/denolehov/obsidian-git) to manage syncing between my phone and my laptop. There is also a GitHub action in a private repo that forwards any public-facing changes to my public-facing repo which will then build and publish this site again. I can go from pushing to published in ~1 min on average.
 
-## Arc  
+## Arc 
+Arc sold me on aesthetics honestly. I wish it were a more educated decision. Frankly, though, I don't care too much about telemetry or data gathering in a browser. For me, what I love is the command palette functionality. This allows me to remove all the cruft and just have my current page open. If I need to "switch tabs", I pop open the command palette and start typing and if the tab exists, it's slotted right under my cursor so I just hit <kbd>return</kbd> and I'm there!
+
+On top of that, I use a legacy CSS injection "extension" that allows me to style EVERY site that I go to somewhat consistently. The main things I've changed are fonts but I also have highly specific Catppuccin themes for GitHub and ChatGPT.
 
 ## Spotify (Spicetify)
 $17 to stream ANY song at ANY time from ANY device (provided a network connection or it's downloaded to your phone) is just too good to pass up! I use the [Catppuccin theme for spicetify](https://github.com/catppuccin/spicetify) for ✨*aesthetics* ✨
