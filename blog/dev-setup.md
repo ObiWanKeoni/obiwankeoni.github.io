@@ -35,6 +35,9 @@ tools:
  - term: Pointing Device  
    definition: Veikk Creator A15  
    link: "https://veikk.com/route/product/product?path=109_112&product_id=271"
+ - term: Window/Application Switcher
+   definition: Raycast
+   link: "https://www.raycast.com/"
 ---
 
 I am software engineer passionate about [ergonomic keyboards](/blog/your-keyboard-has-too-many-keys.html) and maximum efficiency for development. That being said, my development setup is evergreen as I consistently find ways to improve upon work that I've done in the past. What you may have seen here before may not be the setup in the near future.
@@ -139,8 +142,11 @@ I just dig it.
 {: .blog-img}
 
 #### Layer 3
-![](keyboard-layer-2.png)
+![](/assets/images/keyboard-layer-3.png)
 {: .blog-img}
 
 ## Veikk Creator A15
 I'm still getting used to this thing but basically, I want to be able to sketch things out and since I don't use a mouse or trackpad, this is pretty difficult - it's difficult even with one of those. I'm happy about this though, I can do what I need to with it. If I need something more tangible though (which I often do), I'll use my whiteboard.
+
+## Raycast
+The default MacOS app switcher is good but Raycast sends it packing every time I get a new machine. I loved Alfred and I love Raycast... ultimately Raycasts plugin marketplace pulled me in. I can do so much more from my app switcher which I already relied on heavily. It's a perfect addition to my work setup. I'm not willing to shell out a monthly amount for styling support though 😬
