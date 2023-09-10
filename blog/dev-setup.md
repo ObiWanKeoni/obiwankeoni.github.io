@@ -5,7 +5,7 @@ description: Details on my keyboard-driven setup for software engineering.
 image_link: /assets/images/dev-setup.webp
 parent: Blog
 date: 2023-09-09
-time_to_read: 0 min
+time_to_read: 10 min
 disclaimer: My setup is just that, mine. It is highly opinionated and I like it that way.
 tools:  
  - term: Window Manager (WM)  
@@ -56,12 +56,13 @@ The rest of this post will be a deep dive into the tools I use **and how I use t
 	{% endfor %}
 </dl>
 
+We will be going into greater detail into each of these but this is a high-level overview of my arsenal of tools.
+
 Screenshot:
 
 ![](/assets/images/dev-setup-screenshot.webp)
 {: .blog-img}
 
-We will be going into greater detail into each of these but this is a high-level overview of my arsenal of tools.
 
 ## Yabai
 Since I do use MacOS **strictly**, this window manager is a must-have. I used basically every other window manager on the market and none come close to the binary space partitioning that Yabai has built-in. It allows me to organize my windows just where I need them with little fiddling.
