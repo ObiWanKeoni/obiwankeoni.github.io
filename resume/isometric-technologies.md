@@ -18,8 +18,6 @@ languages:
   - AWS
 ---
 
-## Okay but what did ***YOU*** do?
-
 - Worked with our DevOps engineer to transition our legacy CloudFormation IAC to Terraform
 - Dockerized a monolithic application in preparation of moving to ECS from ElasticBeanstalk
 - Worked with two other engineers to establish a new external API philosophy at the company

@@ -20,8 +20,6 @@ languages:
   - React
 ---
 
-## Okay but what did ***YOU*** do?
-
 - Managed a team of 4-6 developers across multiple simultaneous software projects.
 - Improved existing processes by implementing UI/UX guidelines and drastically improving performance and quality of data collection.
 - Managed a subsection of total company clients.

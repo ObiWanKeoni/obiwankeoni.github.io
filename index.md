@@ -48,7 +48,7 @@ Interested in working together? Reach out at my [email](mailto:keoni_garner@yaho
 ### Experience
 {: .mt-2 .mb-5}
 
-{% for child in sorted_pages limit:3 %}
+{% for child in sorted_pages limit:2 %}
 
 <div class="mb-2" markdown="1">
 ####  [{{child.title}}]({{child.url}})
@@ -59,8 +59,11 @@ Active
 </div>
 
 {% for history in child.history %}
-{{ history.dates }} // **{{ history.title }}**
-{: .mb-2}
+{{ history.dates }}
+{: .fs-2 .my-0}
+
+**{{ history.title }}**
+{: .my-2}
 {% endfor %}
 
 {{ child.content }}
