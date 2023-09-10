@@ -58,7 +58,7 @@ The rest of this post will be a deep dive into the tools I use **and how I use t
 
 Screenshot:
 
-![](assets/images/dev-setup-screenshot.webp)
+![](/assets/images/dev-setup-screenshot.webp)
 {: .blog-img}
 
 We will be going into greater detail into each of these but this is a high-level overview of my arsenal of tools.
