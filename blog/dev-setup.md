@@ -55,7 +55,7 @@ The rest of this post will be a deep dive into the tools I use **and how I use t
 
 Screenshot:
 
-![[assets/images/dev-setup-screenshot.webp]]
+![](assets/images/dev-setup-screenshot.webp)
 {: .blog-img}
 
 We will be going into greater detail into each of these but this is a high-level overview of my arsenal of tools.
@@ -120,5 +120,27 @@ $17 to stream ANY song at ANY time from ANY device (provided a network connectio
 ## Catppuccin
 I just dig it.
 
-## W-Ergolite  
+## W-Ergolite
+![](/assets/images/keyboard.jpg)
+{: .blog-img}
+
+### Layers
+
+#### Layer 0
+![](/assets/images/keyboard-layer-0.png)
+{: .blog-img}
+
+#### Layer 1
+![](/assets/images/keyboard-layer-1.png)
+{: .blog-img}
+
+#### Layer 2
+![](/assets/images/keyboard-layer-2.png)
+{: .blog-img}
+
+#### Layer 3
+![](keyboard-layer-2.png)
+{: .blog-img}
+
 ## Veikk Creator A15
+I'm still getting used to this thing but basically, I want to be able to sketch things out and since I don't use a mouse or trackpad, this is pretty difficult - it's difficult even with one of those. I'm happy about this though, I can do what I need to with it. If I need something more tangible though (which I often do), I'll use my whiteboard.
