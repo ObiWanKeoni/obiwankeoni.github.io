@@ -461,7 +461,7 @@ pre {
     radial-gradient(74% 86% at 67% 38%, $red-100 24%, transparent 100%),
     linear-gradient(125deg, $blue-300 1%, $purple-300 100%);
   > code.hljs {
-    background: color-mix(in srgb, $code-background-color 85%, transparent) !important;
+    background: color-mix(in srgb, $code-background-color 90%, transparent) !important;
     border: 1px solid color-mix(in srgb, $grey-lt-000 70%, transparent);
     backdrop-filter: blur(48px);
     -webkit-backdrop-filter: blur(48px);
