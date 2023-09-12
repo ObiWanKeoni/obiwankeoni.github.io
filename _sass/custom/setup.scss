@@ -1,8 +1,6 @@
 $body-font-family:
-  "Bricolage Grotesque",
-  "Darker Grotesque",
-  "Inter",
   "Anek Latin",
+  "Inter",
   system-ui,
   -apple-system,
   blinkmacsystemfont,
@@ -11,7 +9,7 @@ $body-font-family:
   "Helvetica Neue",
   arial,
   sans-serif;
-$mono-font-family: "SFMono-Regular", menlo, consolas, monospace;
+$mono-font-family: "JetBrains Mono", "SFMono-Regular", menlo, consolas, monospace;
 $shadow-color-hue: 0deg;
 $shadow-color-saturation: 0%;
 $shadow-color-lightness: 0%;
