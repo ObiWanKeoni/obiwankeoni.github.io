@@ -57,7 +57,7 @@
     blocks.forEach((block) => {
       let code = block.querySelector("code");
       const language = code.classList[0].replace("language-", "");
-      const terminalLanguages = ["bash", "shell"];
+      const terminalLanguages = ["shell"];
 
       const title = terminalLanguages.includes(language)
         ? "Terminal"
