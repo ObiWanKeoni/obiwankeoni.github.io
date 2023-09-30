@@ -111,7 +111,7 @@ I have tried other terminal emulators and iTerm2 is just too solid to give up fo
 ## Obsidian
 What a complex setup I have here... First thing to call out is that this entire post was written in Obsidian - actually this whole website was written from Obsidian minus the CSS.
 
-{: note}
+{: .note}
 This site was ~95% written from my mobile device. If this is of interest to folks, I can explain how I managed to do that and not go totally insane.
 
 On top of that, I use [obsidian-git](https://github.com/denolehov/obsidian-git) to manage syncing between my phone and my laptop. There is also a GitHub action in a private repo that forwards any public-facing changes to my public-facing repo which will then build and publish this site again. I can go from pushing to published in ~1 min on average.
