@@ -46,6 +46,7 @@ This isn’t to suggest that the Waterfall/Gitflow/QA systems are inherently sup
 Imagine these two divergent entities growing independently, deepening their philosophies until a corporate decision merges them. Here, the terrain becomes treacherous, demanding innovative strategies to integrate these disparate engineering organizations successfully. Here are some speculative approaches:
 
 1. **Adopt Company A’s Methodology Entirely:**
+
 | Pros                                | Cons                                                                     |
 | ----------------------------------- | ------------------------------------------------------------------------ |
 | Maintains Company A’s routine       | Slows down Company B                                                     |
@@ -53,6 +54,7 @@ Imagine these two divergent entities growing independently, deepening their phil
 | Preserves initial high velocity     | Gradual loss of velocity due to decreased output from Company B          |
 
 2. **Adopt Company B’s Methodology Entirely:**
+
 | Pros                                    | Cons                                                         |
 | --------------------------------------- | ------------------------------------------------------------ |
 | Preserves Company B’s routine           | Increases workload for Company A                             |
@@ -61,6 +63,7 @@ Imagine these two divergent entities growing independently, deepening their phil
 |                                         | Raises concerns over patient safety                          |
 
 3. **Maintain Separate Arms:**
+
 | Pros                                                         | Cons                                                 |
 | ------------------------------------------------------------ | ---------------------------------------------------- |
 | Preserves existing working methods, maintaining staff morale | Divergent processes impede balanced team integration |
