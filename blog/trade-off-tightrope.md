@@ -5,7 +5,7 @@ description: Thought dump on development practices, particularly in critical sys
 image_link: /assets/images/trade-off-tightrope.webp
 parent: Blog
 date: 2023-09-30
-time_to_read: 9 min
+time_to_read: 4 min
 ---
 
 <details markdown="block">
