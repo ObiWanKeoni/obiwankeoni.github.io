@@ -18,8 +18,7 @@ languages:
   - AWS
 ---
 
-- Worked with our DevOps engineer to transition our legacy CloudFormation IAC to Terraform
-- Dockerized a monolithic application in preparation of moving to ECS from ElasticBeanstalk
-- Worked with two other engineers to establish a new external API philosophy at the company
-- Architected and implemented [Proximity Search](proximity-search).
-- Built out a richer Analytics integration with Looker
+- Designed and implemented a public-facing API to support an entirely new product stream, generating $300k in ARR before launching. 
+- Designed and implemented a highly-performant Proximity Search feature, giving users a better axis with which to view their data.
+- Assisted in transitioning our CloudFormation-managed infrastructure to Terraform (TF) for cloud-agnosticity and to increase development speed with TF modules.
+- Iterated upon an event-sourced service to provide clearer insights into our data-ingestion pipeline.

@@ -20,7 +20,6 @@ languages:
   - React
 ---
 
-- Managed a team of 4-6 developers across multiple simultaneous software projects.
-- Improved existing processes by implementing UI/UX guidelines and drastically improving performance and quality of data collection.
-- Managed a subsection of total company clients.
-- Implemented LEAN processes, test-driven development, and peer reviews.
+- Managed a team of 4 developers, delivering multiple projects in parallel.    
+- Made a slow process 10x faster by leveraging parallelism and batching.
+- Developed Java modules to communicate with highly specialized control systems equipment.

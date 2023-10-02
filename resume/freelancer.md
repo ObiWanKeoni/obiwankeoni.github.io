@@ -17,4 +17,4 @@ languages:
 ---
 
 - Developed an enterprise-level software application to automate tedious tasks - Allowed Taft College to maintain their accredited status.
-- Created an Automatic Grading program in Python to assist the C++ instructor with checking the outputs of a project.
+- Created numerous websites and applications for individuals.
