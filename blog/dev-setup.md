@@ -128,7 +128,7 @@ $17 to stream ANY song at ANY time from ANY device (provided a network connectio
 I just dig it.
 
 ## Ferris Sweep
-![](/assets/images/keyboard.jpg)
+![](/assets/images/keyboard.jpeg)
 {: .blog-img}
 
 ### Keymap
