@@ -30,8 +30,8 @@ tools:
    definition: Catppuccin  
    link: "https://github.com/catppuccin/catppuccin"  
  - term: Keyboard  
-   definition: W-Ergolite  
-   link: "https://keyclicks.ca/products/w-ergolite-2-4g-wireless-split-keyboard-2"  
+   definition: Ferris Sweep Wireless  
+   link: "https://github.com/davidphilipbarr/Sweep"  
  - term: Pointing Device  
    definition: Veikk Creator A15  
    link: "https://veikk.com/route/product/product?path=109_112&product_id=271"
@@ -127,26 +127,12 @@ $17 to stream ANY song at ANY time from ANY device (provided a network connectio
 ## Catppuccin
 I just dig it.
 
-## W-Ergolite
+## Ferris Sweep
 ![](/assets/images/keyboard.jpg)
 {: .blog-img}
 
-### Layers
-
-#### Layer 0
-![](/assets/images/keyboard-layer-0.png)
-{: .blog-img}
-
-#### Layer 1
-![](/assets/images/keyboard-layer-1.png)
-{: .blog-img}
-
-#### Layer 2
-![](/assets/images/keyboard-layer-2.png)
-{: .blog-img}
-
-#### Layer 3
-![](/assets/images/keyboard-layer-3.png)
+### Keymap
+![](/assets/images/keymap.png)
 {: .blog-img}
 
 ## Veikk Creator A15
