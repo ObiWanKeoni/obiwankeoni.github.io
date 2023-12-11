@@ -18,7 +18,9 @@ languages:
   - AWS
 ---
 
-- Designed and implemented a public-facing API to support an entirely new product stream, generating $300k in ARR before launching. 
-- Designed and implemented a highly-performant Proximity Search feature, giving users a better axis with which to view their data.
-- Assisted in transitioning our CloudFormation-managed infrastructure to Terraform (TF) for cloud-agnosticity and to increase development speed with TF modules.
-- Iterated upon an event-sourced service to provide clearer insights into our data-ingestion pipeline.
+Isometric Technologies is a neutral, third-party facilitator of the exceptions
+process between business entities in the logistics industry.
+
+ - Designed and implemented a public-facing API against our backend services to support an entirely new product stream, generating $300k in ARR before launching.
+ - Developed a highly-performant Proximity Search feature for the main app, improving user engagement by 12%.
+ - Iterated upon an event-sourced service to provide visibility and empower reconciliation into our data-ingestion pipeline - generating time savings of 18% for our SA and CX teams.

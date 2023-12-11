@@ -21,7 +21,9 @@ languages:
   - AWS
 ---
 
-- Designed and implemented a microservice for ePrescribing that would produce ~$20M in revenue.
-- Implemented an event-driven architecture via SNS and SQS on AWS to enable service-service communication.
-- Developed internal Python libraries to centralize code.
-- Improved upon a Twilio integration - allowing multiple participants (specifically translators) in telehealth calls.
+Included Health is the result of a merger between Doctor on Demand, a
+telehealth provider, and Grand Rounds Health, a healthcare navigation service. Together, they provide a single hub for all things healthcare.
+
+- Tech lead for the ePrescribing system that generated >$20M in revenue.
+- Innovatively hacked together a solution that optimized workflow, saving over 50% of the support team's time, significantly enhancing operational efficiency.
+- Successfully led a cross-functional, time-sensitive project pivotal for onboarding a major customer, ensuring a seamless integration process and enhancing client satisfaction.
