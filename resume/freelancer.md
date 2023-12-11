@@ -17,4 +17,4 @@ languages:
 ---
 
 - Developed an enterprise-level software application to automate tedious tasks - Allowed Taft College to maintain their accredited status.
-- Created numerous websites and applications for individuals.
+- Created numerous websites and applications for individuals.No0d|e
