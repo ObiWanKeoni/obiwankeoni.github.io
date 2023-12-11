@@ -11,7 +11,7 @@ has_toc: false
 
 {%- include sorted_pages.html pages = child_pages -%}
 # Experience
-Software engineer with 5+ years of experience across a wide range of industries. I like to build cool things.
+Software engineer with 6+ years of experience across a wide range of industries. I like to build cool things. PDF version of my resume [here](/assets/documents/resume.pdf)
 {: .fs-6 .fw-300 }
 
 {% for child in sorted_pages %}
