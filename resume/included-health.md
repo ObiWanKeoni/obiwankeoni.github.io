@@ -26,4 +26,5 @@ telehealth provider, and Grand Rounds Health, a healthcare navigation service. T
 
 - Tech lead for the ePrescribing system that generated >$20M in revenue.
 - Innovatively hacked together a solution that optimized workflow, saving over 50% of the support team's time, significantly enhancing operational efficiency.
+- Rapidly developed solution that optimized workflow, saving over 50% of the support team’s time, significantly enhancing operational efficiency.
 - Successfully led a cross-functional, time-sensitive project pivotal for onboarding a major customer, ensuring a seamless integration process and enhancing client satisfaction.
