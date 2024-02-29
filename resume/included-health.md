@@ -8,9 +8,9 @@ parent: Experience
 grand_parent: About
 history:
   - title: Sr. Software Engineer
-    dates: "Oct 2022 - Jan 2023"
+    dates: "Oct 2021 - Jan 2023"
   - title: Backend Engineer
-    dates: "Oct 2021 - Oct 2022"
+    dates: "Oct 2020 - Oct 2021"
 languages:
   - React
   - VueJS
