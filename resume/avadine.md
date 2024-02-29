@@ -24,3 +24,4 @@ Avadine is a consulting company that implements and supports web applications an
 - Led and mentored a team of 4 developers, expertly managing multiple projects simultaneously, showcasing strong leadership, teamwork, and excellent time management skills.
 - Revolutionized a critical process by implementing parallelism and batching techniques, achieving a 10x increase in speed, demonstrating exceptional problem-solving and technical innovation.
 - Designed and developed robust Java modules for interfacing with highly specialized control systems equipment, highlighting advanced technical proficiency and a keen ability to adapt to specialized technologies.
+- Standardized a service template that ended up saving 30% of development time for each subsequent project.

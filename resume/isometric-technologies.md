@@ -21,6 +21,8 @@ languages:
 Isometric Technologies is a neutral, third-party facilitator of the exceptions
 process between business entities in the logistics industry.
 
- - Designed and implemented a public-facing API against our backend services to support an entirely new product stream, generating $300k in ARR before launching.
+ - Designed and implemented a public-facing API against our backend services to support an entirely new product stream, generating $300k in ARR before the product launched.
  - Developed a highly-performant Proximity Search feature for the main app, improving user engagement by 12%.
+ - Scoped and coordinated the engineering integration for 2 large customers adding up to ~$250k ARR
+ - Consistently collaborated with Product and Design to evaluate projects and deliver value.
  - Iterated upon an event-sourced service to provide visibility and empower reconciliation into our data-ingestion pipeline - generating time savings of 18% for our SA and CX teams.
