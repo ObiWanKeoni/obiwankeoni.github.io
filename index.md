@@ -23,11 +23,11 @@ has_toc: false
 
 ### About
 
-I always thought software engineering was out of reach, that I was simply too dumb to learn it even though it pulled at me subtly. Back in 2016, the curriculum for a Petroleum Engineering degree required a programming course. I chose C++ and **fell in love** with code.
+Initially, software engineering appeared as an elusive ambition to me, seeming too complex, yet it always intrigued me. My journey began unexpectedly in 2016 during my Petroleum Engineering studies, when I encountered a required programming course and chose C++. That experience sparked a profound interest in coding for me.
 
-I would have pursued a CS degree if I wouldn't have had to retake a year at University so I finished my Community College degree and jumped headfirst into a coding bootcamp. Now I am a software engineer with experience across a variety of industries and a proven track record of delivering value to businesses for whom I have worked.
+Pursuing a degree in Computer Science was tempting, but the thought of extending my university education held me back. Instead, I completed my degree at Community College and then eagerly enrolled in a coding bootcamp. Today, I'm a software engineer with a diverse portfolio, contributing meaningful value to a variety of industries through my work.
 
-More importantly, though, I am a father to one wonderful little boy (Dakota 2) and a mediocre husband to my beautiful wife (Jamie 26). My hobbies include ergonomics, keyboards, and [creative writing](/writing/) (mainly Lovecraftian Horror).
+More importantly, though, I am a father to one wonderful little boy (Dakota 2) and a mediocre husband to my beautiful wife (Jamie 27). My hobbies include ergonomics, keyboards, and [creative writing](/writing/) (mainly Lovecraftian Horror).
 
 Interested in working together? Reach out at my [email](mailto:keoni_garner@yahoo.com)
 
