@@ -13,8 +13,11 @@ layout: default
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 </span>
 
-{% for highlight in site.data.resume[:work_experience].find { |job| job[:company] == history.title }[:highlights] %}
-<li>{{ highlight }}</li>
+{% assign jobs = site.data.resume.work_experience | where: "company", history.title %}
+{% for job in jobs %}
+  {% for highlight in job.highlights %}
+    <li>{{ highlight }}</li>
+  {% endfor %}
 {% endfor %}
 
 {% endfor %}
