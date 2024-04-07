@@ -12,4 +12,10 @@ layout: default
 <span class="fs-8 mt-2">
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 </span>
-{% endfor %} {{ content }}
+
+{% for highlight in site.data.resume[:work_experience].find { |job| job[:company] == history.title }[:highlights] %}
+<li>{{ highlight }}</li>
+{% endfor %}
+
+{% endfor %}
+{{ content }}
