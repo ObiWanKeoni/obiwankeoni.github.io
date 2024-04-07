@@ -7,8 +7,8 @@ layout: default
 {% assign history = site.data.resume.work_experience | where: "company", page.title %}
 
 {% for job in history %}
-<span class="mb-0 mt-1">{{ history.startDate }} - {{ history.endDate }}</span>
-<h4 class="mb-1 mt-0"><strong>{{ history.position }}</strong></h4>
+<span class="mb-0 mt-1">{{ job.startDate }} - {{ job.endDate }}</span>
+<h4 class="mb-1 mt-0"><strong>{{ job.position }}</strong></h4>
 <br />
 {% endfor %}
 
@@ -18,9 +18,23 @@ layout: default
 </span>
 {% endfor %}
 
+{{ content }}
 
-{% for job in history %}
-  {% for highlight in job.highlights %}
-    {{ highlight }}
-  {% endfor %}
-{% endfor %}
+<span id="latex-container">
+    {% for job in history %}
+      {% for highlight in job.highlights %}
+        <li>{{ highlight }}</li>
+      {% endfor %}
+    {% endfor %}
+</span>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var container = document.getElementById('latex-container');
+        var latex = container.textContent;
+        katex.render(latex, container, {
+            throwOnError: false
+        });
+    });
+</script>
