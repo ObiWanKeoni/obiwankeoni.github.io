@@ -1,0 +1,114 @@
+{
+  "work_experience": [
+    {
+      "company": "Isometric Technologies",
+      "location": "Remote",
+      "position": "Senior Software Engineer",
+      "website": "",
+      "startDate": "January 2023",
+      "endDate": "March 2024",
+      "highlights": [
+        "Designed and implemented a public-facing API using \\textbf{Ruby on Rails} to support an entirely new product stream, generating \\textbf{\\$300k in ARR} before launching.",
+        "Developed a highly-performant Proximity Search feature without the need for geo-indexing, improving user engagement by \\textbf{12\\%}.",
+        "Iterated upon an event-sourced service to provide visibility and empower reconciliation into our data-ingestion pipeline - generating time savings of \textbf{50 hours per week} for both our SA and our CX teams.",
+        "Scoped and coordinated the engineering integration for 2 large customers adding up to \\textbf{\\textasciitilde{}\\$250k ARR}"
+      ]
+    },
+    {
+      "highlights": [
+        "Tech lead of a team of 5-7 engineers supporting our clinical tools, including our flagship ePrescribing system that generated \\textbf{\\textgreater{}\\$20M in revenue}.",
+        "Developed workflows to surface prescription eligibility and pricing information to providers driving medication adherence and improving user satisfaction by \\textbf{22\\%}.",
+        "Rapidly developed solution that optimized clinical workflows, saving over \\textbf{360 hours per week} of the support team's time.",
+        "Successfully led a cross-functional, time-sensitive project pivotal for onboarding a major customer, ensuring a seamless integration process and enhancing client satisfaction."
+      ],
+      "company": "Included Health",
+      "position": "Senior Software Engineer",
+      "location": "Remote",
+      "startDate": "October 2021",
+      "endDate": "January 2023"
+    },
+    {
+      "highlights": [
+        "Developed and owned a custom Python library for event-driven communications.",
+        "Refactored the PDF generation process for all PDFs to follow OOP principles.",
+        "Overhauled our Twilio integration to support guests in video calls with teleheath providers."
+      ],
+      "company": "Included Health",
+      "position": "Backend Python Engineer",
+      "location": "Remote",
+      "startDate": "October 2020",
+      "endDate": "October 2021"
+    },
+    {
+      "highlights": [
+        "Led and mentored a team of 4 developers, expertly managing and successfully delivering multiple projects simultaneously."
+      ],
+      "company": "Avadine",
+      "position": "Project Manager",
+      "location": "Remote",
+      "startDate": "June 2020",
+      "endDate": "October 2020"
+    },
+    {
+      "highlights": [
+        "Revolutionized a critical IOT data collection process by implementing parallelism and batching techniques, \\textbf{reducing total collection time from 15 hours to 30 min}.",
+        "Designed and developed robust \\textbf{Java} modules for interfacing with highly specialized control systems equipment, highlighting advanced technical proficiency and a keen ability to adapt to specialized technologies."
+      ],
+      "company": "Avadine",
+      "position": "Software Engineer",
+      "location": "Remote",
+      "startDate": "August 2018",
+      "endDate": "June 2020"
+    },
+    {
+      "highlights": [
+        "Developed an enterprise-level software application to automate tedious tasks - Allowed Taft College to maintain their accredited status.",
+        "Created numerous websites and applications for individuals."
+      ],
+      "company": "Freelance",
+      "position": "Software Engineer",
+      "location": "Remote",
+      "startDate": "November 2016",
+      "endDate": "August 2018"
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Python",
+      "Ruby",
+      "Typescript",
+      "SQL",
+      "C\\#",
+      "Java",
+      "Terraform",
+      "PostgreSQL"
+    ],
+    "Technologies": [
+      "Django",
+      "Flask",
+      "FastAPI",
+      "Rails",
+      "React",
+      "Vue",
+      "Angular",
+      ".NET",
+      "Git",
+      "Docker",
+      "AWS",
+      "Kafka",
+      "RabbitMQ",
+      "Redis"
+    ],
+    "Methodologies": ["Agile", "Scrum", "OOP", "DevOps", "CI/CD", "TDD"]
+  },
+  "projects": {
+    "Gap and Go Trading Algorithm and Journal": {
+      "startDate": "June 2021",
+      "endDate": "Present",
+      "bullets": [
+        "Profitable day trading algorithm based on the “Gap-and-Go” day trading strategy utilizing 2 Third-Party APIs.",
+        "Trading journal with various data visualizations for tracking profitability and optimizations of the algorithm."
+      ]
+    }
+  }
+}
