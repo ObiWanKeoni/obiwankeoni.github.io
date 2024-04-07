@@ -4,21 +4,25 @@ layout: default
 
 <img class="filter" src="{{ page.image_link }}" alt="{{ page.title }}" />
 
-{% for history in page.history %}
-<span class="mb-0 mt-1">{{ history.dates }}</span>
-<h4 class="mb-1 mt-0"><strong>{{ history.title }}</strong></h4>
+{% assign history = site.data.resume.work_experience | where: "company", page.title %}
+
+{% for job in history %}
+<span class="mb-0 mt-1">{{ history.startDate }} - {{ history.endDate }}</span>
+<h4 class="mb-1 mt-0"><strong>{{ history.position }}</strong></h4>
 <br />
-{% endfor %} {% for language in page.languages %}
+{% endfor %}
+
+{% for language in page.languages %}
 <span class="fs-8 mt-2">
 <i class="devicon-{{ language | downcase | replace: 'aws', 'amazonwebservices' | replace: 'c#', 'csharp' | replace: '.net', 'dot-net' | replace: 'mssql', 'microsoftsqlserver' }}-plain-wordmark"></i>
 </span>
+{% endfor %}
 
-{% assign jobs = site.data.resume.work_experience | where: "company", history.title %}
-{% for job in jobs %}
+
+{% for job in history %}
   {% for highlight in job.highlights %}
     <li>{{ highlight }}</li>
   {% endfor %}
 {% endfor %}
 
-{% endfor %}
 {{ content }}
