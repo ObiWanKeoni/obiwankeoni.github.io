@@ -34,7 +34,8 @@ layout: default
         var container = document.getElementById('latex-container');
         var latex = container.textContent;
         katex.render(latex, container, {
-            throwOnError: false
+            throwOnError: false,
+            displayMode: true
         });
     });
 </script>
