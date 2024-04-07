@@ -21,8 +21,6 @@ layout: default
 
 {% for job in history %}
   {% for highlight in job.highlights %}
-    <li>{{ highlight }}</li>
+    {{ highlight }}
   {% endfor %}
 {% endfor %}
-
-{{ content }}
