@@ -19,9 +19,10 @@ layout: default
 {% endfor %}
 
 {{ content }}
-
+<ul>
 {% for job in history %}
-{% for highlight in job.highlights %}
- - {{ highlight }}
+  {% for highlight in job.highlights %}
+    <li>{{ highlight }}</li>
+  {% endfor %}
 {% endfor %}
-{% endfor %}
+</ul>
