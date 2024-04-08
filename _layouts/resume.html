@@ -20,21 +20,8 @@ layout: default
 
 {{ content }}
 
-<ul id="latex-container">
-    {% for job in history %}
-      {% for highlight in job.highlights %}
-        <li>{{ highlight }}</li>
-      {% endfor %}
-    {% endfor %}
-</ul>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var container = document.getElementById('latex-container');
-        var latex = container.textContent;
-        katex.render(latex, container, {
-            throwOnError: false
-        });
-    });
-</script>
+{% for job in history %}
+{% for highlight in job.highlights %}
+ - {{ highlight }
+{% endfor %}
+{% endfor %}
