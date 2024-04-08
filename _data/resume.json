@@ -8,17 +8,17 @@
       "startDate": "January 2023",
       "endDate": "March 2024",
       "highlights": [
-        "Designed and implemented a public-facing API using \\textbf{Ruby on Rails} to support an entirely new product stream, generating \\textbf{\\$300k in ARR} before launching.",
-        "Developed a highly-performant Proximity Search feature without the need for geo-indexing, improving user engagement by \\textbf{12\\%}.",
-        "Iterated upon an event-sourced service to provide visibility and empower reconciliation into our data-ingestion pipeline - generating time savings of \textbf{50 hours per week} for both our SA and our CX teams.",
-        "Scoped and coordinated the engineering integration for 2 large customers adding up to \\textbf{\\textasciitilde{}\\$250k ARR}"
+        "Designed and implemented a public-facing API using <strong>Ruby on Rails</strong> to support an entirely new product stream, generating <strong>$300k in ARR</strong> before launching.",
+        "Developed a highly-performant Proximity Search feature without the need for geo-indexing, improving user engagement by <strong>12%</strong>.",
+        "Iterated upon an event-sourced service to provide visibility and empower reconciliation into our data-ingestion pipeline - generating time savings of <strong>50 hours per week</strong> for both our SA and our CX teams.",
+        "Scoped and coordinated the engineering integration for 2 large customers adding up to <strong>>$250k ARR</strong>"
       ]
     },
     {
       "highlights": [
-        "Tech lead of a team of 5-7 engineers supporting our clinical tools, including our flagship ePrescribing system that generated \\textbf{\\textgreater{}\\$20M in revenue}.",
-        "Developed workflows to surface prescription eligibility and pricing information to providers driving medication adherence and improving user satisfaction by \\textbf{22\\%}.",
-        "Rapidly developed solution that optimized clinical workflows, saving over \\textbf{360 hours per week} of the support team's time.",
+        "Tech lead of a team of 5-7 engineers supporting our clinical tools, including our flagship ePrescribing system that generated <strong>>20M in revenue</strong>.",
+        "Developed workflows to surface prescription eligibility and pricing information to providers driving medication adherence and improving user satisfaction by <strong>22%</strong>.",
+        "Rapidly developed solution that optimized clinical workflows, saving over <strong>360 hours per week</strong> of the support team's time.",
         "Successfully led a cross-functional, time-sensitive project pivotal for onboarding a major customer, ensuring a seamless integration process and enhancing client satisfaction."
       ],
       "company": "Included Health",
@@ -51,8 +51,8 @@
     },
     {
       "highlights": [
-        "Revolutionized a critical IOT data collection process by implementing parallelism and batching techniques, \\textbf{reducing total collection time from 15 hours to 30 min}.",
-        "Designed and developed robust \\textbf{Java} modules for interfacing with highly specialized control systems equipment, highlighting advanced technical proficiency and a keen ability to adapt to specialized technologies."
+        "Revolutionized a critical IOT data collection process by implementing parallelism and batching techniques, <strong>reducing total collection time from 15 hours to 30 min</strong>.",
+        "Designed and developed robust <strong>Java</strong> modules for interfacing with highly specialized control systems equipment, highlighting advanced technical proficiency and a keen ability to adapt to specialized technologies."
       ],
       "company": "Avadine",
       "position": "Software Engineer",
