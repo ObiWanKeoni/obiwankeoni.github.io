@@ -20,13 +20,13 @@ layout: default
 
 {{ content }}
 
-<span id="latex-container">
+<ul id="latex-container">
     {% for job in history %}
       {% for highlight in job.highlights %}
         <li>{{ highlight }}</li>
       {% endfor %}
     {% endfor %}
-</span>
+</ul>
 
 
 <script>
