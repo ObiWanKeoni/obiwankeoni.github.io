@@ -1,6 +1,17 @@
 {
   "work_experience": [
     {
+      "company": "Fabric Health",
+      "location": "Remote",
+      "position": "Senior Software Engineer",
+      "website": "",
+      "startDate": "May 2024",
+      "endDate": "Present",
+      "highlights": [
+        "Starting soon"
+      ]
+    },
+    {
       "company": "Isometric Technologies",
       "location": "Remote",
       "position": "Senior Software Engineer",
