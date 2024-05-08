@@ -1,9 +1,9 @@
 ---
 layout: resume
-nav_order: 3
+nav_order: 4
 title: Avadine
 link: https://avadine.com
-image_link: "https://blog.opto22.com/hs-fs/hubfs/Avadine_logo_horizontal_on_transparent.png?width=300&name=Avadine_logo_horizontal_on_transparent.png"
+image_link: https://blog.opto22.com/hs-fs/hubfs/Avadine_logo_horizontal_on_transparent.png?width=300&name=Avadine_logo_horizontal_on_transparent.png
 parent: Experience
 grand_parent: About
 languages:

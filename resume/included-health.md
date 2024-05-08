@@ -1,9 +1,9 @@
 ---
 layout: resume
-nav_order: 2
+nav_order: 3
 title: Included Health
 link: https://includedhealth.com
-image_link: "https://includedhealth.com/wp-content/uploads/2021/11/Included_Logo_RGB.png"
+image_link: https://includedhealth.com/wp-content/uploads/2021/11/Included_Logo_RGB.png
 parent: Experience
 grand_parent: About
 languages:
