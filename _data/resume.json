@@ -4,11 +4,12 @@
       "company": "Fabric Health",
       "location": "Remote",
       "position": "Senior Software Engineer",
-      "website": "",
+      "website": "https://fabrichealth.com",
       "startDate": "May 2024",
       "endDate": "Present",
       "highlights": [
-        "Starting soon"
+        "Designed an Integrations Layer to consolidate common integration paths with EMR partners.",
+        "Added new integration points with large partners in the EMR space."
       ]
     },
     {
